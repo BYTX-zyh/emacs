@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Mar 16 17:51:55 2023
+;; Desktop file format version 208
+;; Emacs version 30.0.50
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25618 59067 750551 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#c7c9cb") (background-color . "#232530") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#e95678") (font-parameter) (environment) (last-focus-update . t) (frameset--id . "4DBC-4EC3-D488-0635") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 39) (width . 157) (left . 422) (top . 92)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 80) (min-pixel-width . 180) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 20) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 776) (total-width . 160) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 720) (pixel-height . 776) (total-width . 80) (total-height . 39) (normal-height . 1.0) (normal-width . 0.5013927576601671) (buffer "高等数学.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 17716) (start . 16257))) (leaf (last . t) (pixel-width . 716) (pixel-height . 776) (total-width . 80) (total-height . 39) (normal-height . 1.0) (normal-width . 0.4986072423398329) (buffer "#对话开始 – 用户与助手#.chat" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 5163) (start . 3827)) (prev-buffers ("高等数学.org" 16875 18476)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '(#("/Users/bytx/.config/emacs/#对话开始 – 用户与助手#.chat" 0 45 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org.el" 0 54 (ivy-index 1)) #("/Users/bytx/.config/emacs/init.el" 0 33 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/mind-wave/chatgpt_api_key.txt" 0 55 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/math/" 0 33 (ivy-index 0)) "~/code/solo/note/math/高等数学.org" "~/.config/emacs/site-lisp/config/init-org.el" "~/code/solo/note/math/高等数学.org" "~/code/solo/note/math/" "~/.config/emacs/#对话开始#.chat" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.chat" "~/.config/emacs/#I am sorry, but I cannot give a title to this paragraph as it consists of only one word. Please provide a proper paragraph so that I can give it a title.#.chat" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/site-lisp/extensions/emacs-which-key/README.org" "~/.config/emacs/site-lisp/config/init-bytx-function.el" "~/.config/emacs/site-lisp/config/init-blink-search.el" "~/.config/emacs/mind-wave/chatgpt_api_key.txt" "~/code/solo/algorithm/cf/1794/a.cpp" "~/.config/emacs/README.org" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/#件可以让您通过#.chat" "~/.config/emacs/site-lisp/config/init-key.el" "~/code/solo/note/software/warpd.org" "~/.config/emacs/site-lisp/config/init-avy.el" "~/.config/emacs/site-lisp/config/init.el" "~/Pictures/小鹅.png" "~/.config/emacs/site-lisp/config/init-themes.el" "~/.config/emacs/site-lisp/config/bytx.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/Notes/math/高等数学.org"
+  "高等数学.org"
+  'org-mode
+  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode visual-line-mode cursor-sensor-mode xenops-mode)
+  17716
+  '(18045 nil)
+  nil
+  nil
+  '((buffer-display-time 25618 59066 180419 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (18045 17730 18463 17298 17295 16414 16411 16258 16255 15892 15393 15317 15254 15177 14966 17716))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/#对话开始 – 用户与助手#.chat"
+  "#对话开始 – 用户与助手#.chat"
+  'fundamental-mode
+  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  5163
+  '(50 nil)
+  nil
+  nil
+  '((buffer-display-time 25618 59066 180419 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (50 76 95 216 737 850 2473 2473 2473 2513 50))))
+

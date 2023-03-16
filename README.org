@@ -1,0 +1,599 @@
+#+STARTUP: content
+#+macro: pagebreak @@html:<hr />@@
+关于emacs使用和配置的记录存档.
+* 配置
+这一部分会介绍关于配置文件夹的内容,包括加载的插件与配置,以及配置思路等.
+** 配置文件夹描述
+大致配置文件目录如下，其余内容多为插件产生目录(文件):
+- README.org
+  本文件
+- init.el
+  emacs入口文件,定义了递归添加 ~load-path~ ,在此配置目录下的会自动识别并添加到 ~load-path~ 。而后 ~(require 'site-lisp/init.el)~ 文件作为入口。
+- session
+  session管理文件夹，用于保存和恢复会话。
+- site-lisp
+  - extensions
+    用于保留来自github的各种插件，使用 ~submodule~ 进行管理。
+  - config
+    各种扩展文件，总入口为 ~init.el~ 文件，其余格式的 ~init-xxx.el~ 文件表示各种插件或者配置的文件。
+** 配置核心思路
+*** 软件包管理
+本项目尽量采用了从源码安装包的方法进行插件安装，不采用 ~package~ 、 ~use-package~ 等包管理系统进行管理。
+
+对于每个包都采用 ~git submodule~ 进行管理，所有的路径都位于 ~site-lisp/extensions~ ，如果该包存在其他依赖则继续添加，而后调用即可。若需要编译则手动进行编译。
+*** [[https://github.com/manateelazycat/lazy-load][lazy-load]]
+
+lazy-load为插件启动管理用，缓解emacs的启动压力，同时加快启动速度。对于非必须随emacs启动的插件，定义其 ~keybind~ ,标明其源文件与调用函数，在首次按下对应 ~keybind~ 后加载该文件并调用其对应的函数。
+
+#+begin_src elisp
+(lazy-load-global-keys
+ '(("M-g" . goto-line-preview))
+ "goto-line-preview")
+#+end_src
+以上代码表示在首次按下 ~M-g~ 后在 load-path 中读取 ~goto-line-preview.el~ 文件并加载，而后执行 ~goto-line-preview~ 函数。
+
+
+#+begin_src elisp
+(lazy-load-local-keys
+ '(("C-c t" . ruby-hash-syntax-toggle))
+ Ruby-mode-map
+ "ruby-extension")
+#+end_src
+这段代码表示在 ruby-mode 下首次按下 ~C-c t~ 后，在 load-path 中读取 ~ruby-extension.el~ 文件，加载插件后执行 ~ruby-hash-syntax-toggle~ 函数 。
+
+
+默认情况下，Emacs已经占用了许多全局按键。必须先卸载它们，然后才能重新绑定这些全局按键，例如 ~C-x~ 。以下代码是使用 ~lazy-load-unset-keys~ 卸载默认的全局按键：
+#+begin_src elisp
+(lazy-load-unset-keys '("C-x C-f" "C-z" "C-q" "s-W" "s-z" "M-h" "C-x C-c" "C-\\" "s-c" "s-x" "s-v"))
+#+end_src
+
+
+同时可以使用如下配置设置前缀键，用于绑定多个可能的情况：
+#+begin_src elisp
+(lazy-load-global-keys
+ '(("p" . sdcv-search-pointer)
+   ("y" . sdcv-search-pointer+)
+   ("i" . sdcv-search-input)
+   (";" . sdcv-search-input+))
+ "init-sdcv"
+ "C-z")
+#+end_src
+
+
+如果插件已启动时加载，则可以通过 ~lazy-load-set-keys~ 方式设置其快捷键：
+#+begin_src
+(lazy-load-set-keys
+ '(("M-;" . comment-dwim-with-haskell-style))
+ Haskell-mode-map)
+#+end_src
+
+** 主题外观
+主题外观采用了随机加载的方式，根据时间节点自动在白天与夜晚加载不同的主题。
+查看当前主题: ~M-x describe-variable RET custom-enabled-themes RET~ ( ~RET~ 表示回车)
+或者 ~C-h v custom-enabled-themes RET~ .
+详细关于主题的配置见 ~site-lisp/init-themes.el~ 。
+*** light-themes
+*** dark-themes
+** 插件
+此处插件根据功能进行分类.
+*** 编辑类插件
+
+*** 界面/UI类插件
+**** [[https://github.com/Malabarba/beacon.git][beacon]]
+在光标发生跳转后高亮光标所在位置。
+**** 安装
+使用 ~byte-recompile-directory~ 编译后 ~require~ 对应的包。
+**** 配置
+查看[[https://github.com/Malabarba/beacon#customizations][此处]]修改一些关于光标提示的设置，包括提示颜色，光标闪烁时间等。
+**** 使用
+全局启动。
+*** 工具类插件
+**** 光标快速跳转-[[https://github.com/abo-abo/avy][avy]]
+avy是快速光标跳转插件,其作用为通过几个简单的字符跳转到对应的位置.类似于vim-easymotion.
+***** 安装
+使用 ~git submodule~ 安装,而后 ~require('avy)~ .
+***** 配置
+详细的配置文档查看[[https://github.com/abo-abo/avy/wiki/defcustom][此处]],包括有关于提醒字符,提醒时间间隔,提醒格式,提醒范围等内容的设置.
+
+可以查看[[https://github.com/abo-abo/avy/wiki/custom-commands][此处]]了解如何自定义自己的avy指令.
+***** 使用
+命令列表:
+- ~avy-goto-char~
+  跳转一个字符
+- ~avy-goto-char-2~
+  跳转两个字符
+- ~avy-goto-char-timer~
+  任意数量字符跳转
+  键入一个char，在屏幕上动态突出显示。当停止键入avy-timeout-seconds（默认为0.5秒）时，出现avy跳转提示。
+  输入字符时，可以使用C-h（退格）或DEL（删除）来删除最后一个键入的字符，并使用RET立即结束输入序列并选择一个候选字符。
+- ~avy-goto-line~
+  无需输入,行跳转
+- ~avy-goto-word-1~
+  word跳转
+- ~avy-goto-word-0~
+  无输入的word跳转
+avy还有其他的一些命令,可以自行查看尝试需要的命令(通过 ~M-x avy-[TAB]~ 查看所有支持的avy命令).
+**** 搜索插件- [[https://github.com/manateelazycat/blink-search][blink-search]]
+该插件用于进行多功能搜索.
+***** [[https://github.com/manateelazycat/blink-search#installation][安装]]
+需要安装 python 依赖 ~pip3 install epc requests~ .
+以及外部工具:
+- [[https://github.com/sharkdp/fd][fd]]
+- [[https://github.com/BurntSushi/ripgrep][ripgrep]]
+- [[https://www.sqlite.org/index.html][sqlite3]](可选,用于sqlite3后端)
+- [[https://github.com/phiresky/ripgrep-all][ripgrep]](可选，用于搜索pdf后端)
+~git submodule~ 后 ~(require 'blink-search)~ .
+如果需要浮动显示窗口则需要 [[https://github.com/tumashu/posframe][posframe]].
+***** [[https://github.com/manateelazycat/blink-search#option][配置]]
+可以查看配置详细信息进行配置,通常只修改 ~blink-search-enable-posframe~ 即可.
+***** 使用
+命令列表:
+- ~M-x blink-search~
+  启动搜索
+- ~C-u M-x blink-search~
+  搜索当前符号(search current symbol)
+
+blink-search搜索的范围包括如下内容:
+- Buffer List
+  所有的buffer中的内容
+- Common Directory
+  用户常用目录,该选项可以通过 ~blink-search-common-directory~ 进行设置.
+- Recent File
+  最近使用的文件
+- Current Buffer
+  使用ripgrep搜索当前buffer
+- Grep File
+  use ripgrep grep files under git project or current directory
+- IMenu
+  search variable/function of current buffer that base on imenu
+- Find File
+  使用 fd 搜索当前git仓库或者目录中的文件
+- Elisp Symbol
+  elisp内容搜索
+- Google Suggest
+  谷歌搜索推荐
+- Key Value
+  read/get/del/update key-value pairs in sqlite3, require sqlite3 and ensure pip install sqlite3 at first
+
+在搜索时,默认搜索所有的内容,如果搜索以 ~#~ 开始则搜索当前buffer,如果以 ~!~ 开始则搜索当前目录.
+搜索后可以按下  ~Ctrl-m~ 或者回车选择候选内容, 按下 ~Alt + QuickKey~ 选择 ~QuickKey~ 指示的内容.
+
+搜索时会为每个组显示前五个内容，而在右侧显示详细的整个组的内容，故有关于候选组项目的区分。
+| key       | command                                  | 描述                     |
+| C + n     | blink-search-candidate-select-next       | 选择下一个候选项目         |
+| C + p     | blink-search-candidate-select-prev       | 选择上一个候选项目         |
+| M + n     | blink-search-backend-select-next         | 选择下一个项目(倒序)       |
+| M + p     | blink-search-backend-select-prev         | 选择上一个项目(倒序)       |
+| M + j     | blink-search-candidate-group-select-next | 跳转下一个候选组项目        |
+| M + k     | blink-search-candidate-group-select-prev | 跳转上一个候选组项目        |
+| C + j     | blink-search-parent                      | 跳转到所选候选项目的父目录   |
+| C + l     | blink-search-continue                    | 继续搜索当前候选项目的新目录 |
+| C + m     | blink-search-do                          | 对选定的候选项目执行操作    |
+| C + M + m | blink-search-preview                     | 预览选定的候选项目         |
+| C + M + n | blink-search-preview-next                | 预览下一个候选项目         |
+| C + M + p | blink-search-preview-next                | 预览上一个候选项目         |
+| M + w     | blink-search-copy                        | 复制所选候选项目的文本      |
+| C + g     | blink-search-quit                        | 退出                     |
+
+**** chat-GPT-[[https://github.com/manateelazycat/mind-wave/blob/master/README.zh-CN.md][mind-wave]]
+关于一些注册\api的问题查看[[https://emacs-china.org/t/mind-wave-chatgpt-api-emacs-ai/23881/26?u=bytx-zyh][此处]]([[https://emacs-china.org/t/mind-wave-chatgpt-api-emacs-ai/23881/25][原帖]]).
+关于安装和配置的内容其中文README已经很详细了此处不赘述,只保留使用部分.
+
+- 对话模式
+  新建 test.chat 文件，将自动进入 mind-wave-chat-mode
+  执行命令 mind-wave-chat-ask（按下 Ctrl + j），输入问题，等待 ChatGPT 回答
+  执行命令 mind-wave-chat-continue (按下 Ctrl + u), 继续回答
+  执行命令 mind-wave-chat-generate-title (按下 Ctrl + i), 根据内容重新生成标题
+  如果您想更换话题，请新建一个新的 *.chat 文件，然后继续向 ChatGPT 提问即可。
+- 多行输入
+  多行输入有两种方式：
+  执行命令 mind-wave-chat-ask-with-multiline（按下 Ctrl + Shift + j），输入多行问题，等待 ChatGPT 回答
+  执行命令 mind-wave-chat-ask-insert-line 插入 ----- User ------ 分隔符， 在 Buffer 继续输入多行内容， 最后执行 mind-wave-chat-ask-send-buffer
+- 文档模式
+  选中内容（请注意，不要选择太多，ChatGPT 的 API 有大小限制）
+  执行命令 mind-wave-translate-to-english，ChatGPT 获得翻译后会自动替换选中区域的内容。
+  执行命令 mind-wave-proofreading-doc，ChatGPT 会用润色后的文档自动替换选中区域的内容。
+- 代码模式
+  光标移动到想要重构的函数
+  执行命令 mind-wave-refactory-code, ChatGPT 会自动分屏， 在屏幕右边先后重构后的代码和重构建议
+  执行命令 mind-wave-comment-code, ChatGPT 会自动分屏， 在屏幕右边显示带注释的代码
+  执行命令 mind-wave-explain-code, ChatGPT 会自动分屏， 在屏幕右边显示代码的讲解
+- 摘要模式
+  打开视频网站, 执行命令 mind-wave-summary-video, ChatGPT 会自动获取视频字幕， 并分析视频概要 (需要安装 youtube_transcript_api)
+  打开文本网站, 执行命令 mind-wave-summary-web, ChatGPT 会自动获取网页中的核心内容， 并分析网页概要 (需要安装 nodejs-readability-cli)
+
+
+
+
+
+**** completion mechanism 增强(增强 ~M-x~ 等出现在minibuffer的功能)
+
+使用插件 [[https://github.com/abo-abo/swiper][ivy]] 增强 ~M-x~ 相关的功能,提供更为高效、简单、流畅的功能.
+[[https://github.com/abo-abo/swiper#installation][安装]]后可以查看相关的[[https://oremacs.com/swiper/][使用手册]]了解其详细功能,并可以在[[https://github.com/abo-abo/swiper/wiki][wiki]]找到关于 counsel 和 swiper 的相关信息.
+
+关于 ivy 的详细配置可以查看配置文件,此处只对 ivy 的快捷键与命令之外的内容进行描述.
+
+ivy 其在 minibuffer中添加了一些特定的[[https://oremacs.com/swiper/#key-bindings][keybind]],关于详细的信息可以查看 ~ivy-minibuffer-map~ :
+- 导航
+  | C-n | （ivy-next-line）           | 选择下一个候选人         |
+  | C-p | （ivy-previous-line）       | 选择之前的候选人         |
+  | M-< | （ivy-beginning-of-buffer） | 选择第一个候选人         |
+  | M-> | （ivy-end-of-buffer）       | 选择最后一个候选人       |
+  | C-v | （ivy-scroll-up-command）   | 按ivy-height线向上滚动  |
+  | M-v | （ivy-scroll-down-command） | 通过ivy-height线向下滚动 |
+- [[https://oremacs.com/swiper/#key-bindings-for-single-selection-action-then-exit-minibuffer][单一完成并退出ivy]]
+  | C-m/RET | ivy-done            | 选择默认选项执行并退出      |
+  | TAB     | ivy-partial-or-done | 尝试尽可能补全             |
+  | C-M-j   | ivy-immediate-done  | 使用当前输入内容而非默认内容 |
+  | C-'     | ivy-avy             | 使用avy跳转选项           |
+
+同时 ivy 定义了多种匹配规则,可以查看[[https://oremacs.com/swiper/#completion-styles][此处]]选择合适的匹配规则.
+
+
+由于默认的minibuffer位于底部,在 completion mechanism 时需要移动视线,故采用[[https://github.com/tumashu/ivy-posframe][ivy-posframe]]将其设置为居中显示便于查看,关于该插件的详细内容请自行查看.
+
+
+*** 窗口管理
+
+多窗口管理使用[[https://github.com/abo-abo/ace-window][ace-window]]进行,
+
+*** org插件
+
+**** 数学公式渲染
+
+***** 安装
+
+需要保证 ~which dvisvgm~ 与 ~which latex~ 都有返回的可执行文件路径.其中需要首先通过 ~brew install mactex~ 安装,而后通过 mactex 提供的 ~tlmgr~ 命令安装 ~sudo tlmgr install latex~ ~sudo tlmgr install dvisvgm~ .
+
+此时应该具有如上需求的两个命令.
+
+而后添加到 submodule 即可.
+
+安装后可以通过 ~M-x xenops-doctor~ 查看是否符合要求.
+
+***** 使用
+
+*** [[https://github.com/bbatsov/projectile][projectile]]
+
+**** 介绍
+
+- 在项目文件/目录中跳转
+- 在同名不同后缀文件中跳转(例如 ~.c~ 与 ~.h~ 文件)
+- 在项目中跳转到测试
+- 在项目中搜索/替换
+- 在项目之间切换
+
+**** 安装
+
+
+**** 使用
+
+通常 projectile 可以自动读取项目文件，例如一些VSC仓库(git等)，如需要手动标记为项目，可以在项目目录中创建一个空的 ~.projectile~ 文件。
+
+*** [[https://github.com/abo-abo/ace-window.git][ace-window]]
+
+**** 介绍
+
+用于窗口管理的插件。
+
+**** 安装
+
+依赖: avy
+
+**** 配置
+
+- 全局绑定：ace-window 启动键:
+  (global-set-key (kbd "M-o") 'ace-window)
+- ~aw-keys~
+  (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+-
+
+**** 使用
+
+如果只有两个窗口， ~ace-window~ 将会调用 ~other-window~,如果具有更多的windows则会在每个windows上弹出提示词，按下提示词后跳转到对应的窗口。
+
+可以通过 ~C-u ace-window~ 交换窗口，也可以使用 ~C-u C-u ace-window~ 删除窗口。
+
+
+您也可以从调用ace-window开始，然后决定将操作切换为delete或swap等。默认情况下，绑定是：
+- x-删除窗口
+- m-交换窗口
+- M-移动窗口
+- c-复制窗口
+- j-选择缓冲区
+- n-选择上一个窗口
+- u-在另一个窗口中选择缓冲区
+- v-垂直拆分窗口
+- b-水平拆分窗口
+- o-最大化当前窗口
+- ?-显示帮助
+为了正常运行，这些键不能在aw-keys。此外，如果您希望这些密钥在少于三个窗口下工作，您需要将aw-dispatch-always设置为t。
+
+*** [[https://github.com/manateelazycat/sort-tab][sort-tab]]
+sort-tab为窗口管理插件，其效果为自动根据使用频率排序tab并切换。
+**** 安装
+添加到 ~submodule~ ,而后 ~(require 'sort-tab)~ 。
+**** 配置
+
+可以参照[[https://github.com/manateelazycat/sort-tab#switchtabbyindex][此处]]设置 ~S-num~ 为tab切换键。
+
+**** 使用
+
+- ~s-num~
+  快捷切换tab,按下 ~s-num~ 切换到对应的tab，数字内容会自动识别。
+  #+begin_src
+(global-set-key (kbd "s-1") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-2") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-3") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-4") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-5") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-6") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-7") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-8") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-9") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-0") 'sort-tab-select-visible-tab)
+(global-set-key (kbd "s-Q") 'sort-tab-close-all-tabs)
+(global-set-key (kbd "s-q") 'sort-tab-close-mode-tabs)
+(global-set-key (kbd "C-;") 'sort-tab-close-current-tab)
+  #+end_src
+- ~sort-tab-select-next-tab~
+  选择下一个选项卡
+- ~sort-tab-select-prev-tab~
+  选择上一个选项卡
+- ~sort-tab-select-first-tab~
+  选择第一个选项卡
+- ~sort-tab-select-last-tab~
+  选择最后一个选项卡
+- ~sort-tab-close-current-tab~
+  关闭当前选项卡
+
+*** [[https://github.com/manateelazycat/auto-save.git][auto-save]]
+auto-save用于静默自动保存文件，并自动删除行末尾的空格。
+**** 安装
+使用 ~git submodule~ 安装，而后 ~(require 'auto-save)~ 。
+**** 配置
+查看项目README内容即可。
+*** [[https://github.com/manateelazycat/lsp-bridge/blob/master/README.zh-CN.md][lsp-bridge]]
+
+**** 简介
+
+lsp插件，采用python多线程进行补全，速度快，而且不需要进行语言服务器配置。
+
+**** [[https://github.com/manateelazycat/lsp-bridge/blob/master/README.zh-CN.md#安装][安装]]
+
+依赖(均使用 ~submodule~ 后 ~load-path~ 即可)：
+- [[https://github.com/tumashu/posframe][posframe]]
+- [[https://github.com/jrblevin/markdown-mode][markdown-mode]]
+- [[https://github.com/joaotavora/yasnippet][yasnippet]]
+
+同时需要 ~pip3 install epc orjson sexpdata==0.0.3 six~ 安装python相关依赖。
+
+而后通过 ~submodule~ 安装即可。
+
+**** 配置
+
+详细配置内容查看README文件，有中文文件不再赘述。
+
+**** [[https://github.com/manateelazycat/lsp-bridge/blob/master/README.zh-CN.md#使用][使用]]
+
+使用时需要关闭其余补全插件例如 ~lsp-mode~ ，同时 ~ace-mode~ 会自启动，无需对其进行设置。
+
+按键：
+| Alt + n   | acm-select-next           | 选择下一个候选词           |
+| Down      | acm-select-next           | 选择下一个候选词           |
+| Alt + p   | acm-select-prev           | 选择上一个候选词           |
+| Up        | acm-select-prev           | 选择上一个候选词           |
+| Alt + ,   | acm-select-last           | 选择最后一个候选词          |
+| Alt + .   | acm-select-first          | 选择第一个候选词           |
+| Ctrl + v  | acm-select-next-page      | 向下滚动候选菜单           |
+| Alt + v   | acm-select-prev-page      | 向上滚动候选菜单           |
+| Ctrl + m  | acm-complete              | 完成补全                  |
+| Return    | acm-complete              | 完成补全                  |
+| Tab       | acm-complete              | 完成补全                  |
+| Alt + h   | acm-complete              | 完成补全                  |
+| Alt + H   | acm-insert-common         | 插入候选词共有部分          |
+| Alt + u   | acm-filter                | 用 Overlay 进一步过滤候选词 |
+| Alt + d   | acm-doc-toggle            | 开启或关闭候选词文档        |
+| Alt + j   | acm-doc-scroll-up         | 向下滚动候选词文档          |
+| Alt + k   | acm-doc-scroll-down       | 向上滚动候选词文档          |
+| Alt + l   | acm-hide                  | 隐藏补全窗口               |
+| Ctrl + g  | acm-hide                  | 隐藏补全窗口               |
+| Alt+数字键 | acm-complete-quick-access | 快速选择候选词             |
+
+命令列表:
+lsp-bridge-find-def: 跳转到定义位置
+lsp-bridge-find-def-other-window: 在其他窗口跳转到定义位置
+lsp-bridge-find-def-return: 返回跳转之前的位置
+lsp-bridge-find-impl: 跳转到接口实现位置
+lsp-bridge-find-impl-other-window: 在其他窗口跳转到接口实现位置
+lsp-bridge-find-references: 查看代码引用
+lsp-bridge-popup-documentation: 查看光标处的文档
+lsp-bridge-popup-documentation-scroll-up: 文档窗口向上滚动
+lsp-bridge-popup-documentation-scroll-down: 文档窗口向下滚动
+lsp-bridge-rename: 重命名
+lsp-bridge-diagnostic-jump-next: 跳转到下一个诊断位置
+lsp-bridge-diagnostic-jump-prev: 跳转到上一个诊断位置
+lsp-bridge-diagnostic-list: 列出所有诊断信息
+lsp-bridge-diagnostic-copy: 拷贝当前诊断信息到剪切板
+lsp-bridge-diagnostic-ignore: 插入注视忽略当前诊断
+lsp-bridge-code-action: 弹出代码修复菜单, 也可以指需要修复的代码动作类型: "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports", "source.fixAll"
+lsp-bridge-workspace-list-symbols: 列出工作区所有符号，并跳转到符号定义
+lsp-bridge-signature-help-fetch: 在 minibuffer 显示参数信息
+lsp-bridge-popup-complete-menu: 手动弹出补全菜单， 只有当打开 lsp-bridge-complete-manually 选项才需要使用这个命令
+lsp-bridge-restart-process: 重启 lsp-bridge 进程 (一般只有开发者才需要这个功能)
+lsp-bridge-toggle-sdcv-helper: 切换字典助手补全
+acm-insert-common: 插入补全候选词的公共前缀
+acm-doc-scroll-up: API 文档窗口向上滚动
+acm-doc-scroll-down: API 文档窗口向下滚动
+
+*** [[https://github.com/joaotavora/yasnippet][yasnippet]]
+codesnip工具。
+**** 安装
+~git submodule~ 安装，而后 ~(require 'yasnippet)~。
+**** [[http://joaotavora.github.io/yasnippet/][使用]]
+snip文件夹内部基于语言和snip命名进行组织，其结构通常可以为如下所示：
+每个mode文件夹下对应该语言的snip。
+#+begin_src texT
+ .
+ |-- c-mode
+ |   `-- printf
+ |-- java-mode
+ |   `-- println
+ `-- text-mode
+     |-- email
+     `-- time
+#+end_src
+***** 创建snip
+- 创建新的snip
+  ~M-x yas-new-snippet~ / ~C-c & C-n~
+  用于制作新片段的模板创建一个新的缓冲区。缓冲区处于snippet-mode。编辑完新片段后，使用 ~C-c C-c~ 保存。文件会保存在 yas-snippet-dirs指向的目录中。
+- 转到现有的snip进行编辑
+  ~M-x yas-visit-snippet-file~ / ~C-c & C-v~
+  提示您进行可能的片段扩展，类似于 ~yas-insert-snippet~ 但并非展开snip，而是转到片段定义的文件（如果它存在）。
+***** snippet-mode
+主模式snippet-mode来编辑片段。
+可以使用 ~M-x snippet-mode~ 将缓冲区设置为此模式。它提供了合理有用的语法高亮显示。
+
+在此模式下定义了三个命令：
+- ~M-x yas-load-snippet-buffer~ / ~C-c C-l~
+  提示片段表（默认基于片段的主要模式），并加载当前正在编辑的片段。
+- ~M-x yas-load-snippet-buffer-and-close~ / ~C-c C-c~
+  像yas-load-snippet-buffer一样，但也保存片段并调用quit-window。
+  目的地直接根据选择的片段表和片段集合决定（默认为yas-snippet-dirs第一个目录。
+- ~M-x yas-tryout-snippet~ / ~C-c C-t~
+  编辑片段时，这会打开一个新的空缓冲区，将其设置为适当的major mode，并测试snip。
+***** snip文件内容
+定义片段的文件通常包含要展开的模板。
+****** 文件头
+如果文件包含 ~# --~ 行，则其上面的行算作注释，其中一些可以是指令（或元数据）。
+片段指令例如 ~# property: value~ 并调整下面描述的某些片段属性。
+如果没有找到 ~# --~ ，则整个文件被视为片段模板。
+这里有一个典型的例子：
+#+begin_src
+;; # contributor: pluskid <pluskid@gmail.com>
+;; # name: __...__
+;; # --
+;; __${init}__
+#+end_src
+****** snip指令
+- key
+  是在运行yas-expand的键之前键入的扩展片段的缩写。(即展开snip的触发词)
+  如果没有指定key，则snip将无法通过触发机制展开。
+- name
+  这是对snip的一行描述，它将显示在菜单中。有利于在类似的片段中进行区分。
+  如果省略此名称，它将默认为片段加载的文件名。
+- condition
+  这是一段Emacs-lisp代码。
+  如果snip condition存在，则只有当条件代码计算到某个非零值时才会展开。
+  相关内容可以查看：yas-buffer-local-condition in Expanding snippets
+- group
+  从菜单栏菜单中展开/访问片段时，给定模式的片段可以分组到子菜单中。
+  如果一个模式有太多的片段，这会使菜单太长，此时group非常有用。
+****** 模板语法
+
+snip模板的语法简单但功能强大，与TextMate非常相似。
+- 纯文本
+  任意文本可以包含在模板中。它们通常被解释为纯文本。
+  除了 ~$~ 和 ~`~ ，需要使用 ~\~ 来转义： ~\$~ 和 ~\`~ 。~\~ 本身有时也可能需要作为 ~\\~ 转义。
+- 嵌入式 Elisp 代码
+  Emacs-Lisp代码可以嵌入模板中，写在反向引号（`）中。
+   http://joaotavora.github.io/yasnippet/snippet-development.html#orgcde188c
+- TAB停止字段
+  可以通过TAB和S-TAB来回导航的字段。它们由$写入，后跟数字。$0具有片段退出点的特殊含义。
+  当你走遍了所有位置后，$0是最后一个去的位置。
+- 占位符
+  语法是这样的：${N:default value}
+- 镜像
+  将带有占位符的tab stop称为字段。
+  字段可以有镜像。每当您更新任何字段文本时，所有镜像都会更新。
+  这里有一个例子：
+  #+begin_src
+  \begin{${1:enumerate}}
+     $0
+ \end{$1}
+  #+end_src
+  如果没有一个tab stop具有初始值，则选择第一个选项卡作为字段和其他窗口。
+
+如果yas-indent-line没有设置为 ~'auto~ ，仍然可以通过在行的某个地方添加缩进标记$>来缩进特定行。
+
+*** [[https://github.com/akermu/emacs-libvterm#vterm][vterm]]
+vterm为emacs终端模拟器。
+**** 安装
+[[https://github.com/akermu/emacs-libvterm#requirements][需求]]:
+- cmake
+- libtool-bin
+详细信息查看[[https://github.com/akermu/emacs-libvterm#manual-installation][此处]]。
+~git submodule~ 添加包，而后 ~require('vterm)~ 。重新启动emacs，会提示需要进行编译，编译完成后重启即可。
+
+外部shell配置，将如下内容添加到对应的配置文件中，例如 ~~/.zshrc~ :
+#+begin_src
+vterm_printf() {
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+#+end_src
+**** 使用
+- vterm
+  在当前窗口打开一个vterm
+- vterm-other-window
+  在另一个窗口打开vterm
+- vterm-copy-mode
+  当启用 vterm-copy-mode 时，终端缓冲区的行为类似于正常的 read-only 文本缓冲区：可以搜索、复制文本等。切换 vterm-copy-mode 的默认键绑定是C-c C-t。
+  选择区域时，可以复制文本并使用回车键离开vterm-copy-mode。
+  如果在按下回车键时没有选择区域，它将从头到尾复制当前行。
+  如果vterm-copy-exclude-prompt 为真，它将跳过提示，并且不会将其包含在副本中。
+  If vterm-copy-exclude-prompt is true it will skip the prompt and not include it in the copy.
+- [[https://github.com/akermu/emacs-libvterm#vterm-clear-scrollback][vterm-clear-scrollback]]
+- 定制内容
+
+*** [[https://github.com/casouri/valign/blob/master/README-CN.org][valign]]
+valign为表格插件，用于对其Org Mode、Markdown和table.el 的表格，能对齐包含不等宽字体、中日韩字符、图片的表格。且不会影响 Org Mode（或 Markdown mode）基于等宽字符的对齐。
+
+*** [[https://github.com/yangsheng6810/org-latex-impatient][org-latex-impatient]]
+用于org-mode等实时预览latex.
+**** 安装
+安装依赖: ~npm install mathjax-node-cli~ .
+**** 配置
+
+**** 使用
+
+
+*** 数学公式
+
+
+* 使用
+
+
+* todo
+
+- https://github.com/alphapapa/topsy.el/blob/master/topsy.el 修改
+- 插件图片效果
+- session
+  - session 无法保留fold信息
+  - kill-buffer  sort-tab问题
+- font
+  - 为不同mode添加不同的font-hook
+  - 设置字号大小问题
+  - 注释与正文代码字体区分
+- sort-tab
+  sort-tab 不显示tab但是功能存在
+  sort-tab-turn-on
+- keybind
+  ivy
+- blink-search
+  自动出现预览,预览不出现问题
+- 所有的keybind init-key one-key
+  avy跳转
+  ace窗口管理
+- undo-tree
+- tree-sitter
+- init.el 修改run-with-idle-timer与with-temp-message
+- ace-window readme中的内容，键绑定，以及修改配置中的中文无法显示问题
+- lsp-bridge command and keymap 设置与使用

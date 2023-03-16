@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Mar  9 18:58:32 2023
+;; Desktop file format version 208
+;; Emacs version 30.0.50
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25609 48088 390692 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#c4b8d3") (background-color . "#251D2F") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#9783b1") (font-parameter) (environment) (last-focus-update . t) (frameset--id . "E781-928E-02D9-EBB2") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 39) (width . 157) (left . 422) (top . 92)) ((min-height . 5) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 100) (min-pixel-width . 90) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 40) (min-pixel-width-safe . 18)) vc (pixel-width . 1436) (pixel-height . 776) (total-width . 160) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 20) (total-width . 160) (total-height . 1) (normal-height . 0.02577319587628868) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("*Messages*" 1 1))) (leaf (last . t) (pixel-width . 1436) (pixel-height . 756) (total-width . 160) (total-height . 38) (normal-height . 0.9742268041237113) (normal-width . 1.0) (buffer "*gud-a.out*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 105) (start . 1)) (prev-buffers ("a.cpp" 1 284) ("*Ibuffer*" 1 253) ("*gud-a.out*" 1 105) ("*Messages*" 1 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/code/solo/algorithm/cf/1794/a.cpp" "~/.config/emacs/site-lisp/config/init-lsp-bridge.el" "~/.config/emacs/site-lisp/config/init-projectile.el" "~/.config/emacs/site-lisp/config/init-hideshow.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-elpa.el" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/site-lisp/config/init-beacon.el" "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init-fold.el" "~/.config/emacs/site-lisp/config/init-generic.el" "~/.config/emacs/site-lisp/config/init-themes.el" "~/.config/emacs/site-lisp/config/init-sort-tab.el" "~/.config/emacs/site-lisp/config/init-org-fold.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/site-lisp/config/init-screen.el" "~/.config/emacs/init.el" "~/code/solo/note/software/warpd.org" "~/.config/emacs/site-lisp/config/init-blink-search.el" "~/.config/emacs/site-lisp/config/init-auto-save.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/algorithm/cf/1794/a.cpp"
+  "a.cpp"
+  'c++-mode
+  '(font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
+  284
+  '(475 nil)
+  nil
+  nil
+  '((buffer-display-time 25609 47958 892241 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (454 341 1 475 346 346 346 254 254 189 102 162 102 102 162 284))))
+
