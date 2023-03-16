@@ -1,4 +1,4 @@
-
+;;; ivy-posframe
 (require 'ivy-posframe)
 ;; display at `ivy-posframe-style'
 ;;(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))

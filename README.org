@@ -224,11 +224,6 @@ ivy 其在 minibuffer中添加了一些特定的[[https://oremacs.com/swiper/#ke
   | C-M-j   | ivy-immediate-done  | 使用当前输入内容而非默认内容 |
   | C-'     | ivy-avy             | 使用avy跳转选项           |
 
-同时 ivy 定义了多种匹配规则,可以查看[[https://oremacs.com/swiper/#completion-styles][此处]]选择合适的匹配规则.
-
-
-由于默认的minibuffer位于底部,在 completion mechanism 时需要移动视线,故采用[[https://github.com/tumashu/ivy-posframe][ivy-posframe]]将其设置为居中显示便于查看,关于该插件的详细内容请自行查看.
-
 
 *** 窗口管理
 
