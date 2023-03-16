@@ -216,8 +216,12 @@ git-submodule如何指定固定的版本？
 ------ Assistant ------
 如果您想要编辑 `.gitignore` 文件，以便 Git 忽略一个指定的文件夹，可以在 `.gitignore` 文件中添加一个文件夹的路径。以下是一个示例代码，可以让您更好地理解如何编辑 `.gitignore` 文件：```shell# 忽略 path/to/folder/ 目录下的所有文件和子目录 path/to/folder/ # 忽略 path/to/folder/ 目录下的所有 .txt 文件 path/to/folder/*.txt```这个代码会在 `.gitignore` 文件中添加两个规则，以便 Git 忽略 `path/to/folder/` 目录下的所有文件和子目录，以及 `path/to
 
------- User ------
+------ User
+------
 如何关闭当前window?
 
 ------ User ------
 .gitignore文件未生效为何
+
+------ User ------
+如何gitigonre一个文件夹？
