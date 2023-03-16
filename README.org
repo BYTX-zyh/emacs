@@ -71,9 +71,6 @@ lazy-load为插件启动管理用，缓解emacs的启动压力，同时加快启
 主题外观采用了随机加载的方式，根据时间节点自动在白天与夜晚加载不同的主题。
 查看当前主题: ~M-x describe-variable RET custom-enabled-themes RET~ ( ~RET~ 表示回车)
 或者 ~C-h v custom-enabled-themes RET~ .
-详细关于主题的配置见 ~site-lisp/init-themes.el~ 。
-*** light-themes
-*** dark-themes
 ** 插件
 此处插件根据功能进行分类.
 *** 编辑类插件
