@@ -4,3 +4,6 @@
 [submodule "site-lisp/extensions/ivy-posframe"]
 	path = site-lisp/extensions/ivy-posframe
 	url = https://github.com/tumashu/ivy-posframe.git
+[submodule "site-lisp/extensions/auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
