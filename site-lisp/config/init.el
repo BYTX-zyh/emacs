@@ -34,6 +34,7 @@
     ;; (require 'init-awesome-tray) ; awesome-tray
     (require 'init-fingertip)	 ;; fingertip
     (require 'init-treesit)	 ;; treesit 配置
+    (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)	 ; lsp 配置
     (require 'init-blink-search) ; 搜索插件
     (require 'init-beacon)	 ; 光标跳转提示
@@ -46,7 +47,8 @@
     (run-with-idle-timer
      1 nil
      #'(lambda ()
-         (require 'init-key)          ;; lazy-load加载的key设置
+	 (require 'pretty-lambdada) ;; lambda 表达式优化
+	 (require 'init-eldoc) ;; eldoc
          (require 'init-blink-search) ;; 搜索插件
          (require 'init-vterm)        ;; 终端模拟器
          (require 'mind-wave)         ;; chat-gpt聊天
