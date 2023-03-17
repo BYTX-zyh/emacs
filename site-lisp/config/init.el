@@ -33,14 +33,13 @@
     (require 'init-session)             ; session管理，用于保存与恢复
     ;; (require 'init-awesome-tray) ; awesome-tray
     (require 'init-fingertip)	 ;; fingertip
-    (require 'init-treesit)	 ;; treesit
+    (require 'init-treesit)	 ;; treesit 配置
     (require 'init-lsp-bridge)	 ; lsp 配置
     (require 'init-blink-search) ; 搜索插件
     (require 'init-beacon)	 ; 光标跳转提示
     (require 'init-auto-save)	 ; 文件停止编辑后自动保存
     (require 'init-yasnippet)	 ; codesnip
     (require 'init-org)		 ;; org-mode设置
-    ;;  (require init-fingertip) ;; init-fingertip.el
     (require 'init-sort-tab)            ; 智能排序tab
 
     ;; 在emacs闲置1s后启动的内容
@@ -54,9 +53,6 @@
          (require 'init-avy)          ;; 光标跳转插件
          (require 'init-ivy)          ;; ivy
          (require 'init-ivy-posframe) ;; ivy 浮动框架
-         (require 'treesit-auto)
-         (global-treesit-auto-mode)
-         (setq treesit-auto-install t)
          (require 'init-sort-tab)	; 智能排序tab
          ))
     ))
