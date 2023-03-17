@@ -71,4 +71,18 @@
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 
+;; avy 常用命令
+(one-key-create-menu
+ "avy-jump"
+ '(
+   (("t" . "goto char timer") . avy-goto-char-timer)
+   (("c" . "goto char") . avy-goto-char)
+   (("f" . "goto char-2") . avy-goto-char-2)
+   (("" . "goto line") . avy-goto-line)
+   (("w" . "goto word") . avy-goto-word-0)
+   )
+ t)
+
+;; todo; goto char timer kbd
+
 (provide 'init-key)

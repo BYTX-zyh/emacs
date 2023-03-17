@@ -1,12 +1,11 @@
 
-(require 'autothemer) ; kaolin-themes依赖 需要dash.el
-(require 'kaolin-themes)
+
 (require 'doom-themes)
 
 
 ;; 定义亮色主题列表
 (defvar my-light-themes-list
-  '(kaolin-light
+  '(
     doom-acario-light
     doom-1337
     doom-acario-light
@@ -53,7 +52,7 @@
 
 ;; 定义暗色主题列表
 (defvar my-dark-themes-list
-  '(kaolin-dark
+  '(
     doom-ayu-dark
     doom-gruvbox
     doom-acario-dark

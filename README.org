@@ -1,8 +1,5 @@
-#+STARTUP: content
-#+macro: pagebreak @@html:<hr />@@
-关于emacs使用和配置的记录存档.
+
 * 配置
-这一部分会介绍关于配置文件夹的内容,包括加载的插件与配置,以及配置思路等.
 ** 配置文件夹描述
 大致配置文件目录如下，其余内容多为插件产生目录(文件):
 - README.org
@@ -17,10 +14,7 @@
   - config
     各种扩展文件，总入口为 ~init.el~ 文件，其余格式的 ~init-xxx.el~ 文件表示各种插件或者配置的文件。
 ** 配置核心思路
-*** 软件包管理
-本项目尽量采用了从源码安装包的方法进行插件安装，不采用 ~package~ 、 ~use-package~ 等包管理系统进行管理。
 
-对于每个包都采用 ~git submodule~ 进行管理，所有的路径都位于 ~site-lisp/extensions~ ，如果该包存在其他依赖则继续添加，而后调用即可。若需要编译则手动进行编译。
 *** [[https://github.com/manateelazycat/lazy-load][lazy-load]]
 
 lazy-load为插件启动管理用，缓解emacs的启动压力，同时加快启动速度。对于非必须随emacs启动的插件，定义其 ~keybind~ ,标明其源文件与调用函数，在首次按下对应 ~keybind~ 后加载该文件并调用其对应的函数。
@@ -72,8 +66,6 @@ lazy-load为插件启动管理用，缓解emacs的启动压力，同时加快启
 查看当前主题: ~M-x describe-variable RET custom-enabled-themes RET~ ( ~RET~ 表示回车)
 或者 ~C-h v custom-enabled-themes RET~ .
 ** 插件
-此处插件根据功能进行分类.
-*** 编辑类插件
 
 *** 界面/UI类插件
 **** [[https://github.com/Malabarba/beacon.git][beacon]]
@@ -85,31 +77,7 @@ lazy-load为插件启动管理用，缓解emacs的启动压力，同时加快启
 **** 使用
 全局启动。
 *** 工具类插件
-**** 光标快速跳转-[[https://github.com/abo-abo/avy][avy]]
-avy是快速光标跳转插件,其作用为通过几个简单的字符跳转到对应的位置.类似于vim-easymotion.
-***** 安装
-使用 ~git submodule~ 安装,而后 ~require('avy)~ .
-***** 配置
-详细的配置文档查看[[https://github.com/abo-abo/avy/wiki/defcustom][此处]],包括有关于提醒字符,提醒时间间隔,提醒格式,提醒范围等内容的设置.
 
-可以查看[[https://github.com/abo-abo/avy/wiki/custom-commands][此处]]了解如何自定义自己的avy指令.
-***** 使用
-命令列表:
-- ~avy-goto-char~
-  跳转一个字符
-- ~avy-goto-char-2~
-  跳转两个字符
-- ~avy-goto-char-timer~
-  任意数量字符跳转
-  键入一个char，在屏幕上动态突出显示。当停止键入avy-timeout-seconds（默认为0.5秒）时，出现avy跳转提示。
-  输入字符时，可以使用C-h（退格）或DEL（删除）来删除最后一个键入的字符，并使用RET立即结束输入序列并选择一个候选字符。
-- ~avy-goto-line~
-  无需输入,行跳转
-- ~avy-goto-word-1~
-  word跳转
-- ~avy-goto-word-0~
-  无输入的word跳转
-avy还有其他的一些命令,可以自行查看尝试需要的命令(通过 ~M-x avy-[TAB]~ 查看所有支持的avy命令).
 **** 搜索插件- [[https://github.com/manateelazycat/blink-search][blink-search]]
 该插件用于进行多功能搜索.
 ***** [[https://github.com/manateelazycat/blink-search#installation][安装]]
@@ -198,32 +166,6 @@ blink-search搜索的范围包括如下内容:
 - 摘要模式
   打开视频网站, 执行命令 mind-wave-summary-video, ChatGPT 会自动获取视频字幕， 并分析视频概要 (需要安装 youtube_transcript_api)
   打开文本网站, 执行命令 mind-wave-summary-web, ChatGPT 会自动获取网页中的核心内容， 并分析网页概要 (需要安装 nodejs-readability-cli)
-
-
-
-
-
-**** completion mechanism 增强(增强 ~M-x~ 等出现在minibuffer的功能)
-
-使用插件 [[https://github.com/abo-abo/swiper][ivy]] 增强 ~M-x~ 相关的功能,提供更为高效、简单、流畅的功能.
-[[https://github.com/abo-abo/swiper#installation][安装]]后可以查看相关的[[https://oremacs.com/swiper/][使用手册]]了解其详细功能,并可以在[[https://github.com/abo-abo/swiper/wiki][wiki]]找到关于 counsel 和 swiper 的相关信息.
-
-关于 ivy 的详细配置可以查看配置文件,此处只对 ivy 的快捷键与命令之外的内容进行描述.
-
-ivy 其在 minibuffer中添加了一些特定的[[https://oremacs.com/swiper/#key-bindings][keybind]],关于详细的信息可以查看 ~ivy-minibuffer-map~ :
-- 导航
-  | C-n | （ivy-next-line）           | 选择下一个候选人         |
-  | C-p | （ivy-previous-line）       | 选择之前的候选人         |
-  | M-< | （ivy-beginning-of-buffer） | 选择第一个候选人         |
-  | M-> | （ivy-end-of-buffer）       | 选择最后一个候选人       |
-  | C-v | （ivy-scroll-up-command）   | 按ivy-height线向上滚动  |
-  | M-v | （ivy-scroll-down-command） | 通过ivy-height线向下滚动 |
-- [[https://oremacs.com/swiper/#key-bindings-for-single-selection-action-then-exit-minibuffer][单一完成并退出ivy]]
-  | C-m/RET | ivy-done            | 选择默认选项执行并退出      |
-  | TAB     | ivy-partial-or-done | 尝试尽可能补全             |
-  | C-M-j   | ivy-immediate-done  | 使用当前输入内容而非默认内容 |
-  | C-'     | ivy-avy             | 使用avy跳转选项           |
-
 
 *** 窗口管理
 
@@ -339,8 +281,6 @@ sort-tab为窗口管理插件，其效果为自动根据使用频率排序tab并
 - ~sort-tab-close-current-tab~
   关闭当前选项卡
 
-*** [[https://github.com/manateelazycat/auto-save.git][auto-save]]
-auto-save用于静默自动保存文件，并自动删除行末尾的空格。
 **** 安装
 使用 ~git submodule~ 安装，而后 ~(require 'auto-save)~ 。
 **** 配置

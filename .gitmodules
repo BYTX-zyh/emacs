@@ -7,3 +7,6 @@
 [submodule "site-lisp/extensions/auto-save"]
 	path = site-lisp/extensions/auto-save
 	url = https://github.com/manateelazycat/auto-save.git
+[submodule "site-lisp/extensions/fingertip"]
+	path = site-lisp/extensions/fingertip
+	url = https://github.com/manateelazycat/fingertip.git

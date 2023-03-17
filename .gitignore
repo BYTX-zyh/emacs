@@ -1,3 +1,6 @@
+# chat-gpt api key
 mind-wave/
 # chat-gpt 文件
 *.chat
+# xenops渲染的内容
+xenops/

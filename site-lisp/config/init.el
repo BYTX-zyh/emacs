@@ -31,6 +31,7 @@
     (require 'init-bytx-function)	  ; 自定义内容
     (require 'init-themes)		  ; 自动加载随机主题
     (require 'init-session)		; session管理，用于保存与恢复
+   ;; (require 'init-awesome-tray) ; awesome-tray
     (require 'init-lsp-bridge)		; lsp 配置
     (require 'init-blink-search)	; 搜索插件
     (require 'init-beacon)		; 光标跳转提示
