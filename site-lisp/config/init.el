@@ -27,19 +27,21 @@
     (require 'lazy-load)              ; lazy-load模块
     (require 'bytx-one-key)           ; 键盘快捷键方式
     (require 'init-highlight-parentheses) ;; 高亮
-    (require 'bytx)			  ;一些自定义内容
-    (require 'init-bytx-function)	  ; 自定义内容
-    (require 'init-themes)		  ; 自动加载随机主题
-    (require 'init-session)		; session管理，用于保存与恢复
-   ;; (require 'init-awesome-tray) ; awesome-tray
-    (require 'init-lsp-bridge)		; lsp 配置
-    (require 'init-blink-search)	; 搜索插件
-    (require 'init-beacon)		; 光标跳转提示
-    (require 'init-auto-save)		; 文件停止编辑后自动保存
-    (require 'init-yasnippet)		; codesnip
-    (require 'init-org)			;; org-mode设置
-  ;;  (require init-fingertip) ;; init-fingertip.el
-(require 'init-sort-tab)		; 智能排序tab
+    (require 'bytx)                       ;一些自定义内容
+    (require 'init-bytx-function)         ; 自定义内容
+    (require 'init-themes)                ; 自动加载随机主题
+    (require 'init-session)             ; session管理，用于保存与恢复
+    ;; (require 'init-awesome-tray) ; awesome-tray
+    (require 'init-fingertip)	 ;; fingertip
+    (require 'init-treesit)	 ;; treesit
+    (require 'init-lsp-bridge)	 ; lsp 配置
+    (require 'init-blink-search) ; 搜索插件
+    (require 'init-beacon)	 ; 光标跳转提示
+    (require 'init-auto-save)	 ; 文件停止编辑后自动保存
+    (require 'init-yasnippet)	 ; codesnip
+    (require 'init-org)		 ;; org-mode设置
+    ;;  (require init-fingertip) ;; init-fingertip.el
+    (require 'init-sort-tab)            ; 智能排序tab
 
     ;; 在emacs闲置1s后启动的内容
     (run-with-idle-timer
@@ -55,7 +57,7 @@
          (require 'treesit-auto)
          (global-treesit-auto-mode)
          (setq treesit-auto-install t)
-	 (require 'init-sort-tab)		; 智能排序tab
+         (require 'init-sort-tab)	; 智能排序tab
          ))
     ))
 (provide 'init)

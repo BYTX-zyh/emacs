@@ -1,6 +1,7 @@
 ;;; 关于keybind的配置
 
-;; Mac平台下交换 Option 和 Command 键。
+;; Mac平台下交换 Option 和 Command 键
+;; 设置大写锁定为 ctrl 键
 (when (featurep 'cocoa)
   (setq mac-option-modifier 'super)
   (setq mac-command-modifier 'meta))
