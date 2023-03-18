@@ -16,8 +16,8 @@
       ;; 1s后调用全屏幕
       (run-at-time "1sec" nil
 		   (lambda ()
-         	     (toggle-frame-fullscreen)))
-)
+ (shell-command "osascript -e 'tell application \"System Events\" to key code 122 using {command down, control down}'")
+		     )))
 
 
 ;; 修改默认窗口大小

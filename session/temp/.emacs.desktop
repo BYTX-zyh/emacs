@@ -2,18 +2,54 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Mar 17 11:06:34 2023
+;; Created Sat Mar 18 21:00:03 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25619 55610 420951 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "Black") (background-color . "White") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . light) (cursor-color . "black") (font-parameter) (environment) (last-focus-update . t) (frameset--id . "FEAD-701D-4C61-5E90") (frameset--mini t . t) (height . 39) (width . 157) (modeline . t) (unsplittable) (left . 422) (top . 92) (icon-name) (visibility . t) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 80) (min-pixel-width . 90) (min-pixel-height-ignore . 40) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 20) (min-pixel-width-safe . 18)) leaf (pixel-width . 1436) (pixel-height . 776) (total-width . 159) (total-height . 38) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 406) (start . 1))))])
+(setq desktop-saved-frameset [frameset 1 (25621 46547 697452 0) (desktop . "208") "bytx@192.168.0.104" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#EEFFFF") (background-color . "#212121") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#ffcb6b") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "32AD-60C5-5616-3846") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "192.168.0.104") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 39) (width . 157) (left . 0) (top . 25)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 80) (min-pixel-width . 90) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 20) (min-pixel-width-safe . 18)) leaf (pixel-width . 1436) (pixel-height . 776) (total-width . 160) (total-height . 38) (normal-height . 1.0) (normal-width . 1.0) (buffer "a.cpp" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 167) (start . 1)) (prev-buffers ("1802" 1 187) ("cf" 1 179) ("*Messages*" 1 3326))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history nil)
+(setq file-name-history '(#("/Users/bytx/code/solo/algorithm/cf/" 0 35 (ivy-index 0))))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/algorithm/cf/1802/a.cpp"
+  "a.cpp"
+  'c++-ts-mode
+  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  167
+  '(22 nil)
+  nil
+  nil
+  '((buffer-display-time 25621 46545 807403 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (22 22 160 118 161 22 161 71 192 173 161 22 22 22 68 167))))
+
+(desktop-create-buffer 208
+  nil
+  "1802"
+  'dired-mode
+  '(font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  187
+  '(nil nil)
+  t
+  '("/Users/bytx/code/solo/algorithm/cf/1802/")
+  '((buffer-display-time 25621 46361 730994 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "cf"
+  'dired-mode
+  '(font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  179
+  '(nil nil)
+  t
+  '("/Users/bytx/code/solo/algorithm/cf/")
+  '((buffer-display-time 25621 46360 678912 0))
+  '((mark-ring nil)))
+

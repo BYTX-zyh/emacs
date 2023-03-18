@@ -127,7 +127,7 @@
         ))
 (lazy-load-set-keys fingertip-key-alist fingertip-mode-map)
 
-
+(require 'open-newline)
 
 ;; todo; goto char timer kbd
 

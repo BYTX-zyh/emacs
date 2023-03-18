@@ -13,3 +13,6 @@
 [submodule "site-lisp/extensions/projectile"]
 	path = site-lisp/extensions/projectile
 	url = https://github.com/bbatsov/projectile.git
+[submodule "site-lisp/extensions/lsp-bridge"]
+	path = site-lisp/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge.git

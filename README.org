@@ -363,18 +363,7 @@ codesnip工具。
 **** 安装
 ~git submodule~ 安装，而后 ~(require 'yasnippet)~。
 **** [[http://joaotavora.github.io/yasnippet/][使用]]
-snip文件夹内部基于语言和snip命名进行组织，其结构通常可以为如下所示：
-每个mode文件夹下对应该语言的snip。
-#+begin_src texT
- .
- |-- c-mode
- |   `-- printf
- |-- java-mode
- |   `-- println
- `-- text-mode
-     |-- email
-     `-- time
-#+end_src
+
 ***** 创建snip
 - 创建新的snip
   ~M-x yas-new-snippet~ / ~C-c & C-n~

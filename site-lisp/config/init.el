@@ -30,7 +30,7 @@
     (require 'init-bytx-function)         ;; 自定义内容
     (require 'init-themes)                ;; 自动加载随机主题
     (require 'init-session)	 ;; session管理，用于保存与恢复
-(require 'init-treesit)      ;; treesit 配置
+    (require 'init-treesit)      ;; treesit 配置
     (require 'init-fingertip)    ;; fingertip
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
