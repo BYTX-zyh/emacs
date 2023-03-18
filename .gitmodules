@@ -10,3 +10,6 @@
 [submodule "site-lisp/extensions/fingertip"]
 	path = site-lisp/extensions/fingertip
 	url = https://github.com/manateelazycat/fingertip.git
+[submodule "site-lisp/extensions/projectile"]
+	path = site-lisp/extensions/projectile
+	url = https://github.com/bbatsov/projectile.git

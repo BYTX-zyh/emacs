@@ -1,5 +1,3 @@
-
-
 (require 'cl-lib)
 
 (tool-bar-mode -1)                      ;禁用工具栏
@@ -37,13 +35,15 @@
         ;; 继续递归搜索子目录
         (add-subdirs-to-load-path subdir-path)))))
 
+;; 自动添加路径下所有内容到load-path
 (add-subdirs-to-load-path "/Users/bytx/.config/emacs/site-lisp/")
+
 ;; 添加zsh path到emacs环境
 (let ((path (shell-command-to-string ". ~/.zshrc; echo -n $PATH")))
   (setenv "PATH" path)
   (setq exec-path (split-string path ":")))
 
-(setq url-gateway-method 'socks)
-(setq socks-server '("Default server" "127.0.0.1" 7890 5))
+;; (setq url-gateway-method 'socks)
+;;(setq socks-server '("Default server" "127.0.0.1" 7890 5))
 
 (require 'init)

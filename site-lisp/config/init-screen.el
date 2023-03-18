@@ -11,15 +11,12 @@
       ;; Mac就不会移动Emacs窗口到单独的工作区, 最终解决Mac平台下原生全屏窗口导致 `make-frame' 左右滑动闪烁的问题.
       (setq ns-use-native-fullscreen nil)
       (setq ns-use-fullscreen-animation nil)
-
       ;; 默认先最大化
       (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
-
       ;; 1s后调用全屏幕
-      ;; (run-at-time "1sec" nil
-      ;;   (lambda ()
-      ;;   	(toggle-frame-fullscreen)
-      ;;   ))
+      (run-at-time "1sec" nil
+		   (lambda ()
+         	     (toggle-frame-fullscreen)))
 )
 
 
