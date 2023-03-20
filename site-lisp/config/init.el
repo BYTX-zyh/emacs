@@ -30,14 +30,13 @@
     (require 'init-themes)                ;; 自动加载随机主题
     (require 'init-session)	 ;; session管理，用于保存与恢复
     (require 'init-indent) ;; 缩进
-    (require 'init-treesit)      ;; treesit 配置
+    (require 'init-preformance) ;;
     (require 'init-fingertip)    ;; fingertip
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
     (require 'init-blink-search) ;; 搜索插件
     (require 'init-beacon)       ;; 光标跳转提示
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
-    (require 'init-yasnippet)    ;; codesnip
     (require 'init-org)          ;; org-mode设置
     (require 'init-sort-tab)	 ;; 智能排序tab
    ;; (require 'init-eaf) ;; eaf
@@ -45,9 +44,11 @@
     ;; 在emacs闲置1s后启动的内容
     (run-with-idle-timer
      1 nil
-     #'(lambda ()
+     #'(lambda()
         (require 'init-replace-char) ;; 中英文字符自动替换
          (require 'pretty-lambdada)  ;;;elisp lambda 表达式优化
+	 (require 'init-treesit)      ;; treesit 配置
+	 (require 'init-yasnippet)    ;; codesnip
          (require  'bytx-align)	      ;;;对齐
          (require 'init-blink-search) ;; 搜索插件
          (require 'init-vterm)	   ;; 终端模拟器
@@ -60,8 +61,8 @@
 (provide 'init)
 
 ;;; todo
+;; pretty-lambdada 自动显示
 ;; font: 为不同mode 添加不同的字体配置
 ;; lsp-bridge: 多功能跳转 keybind
 ;; init-mode : mode 绑定
-
 ;; Smart-align 匹配注释
