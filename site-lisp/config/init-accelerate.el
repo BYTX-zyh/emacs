@@ -1,4 +1,4 @@
-;; 一些加速配置
+;;; 一些加速配置
 (setq
  ;; 不要缩放frame.
  frame-inhibit-implied-resize t

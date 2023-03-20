@@ -151,6 +151,6 @@ This is used to prevent analyzing the same context over and over.")
     (kill-local-variable 'hl-paren-point)
     (remove-hook 'post-command-hook 'hl-paren-highlight t)))
 
-(provide 'bytx-highlight-parentheses)
+(provide 'highlight-parentheses)
 
 ;;; highlight-parentheses.el ends here

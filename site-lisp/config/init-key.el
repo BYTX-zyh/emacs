@@ -129,6 +129,44 @@
 
 (require 'open-newline)
 
+
+;;; lsp-bridge
+;; lsp-bridge 内功能:
+;; 选择下一个候选词 Alt+n/Down
+;; 选择上一个候选词 Alt+p/Up
+;; Alt + ,	acm-select-last	选择最后一个候选词
+;; Alt + .	acm-select-first	选择第一个候选词
+;;Ctrl + v	acm-select-next-page	向下滚动候选菜单
+;;Alt + v	acm-select-prev-page	向上滚动候选菜单
+;;Ctrl + m	acm-complete	完成补全
+;;Return	acm-complete	完成补全
+;;Tab	acm-complete	完成补全
+;;Alt + h	acm-complete	完成补全
+;;Alt + H	acm-insert-common	插入候选词共有部分
+;;Alt + u	acm-filter	用 Overlay 进一步过滤候选词
+;;Alt + d	acm-doc-toggle	开启或关闭候选词文档
+;;Alt + j	acm-doc-scroll-up	向下滚动候选词文档
+;;Alt + k	acm-doc-scroll-down	向上滚动候选词文档
+;;Alt + l	acm-hide	隐藏补全窗口
+;;Ctrl + g	acm-hide	隐藏补全窗口
+;;Alt + 数字键	acm-complete-quick-access	快速选择候选词， 需要开启 acm-enable-quick-access 选项
+
+
+(lazy-load-set-keys
+ ;; 原生按键替换
+ '(("M-x" . counsel-M-x)
+   ("C-x C-f" . counsel-find-file)
+   ("C-h v" . counsel-describe-variable)
+   ("C-h f" . counsel-describe-function)
+   ("C-s" . swiper)
+   ("C-h l" . counsel-find-library)
+   ;; ivy恢复
+   ("C-c C-r" . ivy-resume)
+   ;; ivy-immediate-done 表示使用当然输入值,而非默认选择的值
+   ("C-<return>" . ivy-immediate-done)
+   ))
+
+
 ;; todo; goto char timer kbd
 
 (provide 'init-key)
