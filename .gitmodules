@@ -58,3 +58,6 @@
 [submodule "site-lisp/extensions/yasnippet"]
 	path = site-lisp/extensions/yasnippet
 	url = https://github.com/joaotavora/yasnippet.git
+[submodule "site-lisp/extensions/emacs-aio"]
+	path = site-lisp/extensions/emacs-aio
+	url = https://github.com/skeeto/emacs-aio.git

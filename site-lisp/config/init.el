@@ -35,11 +35,10 @@
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
     (require 'init-blink-search) ;; 搜索插件
-    (require 'init-beacon)       ;; 光标跳转提示
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
     (require 'init-sort-tab)     ;; 智能排序tab
-    ;; (require 'init-eaf) ;; eaf
+    (require 'init-awesome-tray) ;;
 
     ;; 在emacs闲置1s后启动的内容
     (run-with-idle-timer
@@ -69,3 +68,4 @@
 ;; lsp-bridge: 多功能跳转 keybind
 ;; init-mode : mode 绑定
 ;; Smart-align 匹配注释
+;; undo tree

@@ -1,4 +1,11 @@
+;;; awesome-tary
+
+;;; Require
 (require 'awesome-tray)
-(awesome-tray-mode 1)
+
+;;; Code
+(awesome-tray-mode 1);;
+
+
 
 (provide 'init-awesome-tray)

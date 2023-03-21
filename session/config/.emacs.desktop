@@ -2,258 +2,282 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Mar 21 15:54:04 2023
+;; Created Tue Mar 21 18:13:24 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25625 25244 921744 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#F8F8F2") (background-color . "#272822") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#F92660") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "561D-8B87-CA41-D955") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (background-image . "~/Downloads/wallhaven-zyxvqy.jpg") (visibility . t) (height . 44) (width . 157) (left . 0) (top . 25)) ((min-height . 5) (min-width . 28) (min-height-ignore . 3) (min-width-ignore . 22) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 100) (min-pixel-width . 252) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 198) (min-pixel-height-safe . 40) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 876) (total-width . 160) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 630) (pixel-height . 876) (total-width . 70) (total-height . 44) (normal-height . 1.0) (normal-width . 0.4387186629526463) (combination-limit) (leaf (pixel-width . 630) (pixel-height . 20) (total-width . 70) (total-height . 1) (normal-height . 0.022831050228310557) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("*sort-tab*" 1 1))) (leaf (last . t) (pixel-width . 630) (pixel-height . 856) (total-width . 70) (total-height . 43) (normal-height . 0.9771689497716894) (normal-width . 1.0) (buffer "init-font.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1116) (start . 521)) (prev-buffers ("init.el<config>" 1160 2200) ("init-generic.el" 520 1684) ("init-accelerate.el" 1 226) ("init-olivetti.el" 1 604)))) (leaf (last . t) (pixel-width . 806) (pixel-height . 876) (total-width . 90) (total-height . 44) (normal-height . 1.0) (normal-width . 0.5612813370473537) (buffer "init-olivetti.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins 7 . 7) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 818) (start . 48)) (prev-buffers (".gitignore" 1 99) ("init-olivetti.el" 1 437) ("init-generic.el" 865 2103) ("init-performance.el" 1 469) ("init-indent.el" 2292 3056) ("init-auto-save.el" 1 409) ("init-lsp-bridge.el" 1 793) ("*Messages*" 1 1035) ("init-eaf.el" 1 66) ("init-replace-char.el" 1 751) ("init-highlight-parentheses.el" 1 173) ("init-font.el" 127 800)))))])
+(setq desktop-saved-frameset [frameset 1 (25625 33604 424342 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#F8F8F2") (background-color . "#272822") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#F92660") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "561D-8B87-CA41-D955") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (background-image . "~/Downloads/wallhaven-zyxvqy.jpg") (visibility . t) (height . 44) (width . 157) (left . 0) (top . 25)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 80) (min-pixel-width . 180) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 20) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 876) (total-width . 160) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 720) (pixel-height . 876) (total-width . 80) (total-height . 44) (normal-height . 1.0) (normal-width . 0.5013927576601671) (buffer "init-key.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 4161) (start . 2795)) (prev-buffers ("init.el<config>" 637 1338) ("init-awesome-tray.el" 89 121) ("init-eaf.el" 1 66) ("init-lsp-bridge.el" 1 793) ("init-auto-save.el" 1 409) ("init-indent.el" 1 3056) ("init-performance.el" 1 469) ("配置.org" 1 902) ("init-highlight-parentheses.el" 1 173) ("projectile.org" 1 9) ("init-accelerate.el" 1 226) ("bytx-align.el" 1 388) (".gitignore" 1 99) ("init-replace-char.el" 1 751) ("init-generic.el" 1 1684) ("init.el<emacs>" 1 1561) ("emacs" 1 181) ("emacs入门.org" 1 2) ("init-font.el" 1 719) ("init-olivetti.el" 1 457) ("*Messages*" 1 659))) (leaf (last . t) (pixel-width . 716) (pixel-height . 876) (total-width . 80) (total-height . 44) (normal-height . 1.0) (normal-width . 0.4986072423398329) (buffer "jump-newline.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 284) (start . 1)) (prev-buffers ("init-awesome-tray.el" 1 121) ("init.el<config>" 1 549)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring '("hook" "config"))
 (setq register-alist nil)
-(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init-font.el" 0 55 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el" 0 59 (ivy-index 1)) #("/Users/bytx/.config/emacs/.gitignore" 0 36 (ivy-index 1)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-accelerate.el" 0 61 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-performance.el" 0 62 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-indent.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-auto-save.el" 0 60 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-lsp-bridge.el" 0 61 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el" 0 63 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 1)) #("/Users/bytx/.config/emacs/README.org" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.cpp" 0 34 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-key.el" 0 54 (ivy-index 1)) #("/Users/bytx/code/solo/notes/emacs/yassnippet.org" 0 48 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/onen-newline.el" 0 67 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/emacs入门.org" 0 45 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/projectile.org" 0 48 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el" 0 65 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/" 0 34 (ivy-index 0)) #("/Users/bytx/.config/emacs/init.el" 0 33 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-treesit.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-fingertip.el" 0 60 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/README.org" 0 44 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 1)) #("/Users/bytx/.config/emacs/site-lisp/" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/testt.chat" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/.gitmodules" 0 37 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/#对话开始 – 用户与助手#.chat" 0 45 (ivy-index 0)) #("/Users/bytx/.config/emacs/mind-wave/" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-avy.el" 0 54 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/src/emacs/README.org/ivy.png" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/src/emacs/README.org/ivy演示.png" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-ivy.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-ivy-posframe.el" 0 63 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-emacs-which-key.el" 0 66 (ivy-index 0)) #("/Users/bytx/.config/emacs/conf" 0 30 (ivy-index 0)) #("/Users/bytx/code/solo/" 0 22 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-one-key.el" 0 67 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-highlight-parentheses.el" 0 81 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-acclerate.el" 0 60 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-elpa.el" 0 55 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/" 0 43 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init.el" #("/Users/bytx/.config/emacs/site-lisp/config/init-xenops.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org-fragtog.el" 0 62 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-ivy.el" "~/.config/emacs/tst.gif" "~/.config/emacs/test.gif" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/test.png" "~/.config/emacs/README.org" "~/.config/emacs/fun.png" "~/code/solo/note/math/test.png" "~/.config/emacs/test.png" "~/.config/emacs/site-lisp/extensions/bytx/bytx-org-insert-image-from-clipboard.el" "~/.config/emacs/src/test.jpg" "~/.config/emacs/src/test.png" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/site-lisp/extensions/bytx/bytx-org-insert-image-from-clipboard.el" "~/.config/emacs/README.org" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/test.el" "~/.config/emacs/plug.org" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.el" "~/.config/emacs/test.chat" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.el" "~/.config/emacs/plug.org" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.chat" "~/.config/emacs/#I am sorry, but I cannot give a title to this paragraph as it consists of only one word. Please provide a proper paragraph so that I can give it a title.#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-avy.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/test.chat" "~/.config/emacs/#件可以让您通过#.chat" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/README.org" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/#标题：Emacs常用语法高亮插件推荐#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-themes.el" "~/.config/emacs/#标题：Emacs常用语法高亮插件推荐#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/#\"日常问候\"#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/README.org" "~/code/solo/algorithm/cf/1794/a.cpp" "~/.config/emacs/test.chat" "~/.config/emacs/site-lisp/config/init.el"))
+(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/jump-newline.el" 0 67 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-key.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-key.elc" 0 55 (ivy-index 2)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 0)) #("/Users/bytx/.config/emacs/.gitmodules" 0 37 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-font.el" 0 55 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el" 0 59 (ivy-index 1)) #("/Users/bytx/.config/emacs/.gitignore" 0 36 (ivy-index 1)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-accelerate.el" 0 61 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-performance.el" 0 62 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-indent.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-auto-save.el" 0 60 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-lsp-bridge.el" 0 61 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el" 0 63 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 1)) #("/Users/bytx/.config/emacs/README.org" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.cpp" 0 34 (ivy-index 0)) #("/Users/bytx/code/solo/notes/emacs/yassnippet.org" 0 48 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/onen-newline.el" 0 67 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/emacs入门.org" 0 45 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/projectile.org" 0 48 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el" 0 65 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/" 0 34 (ivy-index 0)) #("/Users/bytx/.config/emacs/init.el" 0 33 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-treesit.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-fingertip.el" 0 60 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/README.org" 0 44 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/testt.chat" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/#对话开始 – 用户与助手#.chat" 0 45 (ivy-index 0)) #("/Users/bytx/.config/emacs/mind-wave/" 0 36 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-avy.el" 0 54 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/src/emacs/README.org/ivy.png" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/src/emacs/README.org/ivy演示.png" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-ivy.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-ivy-posframe.el" 0 63 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-emacs-which-key.el" 0 66 (ivy-index 0)) #("/Users/bytx/.config/emacs/conf" 0 30 (ivy-index 0)) #("/Users/bytx/code/solo/" 0 22 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-one-key.el" 0 67 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-highlight-parentheses.el" 0 81 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-acclerate.el" 0 60 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-elpa.el" 0 55 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/" 0 43 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init.el" #("/Users/bytx/.config/emacs/site-lisp/config/init-xenops.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org.el" 0 54 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org-fragtog.el" 0 62 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-ivy.el" "~/.config/emacs/tst.gif" "~/.config/emacs/test.gif" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/test.png" "~/.config/emacs/README.org" "~/.config/emacs/fun.png" "~/code/solo/note/math/test.png" "~/.config/emacs/test.png" "~/.config/emacs/site-lisp/extensions/bytx/bytx-org-insert-image-from-clipboard.el" "~/.config/emacs/src/test.jpg" "~/.config/emacs/src/test.png" "~/.config/emacs/site-lisp/config/init-org.el" "~/.config/emacs/site-lisp/extensions/bytx/bytx-org-insert-image-from-clipboard.el" "~/.config/emacs/README.org" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/test.el" "~/.config/emacs/plug.org" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.el" "~/.config/emacs/test.chat" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.el" "~/.config/emacs/plug.org" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/test.chat" "~/.config/emacs/#I am sorry, but I cannot give a title to this paragraph as it consists of only one word. Please provide a proper paragraph so that I can give it a title.#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-avy.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/test.chat" "~/.config/emacs/#件可以让您通过#.chat" "~/.config/emacs/site-lisp/config/bytx-one-key.el" "~/.config/emacs/README.org" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/#标题：Emacs常用语法高亮插件推荐#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-themes.el" "~/.config/emacs/#标题：Emacs常用语法高亮插件推荐#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/#\"日常问候\"#.chat" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/README.org" "~/code/solo/algorithm/cf/1794/a.cpp" "~/.config/emacs/test.chat"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el"
-  "init-olivetti.el"
+  "/Users/bytx/.config/emacs/site-lisp/extensions/bytx/jump-newline.el"
+  "jump-newline.el"
   'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
-  818
-  '(689 nil)
+  '(visual-line-mode olivetti-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  284
+  '(285 nil)
   nil
   nil
-  '((buffer-display-time 25625 25218 886704 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (689 660 875 660 47 1104 1 1 1 1 1 1 1 1 1 788))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-font.el"
-  "init-font.el"
-  'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  1116
-  '(1168 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 25208 575408 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (1015 1157 126 129 493 126 521 1038 1015 1168 1192 1038 699 794 777 1116))))
-
-(desktop-create-buffer 208
-  nil
-  "emacs"
-  'dired-mode
-  '(yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode)
-  181
-  '(nil nil)
-  t
-  '("/Users/bytx/code/solo/Notes/emacs/")
-  '((buffer-display-time 25625 25194 860339 0))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode visual-line-mode olivetti-mode)
-  2200
-  '(1886 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 24424 960084 708000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (932 2360 2120 2118 2163 1886 2200))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode fingertip-mode lsp-bridge-mode)
-  1561
-  '(317 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 23390 869092 708000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (437 1823 1822 1874 1627 1536))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-generic.el"
-  "init-generic.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  1684
-  '(1476 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 23210 449874 643000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1424 1915 1914 1954 2128 2118 2103 2120 2109 2103 1914 1558 1402 1402 1310 1684))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el"
-  "init-replace-char.el"
-  'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
-  751
-  '(270 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 23167 145968 643000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (27 26 14 201 233 279 270 354 601 751))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/.gitignore"
-  ".gitignore"
-  'fundamental-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
-  99
-  '(51 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 22629 296511 607000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (44 65 73))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el"
-  "bytx-align.el"
-  'emacs-lisp-mode
-  '(yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode fingertip-mode lsp-bridge-mode)
-  388
-  '(2 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 22472 958134 607000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 388))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-accelerate.el"
-  "init-accelerate.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  226
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 22326 617818 814000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1 1 1 1 1 1 1 166 65 1 226 197 166 197 226))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/emacs/projectile.org"
-  "projectile.org"
-  'org-mode
-  '(lsp-bridge-mode yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode visual-line-mode olivetti-mode)
-  9
-  '(9 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 21682 139611 814000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el"
-  "init-highlight-parentheses.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  173
-  '(20 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 21631 231687 145000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (212 211 170 173))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el"
-  "init-awesome-tray.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode fingertip-mode)
-  77
-  '(77 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 21248 478540 506000) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (1 1 63 1 77 77 77 77 47 77 77 47 39 77 77 77))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/emacs/配置.org"
-  "配置.org"
-  'org-mode
-  '(lsp-bridge-mode yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode visual-line-mode olivetti-mode)
-  902
-  '(921 nil)
-  nil
-  nil
-  '((buffer-display-time 25625 612 387632 234000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (641 3047 3535 3047 371 312 106 106 34 64 106 106 106 23 34 902))))
+  '((buffer-display-time 25625 32970 753375 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (21 21 21 21 21 21 21 21 20 20 20 1 1 20 1 285))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-performance.el"
   "init-performance.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
   469
   '(63 nil)
   nil
   nil
-  '((buffer-display-time 25625 296 124547 749000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25625 32719 934063 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (62 62 62 62 1 1 117 413 118 62 62 62 62 63 200 469))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el"
+  "init-awesome-tray.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode visual-line-mode olivetti-mode)
+  121
+  '(88 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 32123 712527 235000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (121 1 1 107 1 121 121 121 121 91 121 121 91 66 121 121))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-indent.el"
   "init-indent.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
   3056
   '(1 nil)
   nil
   nil
-  '((buffer-display-time 25624 36942 114530 749000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((buffer-display-time 25625 32120 544373 235000) (buffer-file-coding-system . prefer-utf-8-unix))
   '((mark-ring (1 3056))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-key.el"
+  "init-key.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  4161
+  '(252 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 32970 753375 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3660 3774 3777 4014 4072 4187 4161))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  1338
+  '(1338 t)
+  nil
+  nil
+  '((buffer-display-time 25625 31915 798095 313000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1554 1195 1474 1379 1523 1120 1120 1981 909 1845 932 2319 2079 2077 2122 1845))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-auto-save.el"
   "init-auto-save.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
   409
   '(31 nil)
   nil
   nil
-  '((buffer-display-time 25624 36595 271620 749000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25625 29456 216851 313000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (174 311 409))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-lsp-bridge.el"
   "init-lsp-bridge.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
   793
   '(820 nil)
   nil
   nil
-  '((buffer-display-time 25624 32271 323321 749000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25625 29266 606982 179000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (636 636 692 764 793))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el"
   "init-eaf.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
   66
   '(16 nil)
   nil
   nil
-  '((buffer-display-time 25624 30258 753685 360000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((buffer-display-time 25625 29220 942101 233000) (buffer-file-coding-system . prefer-utf-8-unix))
   '((mark-ring (45 66 66))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el"
+  "init-olivetti.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  457
+  '(689 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 29016 950510 90000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (689 660 875 660 47 1104 1 1 1 1 1 1 1 1 1 457))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-font.el"
+  "init-font.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode visual-line-mode olivetti-mode)
+  719
+  '(1324 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 28934 439264 90000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1168 1015 1157 126 129 493 126 521 1038 1015 1168 1192 1038 699 794 719))))
 
 (desktop-create-buffer 208
   "/Users/bytx/code/solo/Notes/emacs/emacs入门.org"
   "emacs入门.org"
   'org-mode
-  '(lsp-bridge-mode yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode visual-line-mode olivetti-mode)
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode lsp-bridge-mode)
   2
   '(2 nil)
   nil
   nil
-  '((buffer-display-time 25624 30158 909742 360000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((buffer-display-time 25625 27437 631985 90000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
   '((mark-ring (2))))
+
+(desktop-create-buffer 208
+  nil
+  "emacs"
+  'dired-mode
+  '(yas-minor-mode font-lock-mode subword-mode display-line-numbers-mode)
+  181
+  '(nil nil)
+  t
+  '("/Users/bytx/code/solo/Notes/emacs/")
+  '((buffer-display-time 25625 27386 228034 25000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode)
+  1561
+  '(317 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 25582 744532 733000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (437 1823 1822 1874 1627 1536))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-generic.el"
+  "init-generic.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  1684
+  '(1476 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 25402 891475 668000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1424 1915 1914 1954 2128 2118 2103 2120 2109 2103 1914 1558 1402 1402 1310 1684))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el"
+  "init-replace-char.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  751
+  '(270 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 25360 117822 668000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (27 26 14 201 233 279 270 354 601 751))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/.gitignore"
+  ".gitignore"
+  'fundamental-mode
+  '(yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode)
+  99
+  '(51 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 24822 787176 632000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (44 65 73))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el"
+  "bytx-align.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode)
+  388
+  '(2 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 24667 52593 632000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 388))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-accelerate.el"
+  "init-accelerate.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  226
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 24521 373364 839000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 1 1 1 1 1 1 166 65 1 226 197 166 197 226))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/Notes/emacs/projectile.org"
+  "projectile.org"
+  'org-mode
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode lsp-bridge-mode)
+  9
+  '(9 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 23877 886800 839000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el"
+  "init-highlight-parentheses.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  173
+  '(20 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 23827 631642 170000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (212 211 170 173))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/Notes/emacs/配置.org"
+  "配置.org"
+  'org-mode
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode lsp-bridge-mode)
+  902
+  '(921 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 2809 493079 259000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (641 3047 3535 3047 371 312 106 106 34 64 106 106 106 23 34 902))))
 
