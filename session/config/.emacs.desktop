@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Mar 21 08:27:05 2023
+;; Created Tue Mar 21 14:39:10 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25624 63961 858645 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#EEFFFF") (background-color . "#212121") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#ffcb6b") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "561D-8B87-CA41-D955") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 44) (width . 157) (left . 0) (top . 25)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 80) (min-pixel-width . 180) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 20) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 876) (total-width . 160) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 630) (pixel-height . 876) (total-width . 70) (total-height . 44) (normal-height . 1.0) (normal-width . 0.4387186629526463) (buffer "init.el<config>" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2135) (start . 592)) (prev-buffers ("init.el<config>" 1095 2092) ("*sort-tab*" 1 1))) (leaf (last . t) (pixel-width . 806) (pixel-height . 876) (total-width . 90) (total-height . 44) (normal-height . 1.0) (normal-width . 0.5612813370473537) (buffer "init-olivetti.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2112) (start . 1906)) (prev-buffers ("init-generic.el" 865 1989) ("init-performance.el" 1 469) ("init-indent.el" 2292 3056) ("init-auto-save.el" 1 409) ("init-lsp-bridge.el" 1 793) ("*Messages*" 1 1547) ("init-eaf.el" 1 66) ("init-replace-char.el" 1 751) ("init-highlight-parentheses.el" 1 173) ("init-font.el" 127 800) ("init.el<config>" 1 270)))))])
+(setq desktop-saved-frameset [frameset 1 (25625 20750 413567 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#F6F3E8") (background-color . "#171717") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#8AC6F2") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "561D-8B87-CA41-D955") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (background-image . "~/Downloads/wallhaven-zyxvqy.jpg") (visibility . t) (height . 44) (width . 157) (left . 0) (top . 25)) ((min-height . 5) (min-width . 28) (min-height-ignore . 3) (min-width-ignore . 22) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 100) (min-pixel-width . 252) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 198) (min-pixel-height-safe . 40) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 876) (total-width . 160) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 630) (pixel-height . 876) (total-width . 70) (total-height . 44) (normal-height . 1.0) (normal-width . 0.4387186629526463) (combination-limit) (leaf (pixel-width . 630) (pixel-height . 20) (total-width . 70) (total-height . 1) (normal-height . 0.022831050228310557) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("init.el<config>" 680 1421) ("*sort-tab*" 1 1))) (leaf (last . t) (pixel-width . 630) (pixel-height . 856) (total-width . 70) (total-height . 43) (normal-height . 0.9771689497716894) (normal-width . 1.0) (buffer "init.el<config>" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2121) (start . 1339)))) (leaf (last . t) (pixel-width . 806) (pixel-height . 876) (total-width . 90) (total-height . 44) (normal-height . 1.0) (normal-width . 0.5612813370473537) (buffer "init-olivetti.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins 7 . 7) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1337) (start . 1)) (prev-buffers ("init-generic.el" 865 1989) ("init-performance.el" 1 469) ("init-indent.el" 2292 3056) ("init-auto-save.el" 1 409) ("init-lsp-bridge.el" 1 793) ("*Messages*" 1 1035) ("init-eaf.el" 1 66) ("init-replace-char.el" 1 751) ("init-highlight-parentheses.el" 1 173) ("init-font.el" 127 800) ("init.el<config>" 1 358)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -18,184 +18,16 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el"
-  "init-olivetti.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  2112
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 63884 512237 0) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (1 1956 2163 2112))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-generic.el"
-  "init-generic.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  1989
-  '(1801 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 63871 620082 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1800 1840 2014 2004 1989 2006 1995 1989))))
-
-(desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init.el"
   "init.el"
   'emacs-lisp-mode
   '(pretty-lambda-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  2135
-  '(2113 nil)
+  2121
+  '(2315 nil)
   nil
   nil
-  '((buffer-display-time 25624 63871 620082 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1370 1724 1370 1679 1095 1095 1091 2100 2100 1481 2100 923 1802 577 548 2135))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-performance.el"
-  "init-performance.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  469
-  '(63 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 63646 350533 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (62 62 62 62 1 1 117 413 118 62 62 62 62 63 200 469))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-indent.el"
-  "init-indent.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  3056
-  '(1 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 34755 632249 0) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (1 3056))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-auto-save.el"
-  "init-auto-save.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  409
-  '(31 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 34408 30899 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (174 311 409))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-lsp-bridge.el"
-  "init-lsp-bridge.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  793
-  '(820 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 30083 362940 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (636 636 692 764 793))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/test.cpp"
-  "test.cpp"
-  'c++-ts-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  28
-  '(79 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 28107 514047 0) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (54 79 79 79 67 67 82 67 67 79 79 67 79 82 77 24))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el"
-  "init-eaf.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  66
-  '(16 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 28069 526045 611000) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (45 66 66))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/emacs/emacs入门.org"
-  "emacs入门.org"
-  'org-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
-  2
-  '(2 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 27968 626543 611000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
-  '((mark-ring (2))))
-
-(desktop-create-buffer 208
-  nil
-  "emacs"
-  'dired-mode
-  '(font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
-  181
-  '(nil nil)
-  t
-  '("/Users/bytx/code/solo/Notes/emacs/")
-  '((buffer-display-time 25624 27772 700698 832000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode)
-  1561
-  '(317 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 27763 321264 726000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (437 1823 1822 1874 1627 1536))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el"
-  "init-replace-char.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  751
-  '(270 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 27699 504920 167000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (27 26 14 201 233 279 270 354 601 751))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el"
-  "bytx-align.el"
-  'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode)
-  388
-  '(2 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 27675 181484 167000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 388))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/emacs/projectile.org"
-  "projectile.org"
-  'org-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
-  9
-  '(9 nil)
-  nil
-  nil
-  '((buffer-display-time 25624 27362 823904 734000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
-  '((mark-ring nil)))
+  '((buffer-display-time 25625 20714 663931 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (125 73 2239 1470 1837 1470 1785 1195 1195 1190 2219 2219 1585 2219 1012 2121))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el"
@@ -206,8 +38,20 @@
   '(20 nil)
   nil
   nil
-  '((buffer-display-time 25624 27115 945123 232000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25625 20700 851722 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (212 211 170 173))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-olivetti.el"
+  "init-olivetti.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode visual-line-mode olivetti-mode)
+  1337
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25625 20714 662367 0) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1 1956 2163 2112 2174 2239 2021 2144 2142 2239 2343 2001 2385 2011 2001 512))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el"
@@ -218,7 +62,7 @@
   '(77 nil)
   nil
   nil
-  '((buffer-display-time 25624 26952 183693 232000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((buffer-display-time 25625 20317 681775 361000) (buffer-file-coding-system . prefer-utf-8-unix))
   '((mark-ring (1 1 63 1 77 77 77 77 47 77 77 47 39 77 77 77))))
 
 (desktop-create-buffer 208
@@ -230,18 +74,174 @@
   '(1168 nil)
   nil
   nil
-  '((buffer-display-time 25624 26900 357271 246000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25625 20221 582035 648000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (1015 1157 126 129 493 126 521 1038 1015 1168 1192 1038 699 794 777 800))))
 
 (desktop-create-buffer 208
   "/Users/bytx/code/solo/Notes/emacs/配置.org"
   "配置.org"
   'org-mode
-  '(visual-line-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
+  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
   902
   '(921 nil)
   nil
   nil
-  '((buffer-display-time 25624 26641 225365 246000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25624 65216 739300 89000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (641 3047 3535 3047 371 312 106 106 34 64 106 106 106 23 34 902))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-generic.el"
+  "init-generic.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  1989
+  '(1801 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 65124 991653 604000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1800 1840 2014 2004 1989 2006 1995 1989))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-performance.el"
+  "init-performance.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  469
+  '(63 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 64899 987100 604000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (62 62 62 62 1 1 117 413 118 62 62 62 62 63 200 469))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-indent.el"
+  "init-indent.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  3056
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 36009 538422 604000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (1 3056))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-auto-save.el"
+  "init-auto-save.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  409
+  '(31 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 35662 187116 604000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (174 311 409))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-lsp-bridge.el"
+  "init-lsp-bridge.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  793
+  '(820 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 31337 774203 604000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (636 636 692 764 793))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/test.cpp"
+  "test.cpp"
+  'c++-ts-mode
+  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  28
+  '(79 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 29362 227317 604000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (54 79 79 79 67 67 82 67 67 79 79 67 79 82 77 24))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el"
+  "init-eaf.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  66
+  '(16 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 29324 562569 215000) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (45 66 66))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/Notes/emacs/emacs入门.org"
+  "emacs入门.org"
+  'org-mode
+  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
+  2
+  '(2 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 29224 225430 215000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (2))))
+
+(desktop-create-buffer 208
+  nil
+  "emacs"
+  'dired-mode
+  '(font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  181
+  '(nil nil)
+  t
+  '("/Users/bytx/code/solo/Notes/emacs/")
+  '((buffer-display-time 25624 29028 538205 436000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  1561
+  '(317 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 29019 523271 330000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (437 1823 1822 1874 1627 1536))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el"
+  "init-replace-char.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
+  751
+  '(270 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 28956 134184 771000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (27 26 14 201 233 279 270 354 601 751))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/extensions/bytx/bytx-align.el"
+  "bytx-align.el"
+  'emacs-lisp-mode
+  '(lsp-bridge-mode fingertip-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode)
+  388
+  '(2 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 28932 192645 771000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 388))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/Notes/emacs/projectile.org"
+  "projectile.org"
+  'org-mode
+  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode)
+  9
+  '(9 nil)
+  nil
+  nil
+  '((buffer-display-time 25624 28620 232873 338000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring nil)))
 
