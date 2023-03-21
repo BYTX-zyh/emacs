@@ -30,7 +30,7 @@
     (require 'init-themes)                ;; 自动加载随机主题
     (require 'init-session)	 ;; session管理，用于保存与恢复
     (require 'init-indent) ;; 缩进
-    (require 'init-preformance) ;;
+    (require 'init-performance) ;;
     (require 'init-fingertip)    ;; fingertip
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
@@ -56,6 +56,7 @@
          (require 'init-avy)              ;; 光标跳转插件
          (require 'init-ivy)           ;; ivy
          (require 'init-ivy-posframe) ;; ivy 浮动框架
+	 (require 'init-olivetti) ;; 居中显示
     ))))
 
 (provide 'init)

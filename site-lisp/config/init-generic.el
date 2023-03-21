@@ -47,6 +47,7 @@
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode t)
 
+(global-hl-line-mode 1)                ;; 高亮当前行
 ;; (prefer-coding-system 'utf-8) ; 防止中文乱码
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory)) ; 创建custom.el使其不污染init.el
