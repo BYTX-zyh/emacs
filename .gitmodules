@@ -25,6 +25,15 @@
 [submodule "site-lisp/extensions/olivetti"]
 	path = site-lisp/extensions/olivetti
 	url = https://github.com/rnkn/olivetti.git
-[submodule "site-lisp/toggle-one-window"]
-	path = site-lisp/toggle-one-window
+[submodule "site-lisp/extensions/dash.el"]
+	path = site-lisp/extensions/dash.el
+	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/extensions/s.el"]
+	path = site-lisp/extensions/s.el
+	url = https://github.com/magnars/s.el.git
+[submodule "site-lisp/extensions/f.el"]
+	path = site-lisp/extensions/f.el
+	url = https://github.com/rejeep/f.el.git
+[submodule "site-lisp/extensions/toggle-one-window"]
+	path = site-lisp/extensions/toggle-one-window
 	url = https://github.com/manateelazycat/toggle-one-window.git
