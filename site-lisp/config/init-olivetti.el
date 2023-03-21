@@ -1,9 +1,9 @@
-
+;;; olivetti
 
 ;;; Require
 (require 'olivetti)
 
-;;; Code:
+;;; Code
 
 (dolist (hook (list
                'Info-mode-hook
@@ -23,7 +23,7 @@
             #'(lambda ()
                 (when (buffer-file-name)
                   (unless (string-prefix-p "README" (file-name-base (buffer-file-name)))
-                   (olivetti-mode 1)
-                   (olivetti-set-width 120))))))
+                    (olivetti-mode 1)
+                    (olivetti-set-width 120))))))
 
 (provide 'init-olivetti)

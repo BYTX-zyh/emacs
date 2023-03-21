@@ -31,6 +31,9 @@
 (setq scroll-step 1
       scroll-conservatively 10000)
 (setq auto-save-default nil)  ; 关闭emacs自动保存 不生成auto-save-list
+(setq auto-save-list-file-prefix nil)
+;; 修改recentf 目录
+(setq recentf-save-file "~/.config/emacs/plugtemp/recentf")
 
 ;; 不显示 *scratch*
 (defun remove-scratch-buffer ()
