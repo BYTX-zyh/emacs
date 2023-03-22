@@ -20,7 +20,6 @@
 
   ;; 抹掉插件启动输出
   (with-temp-message ""
-  
     (require 'init-elpa) ;; elpa换源
     ;; (require 'mind-wave)         ;;; chat-gpt聊天
     (require 'init-screen)  ;; 屏幕大小设置
@@ -41,7 +40,7 @@
       (require 'init-auto-save)    ;; 文件停止编辑后自动保存
      (require 'init-org)          ;; org-mode设置
       (require 'init-sort-tab)     ;; 智能排序tab
-      (require 'init-perspective)
+     (require 'init-treemacs)
   ;;  (require 'init-awesome-tray) ;;
 
     ;; 在emacs闲置1s后启动的内容
@@ -60,7 +59,7 @@
           (require 'init-olivetti)     ;; 居中显示
     ;;      (require 'init-sort-tab)     ;; 智能排序tab
          (require 'toggle-one-window) ;; 窗口切换
-         )) 
+         ))
          ))
 
 (provide 'init)
