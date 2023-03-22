@@ -61,3 +61,9 @@
 [submodule "site-lisp/extensions/emacs-aio"]
 	path = site-lisp/extensions/emacs-aio
 	url = https://github.com/skeeto/emacs-aio.git
+[submodule "site-lisp/extensions/lazycat-theme"]
+	path = site-lisp/extensions/lazycat-theme
+	url = https://github.com/manateelazycat/lazycat-theme.git
+[submodule "site-lisp/extensions/xenops"]
+	path = site-lisp/extensions/xenops
+	url = https://github.com/dandavison/xenops.git

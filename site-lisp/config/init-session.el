@@ -70,7 +70,7 @@
   (interactive)
   (if (null now-desktop-session-name)
       (setq now-desktop-session-name (my-desktop-get-session-name "Load session: ")))
-  (delete-other-windows) ;; 关闭其他窗口
+  ;; (delete-other-windows) ;; 关闭其他窗口
   ;; (kill-unused-buffers)            ;; 关闭不活跃的buffer
   (desktop-read (concat my-desktop-session-dir now-desktop-session-name))
   ;; 恢复session后重新加载一个随机主题，以防止出现记录主题与随机主题冲突问题

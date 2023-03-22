@@ -3,6 +3,6 @@ mind-wave/
 # chat-gpt 文件
 *.chat
 # xenops渲染的内容
-xenops/
+
 # 各种文件的缓存/生成物目录
 plugtemp/
