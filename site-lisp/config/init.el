@@ -20,7 +20,8 @@
 
   ;; 抹掉插件启动输出
   (with-temp-message ""
-    ;; (require 'init-elpa) ;; elpa换源
+  
+    (require 'init-elpa) ;; elpa换源
     ;; (require 'mind-wave)         ;;; chat-gpt聊天
     (require 'init-screen)  ;; 屏幕大小设置
      (require 'init-generic) ;; 通用配置(一些各种小配置的集合)
@@ -59,7 +60,6 @@
           (require 'init-olivetti)     ;; 居中显示
     ;;      (require 'init-sort-tab)     ;; 智能排序tab
          (require 'toggle-one-window) ;; 窗口切换
-         (require 'mind-wave)
          )) 
          ))
 
