@@ -2,90 +2,102 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Mar 23 21:37:12 2023
+;; Created Sat Mar 25 20:03:22 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25628 22024 806369 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#c5c8c6") (background-color . "#1d1f21") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#81a2be") (font-parameter) (environment) (last-focus-update) (fullscreen-restore . maximized) (frameset--id . "EDBA-056A-C014-29D5") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 43) (width . 157) (left . 422) (top . 85)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 80) (min-pixel-width . 180) (min-pixel-height-ignore . 60) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 20) (min-pixel-width-safe . 36)) hc (pixel-width . 1436) (pixel-height . 848) (total-width . 160) (total-height . 42) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 716) (pixel-height . 848) (total-width . 80) (total-height . 42) (normal-height . 1.0) (normal-width . 0.5) (buffer "README.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 67) (start . 1)) (prev-buffers ("*sort-tab*" 1 1) ("emacs操作.org" 1 547))) (leaf (last . t) (pixel-width . 720) (pixel-height . 848) (total-width . 80) (total-height . 42) (normal-height . 1.0) (normal-width . 0.5) (buffer "emacs操作.org" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1392) (start . 415)) (prev-buffers ("*Buffer List*" 1 51) ("emacs操作.org" 415 1333) ("*Ibuffer*" 1 253)))))])
+(setq desktop-saved-frameset [frameset 1 (25630 58122 381040 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#EEFFFF") (background-color . "#212121") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#ffcb6b") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore . maximized) (frameset--id . "62FF-D413-C117-1AFC") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 44) (width . 157) (left . 422) (top . 85)) ((min-height . 5) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 100) (min-pixel-width . 90) (min-pixel-height-ignore . 80) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 40) (min-pixel-width-safe . 18)) vc (pixel-width . 1436) (pixel-height . 876) (total-width . 160) (total-height . 44) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 20) (total-width . 160) (total-height . 1) (normal-height . 0.02358490566037741) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("*Messages*" 1 157))) (leaf (last . t) (pixel-width . 1436) (pixel-height . 856) (total-width . 160) (total-height . 43) (normal-height . 0.9764150943396226) (normal-width . 1.0) (buffer "init-session.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1187) (start . 523)) (prev-buffers ("高等数学.tex" 15433 15970) ("init-session.el" 1219 1319) ("init.el" 285 1103) ("math" 1 421) ("Notes" 1 402) ("*Messages*" 1 157)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring '("fingertip-node-type-at-point" "\\(defun\\).*?\\(fingertipincomment\\)" "fingertip-after-close-pair-p" "\\(defun\\).*?\\(fingertip-in-comment\\)" "fingertipcurrentpares" "fingertip-currentpar" "fingertip-current-parse-state" "fingertipcommentp" "fingertip-in-comment-p"))
+(setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '(#("/Users/bytx/code/solo/algorithm/cf/README.org" 0 45 (ivy-index 0)) #("/Users/bytx/code/solo/notes/emacs/" 0 34 (ivy-index 0)) #("/Users/bytx/code/solo/notes/emacs/emacs操作.org" 0 45 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" 0 69 (ivy-index 0)) #("/Users/bytx/code/solo/notes/math/" 0 33 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/fingertip/" 0 57 (ivy-index 2)) "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/.cache/treemacs-persist" "~/.config/emacs/site-lisp/config/init-treemacs.el" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/.config/emacs/site-lisp/config/init-yasnippet.el" "~/.config/emacs/site-lisp/config/init-perspective.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/math/高等数学.org" "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-createsAmwTC.tex" "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-createNou0DI.tex" "~/code/solo/notes/math/高等数学.tex" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/lazycat-theme/#\"用中文解释Emacs问题\"#.chat" "~/.config/emacs/site-lisp/extensions/lazycat-theme/lazycat-theme.el" "~/.config/emacs/site-lisp/extensions/lazycat-theme/lazycat-light-theme.el" "~/.config/emacs/init.el" "~/.config/emacs/site-lisp/config/init-olivetti.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-highlight-parentheses.el"))
+(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/" 0 28 (ivy-index 0)) "~/code/solo/notes/emacs/emacs操作.org" "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-createDON6fJ.tex" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/.config/emacs/site-lisp/config/init.el" "~/code/solo/notes/math/高等数学.tex" "~/code/solo/notes/math/高等数学.org" "~/code/solo/algorithm/cf/README.org" "~/.config/emacs/.gitmodules" "~/.config/emacs/.gitignore" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/site-lisp/config/init-treemacs.el" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/.config/emacs/site-lisp/config/init-yasnippet.el" "~/.config/emacs/site-lisp/config/init-perspective.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/math/高等数学.org" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/lazycat-theme/#\"用中文解释Emacs问题\"#.chat" "~/.config/emacs/site-lisp/extensions/lazycat-theme/lazycat-theme.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/bytx/code/solo/algorithm/cf/README.org"
-  "README.org"
-  'org-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode visual-line-mode cursor-sensor-mode xenops-mode)
-  67
-  '(42 nil)
-  nil
-  nil
-  '((buffer-display-time 25628 21482 77050 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (7 2 2 2 2 2 1 2 2 2 2 2 2 65))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/notes/emacs/emacs操作.org"
-  "emacs操作.org"
-  'org-mode
-  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode cursor-sensor-mode xenops-mode)
-  1392
-  '(1772 nil)
-  nil
-  nil
-  '((buffer-display-time 25628 21482 77051 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (1410 1153 1153 1153 1381 1381 1381 1381 1381 1381 1381 1381 1065 1381 1381 547))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
-  "init.el"
+  "/Users/bytx/.config/emacs/site-lisp/config/init-session.el"
+  "init-session.el"
   'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode yas-minor-mode lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
-  358
-  '(1743 nil)
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  1187
+  '(1319 nil)
   nil
   nil
-  '((buffer-display-time 25628 18980 893333 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (1620 1620 1620 1620 664 636 703 514 703 372 1620 664 957 1209 1855 358))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/extensions/fingertip/fingertip.el"
-  "fingertip.el"
-  'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode fingertip-mode lsp-bridge-mode)
-  366
-  '(46333 nil)
-  nil
-  nil
-  '((buffer-display-time 25628 17965 550987 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (48008 7784 48969 48969 44805 44805 45196 44668 44700 44870 44955 44667 44804 44786 48264 366))))
+  '((buffer-display-time 25630 58108 952845 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1319 1319 1319 191 266 372 445 484 688 796 868 986 1173 1251 1279 1187))))
 
 (desktop-create-buffer 208
   nil
   "math"
   'dired-mode
   '(yas-minor-mode font-lock-mode subword-mode display-line-numbers-mode)
-  414
+  421
   '(nil nil)
   t
-  '("/Users/bytx/code/solo/notes/math/")
-  '((buffer-display-time 25628 9862 104085 0))
+  '("/Users/bytx/code/solo/Notes/math/")
+  '((buffer-display-time 25630 58094 375093 0))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/test.chat"
-  "test.chat"
-  'fundamental-mode
-  '(yas-minor-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode)
-  1
-  '(1 nil)
+  "/Users/bytx/code/solo/Notes/math/高等数学.tex"
+  "高等数学.tex"
+  'latex-mode
+  '(yas-minor-mode lsp-bridge-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode cursor-sensor-mode xenops-mode)
+  15970
+  '(15725 nil)
   nil
   nil
-  '((buffer-display-time 25628 9839 229153 618000) (buffer-file-coding-system . utf-8-unix))
+  '((indent-tabs-mode) (buffer-display-time 25630 58079 464628 828000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (14031 14271 14031 15725 15883 15502 15115 15501 14721 13226 14349 14704 14350 13226 14350 15970))))
+
+(desktop-create-buffer 208
+  nil
+  "Notes"
+  'dired-mode
+  '(yas-minor-mode font-lock-mode subword-mode display-line-numbers-mode)
+  402
+  '(nil nil)
+  t
+  '("/Users/bytx/code/solo/Notes/")
+  '((buffer-display-time 25630 58068 31295 828000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode fingertip-mode lsp-bridge-mode)
+  1103
+  '(72 nil)
+  nil
+  nil
+  '((buffer-display-time 25630 53488 809938 118000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (324 284 2504 2289 1527 72 173 232 576 1103))))
+
+(desktop-create-buffer 208
+  "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-create6iZetD.tex"
+  "xenops-math-TeX-region-create6iZetD.tex"
+  'latex-mode
+  '(yas-minor-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode cursor-sensor-mode xenops-mode)
+  290
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 25630 58068 118374 828000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-createsGmA5H.tex"
+  "xenops-math-TeX-region-createsGmA5H.tex"
+  'latex-mode
+  '(yas-minor-mode cursor-sensor-mode xenops-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode)
+  308
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 25630 58094 367734 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
 

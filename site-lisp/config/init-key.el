@@ -4,18 +4,16 @@
 ;; 设置大写锁定为 ctrl 键
 (when (featurep 'cocoa)
   (setq mac-option-modifier 'super)
-  (setq mac-command-modifier 'meta)
-  )
-
+  (setq mac-command-modifier 'meta))
 
 ;; ace-window
 (lazy-load-global-keys
  '(("M-o" . ace-window))
  "init-ace-window")
 
-;(lazy-load-global-keys
-; '(("" . avy-goto-char))
-; "init-avy")
+(lazy-load-global-keys
+ '(("" . avy-goto-char))
+ "init-avy")
 
 ;; 源自于ivy 三件套的键盘快捷键
 (lazy-load-set-keys
@@ -56,10 +54,8 @@
 (global-set-key (kbd "C-c j") 'counsel-git-grep)
 (global-set-key (kbd "C-c L") 'counsel-git-log)
 (global-set-key (kbd "C-c k") 'counsel-rg)
-(global-set-key (kbd "C-c m") 'counsel-linux-app)
 (global-set-key (kbd "C-c n") 'counsel-fzf)
 (global-set-key (kbd "C-x l") 'counsel-locate)
-(global-set-key (kbd "C-c J") 'counsel-file-jump)
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (global-set-key (kbd "C-c w") 'counsel-wmctrl)
 (global-set-key (kbd "C-c b") 'counsel-bookmark)
@@ -89,7 +85,7 @@
 ;;; --- 结构化编程
 (lazy-load-unset-keys
  '("M-J" "M-r" "M-s" "M-;" "C-M-f" "C-M-b" "M-)")
- fingertip-mode-map)             ;卸载按键
+ fingertip-mode-map)                    ;卸载按键
 (defvar fingertip-key-alist nil)
 (setq fingertip-key-alist
       '(
@@ -97,22 +93,22 @@
         ("M-n" . fingertip-jump-left)
         ("M-p" . fingertip-jump-right)
         ;; 符号插入
-        ("%" . fingertip-match-paren)       ;括号跳转
-        ("(" . fingertip-open-round)        ;智能 (
-        ("[" . fingertip-open-bracket)      ;智能 [
-        ("{" . fingertip-open-curly)        ;智能 {
-        (")" . fingertip-close-round)       ;智能 )
-        ("]" . fingertip-close-bracket)     ;智能 ]
-        ("}" . fingertip-close-curly)       ;智能 }
-        ("\"" . fingertip-double-quote)     ;智能 "
-        ("'" . fingertip-single-quote)      ;智能 '
-        ("=" . fingertip-equal)             ;智能 =
-        ("SPC" . fingertip-space)           ;智能 space
-        ("RET" . fingertip-newline)         ;智能 newline
+        ("%" . fingertip-match-paren)   ;括号跳转
+        ("(" . fingertip-open-round)    ;智能 (
+        ("[" . fingertip-open-bracket)  ;智能 [
+        ("{" . fingertip-open-curly)    ;智能 {
+        (")" . fingertip-close-round)   ;智能 )
+        ("]" . fingertip-close-bracket) ;智能 ]
+        ("}" . fingertip-close-curly)   ;智能 }
+        ("\"" . fingertip-double-quote) ;智能 "
+        ("'" . fingertip-single-quote)  ;智能 '
+        ("=" . fingertip-equal)         ;智能 =
+        ("SPC" . fingertip-space)       ;智能 space
+        ("RET" . fingertip-newline)     ;智能 newline
         ;; 删除
-        ("M-o" . fingertip-backward-delete) ;向后删除
-        ("C-d" . fingertip-forward-delete)  ;向前删除
-        ("C-k" . fingertip-kill)            ;向前kill
+        ;;     ("M-o" . fingertip-backward-delete) ;向后删除
+        ("C-d" . fingertip-forward-delete) ;向前删除
+        ("C-k" . fingertip-kill)           ;向前kill
         ;; 包围
         ("M-\"" . fingertip-wrap-double-quote) ;用 " " 包围对象, 或跳出字符串
         ("M-'" . fingertip-wrap-single-quote) ;用 ' ' 包围对象, 或跳出字符串
@@ -134,22 +130,22 @@
 ;; lsp-bridge 内功能:
 ;; 选择下一个候选词 Alt+n/Down
 ;; 选择上一个候选词 Alt+p/Up
-;; Alt + ,	acm-select-last	选择最后一个候选词
-;; Alt + .	acm-select-first	选择第一个候选词
-;;Ctrl + v	acm-select-next-page	向下滚动候选菜单
-;;Alt + v	acm-select-prev-page	向上滚动候选菜单
-;;Ctrl + m	acm-complete	完成补全
-;;Return	acm-complete	完成补全
-;;Tab	acm-complete	完成补全
-;;Alt + h	acm-complete	完成补全
-;;Alt + H	acm-insert-common	插入候选词共有部分
-;;Alt + u	acm-filter	用 Overlay 进一步过滤候选词
-;;Alt + d	acm-doc-toggle	开启或关闭候选词文档
-;;Alt + j	acm-doc-scroll-up	向下滚动候选词文档
-;;Alt + k	acm-doc-scroll-down	向上滚动候选词文档
-;;Alt + l	acm-hide	隐藏补全窗口
-;;Ctrl + g	acm-hide	隐藏补全窗口
-;;Alt + 数字键	acm-complete-quick-access	快速选择候选词， 需要开启 acm-enable-quick-access 选项
+;; Alt + ,  acm-select-last 选择最后一个候选词
+;; Alt + .  acm-select-first    选择第一个候选词
+;;Ctrl + v  acm-select-next-page    向下滚动候选菜单
+;;Alt + v   acm-select-prev-page    向上滚动候选菜单
+;;Ctrl + m  acm-complete    完成补全
+;;Return    acm-complete    完成补全
+;;Tab   acm-complete    完成补全
+;;Alt + h   acm-complete    完成补全
+;;Alt + H   acm-insert-common   插入候选词共有部分
+;;Alt + u   acm-filter  用 Overlay 进一步过滤候选词
+;;Alt + d   acm-doc-toggle  开启或关闭候选词文档
+;;Alt + j   acm-doc-scroll-up   向下滚动候选词文档
+;;Alt + k   acm-doc-scroll-down 向上滚动候选词文档
+;;Alt + l   acm-hide    隐藏补全窗口
+;;Ctrl + g  acm-hide    隐藏补全窗口
+;;Alt + 数字键  acm-complete-quick-access   快速选择候选词， 需要开启 acm-enable-quick-access 选项
 
 
 (lazy-load-set-keys

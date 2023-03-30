@@ -1,6 +1,6 @@
 (require 'init-accelerate) ;; 一些加速设置
 (require 'init-font)       ;; 字体设置
-;; (setq default-frame-alist '((background-image . "~/Downloads/wallhaven-zyxvqy.jpg")))
+
 (let (
       ;; 加载的时候临时增大`gc-cons-threshold'以加速启动速度。
       (gc-cons-threshold most-positive-fixnum)
@@ -28,6 +28,8 @@
     (require 'bytx-one-key) ;; 键盘快捷键方式
     (require 'init-highlight-parentheses) ;; 高亮括号
     (require 'bytx)                       ;; 一些自定义内容
+   ;; (require 'bytx-theme)
+   ;; (bytx-theme-load-with-sunrise)
     (require 'init-themes)                ;; 自动加载随机主题
     (require 'init-ivy)                   ;; ivy
     (require 'init-session)      ;; session管理，用于保存与恢复
@@ -40,12 +42,8 @@
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
     (require 'init-sort-tab)     ;; 智能排序tab
+    (require 'init-awesome-tray) 
     (require 'vimish-fold)
-    ;;  (require 'init-awesome-tray) ;;
-
-    ;; 在emacs闲置1s后启动的内容
-    (run-with-idle-timer
-     1 nil
      #'(lambda()
          (require 'init-replace-char) ;; 中英文字符自动替换
          (require 'pretty-lambdada)   ;;;elisp lambda 表达式优化
@@ -55,13 +53,14 @@
          (require 'init-blink-search) ;; 搜索插件
          (require 'init-vterm)        ;; 终端模拟器
          (require 'init-avy)          ;; 光标跳转插件
+
          ;;      (require 'init-ivy-posframe) ;; ivy 浮动框架
          (require 'init-olivetti) ;; 居中显示
          ;;      (require 'init-sort-tab)     ;; 智能排序tab
          (require 'toggle-one-window) ;; 窗口切换
-         (require 'mind-wave) ;; chat
-         ))
-    ))
+         (require 'rainbow-mode) ;; rainbow mode
+       ;;  (require 'mind-wave) ;; chat
+         )))
 
 (provide 'init)
 
@@ -72,4 +71,4 @@
 ;; init-mode : mode 绑定
 ;; Smart-align 匹配注释
 ;; undo tree
-;; xenops 报错
+;; session 恢复
