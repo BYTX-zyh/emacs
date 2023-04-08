@@ -28,8 +28,8 @@
     (require 'bytx-one-key) ;; 键盘快捷键方式
     (require 'init-highlight-parentheses) ;; 高亮括号
     (require 'bytx)                       ;; 一些自定义内容
-   ;; (require 'bytx-theme)
-   ;; (bytx-theme-load-with-sunrise)
+    ;; (require 'bytx-theme)
+    ;; (bytx-theme-load-with-sunrise)
     (require 'init-themes)                ;; 自动加载随机主题
     (require 'init-ivy)                   ;; ivy
     (require 'init-session)      ;; session管理，用于保存与恢复
@@ -42,8 +42,11 @@
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
     (require 'init-sort-tab)     ;; 智能排序tab
-    (require 'init-awesome-tray) 
+    (require 'init-awesome-tray)
     (require 'vimish-fold)
+    ;; 在emacs闲置1s后启动的内容
+    (run-with-idle-timer
+     1 nil
      #'(lambda()
          (require 'init-replace-char) ;; 中英文字符自动替换
          (require 'pretty-lambdada)   ;;;elisp lambda 表达式优化
@@ -59,8 +62,9 @@
          ;;      (require 'init-sort-tab)     ;; 智能排序tab
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
-       ;;  (require 'mind-wave) ;; chat
-         )))
+         (require 'mind-wave) ;; chat
+         (require 'init-latex) ;; latex 设置
+         ))))
 
 (provide 'init)
 

@@ -1,3 +1,4 @@
+
 (defun indent-buffer ()
   "Automatic format current buffer."
   (interactive)

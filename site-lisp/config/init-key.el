@@ -11,6 +11,18 @@
  '(("M-o" . ace-window))
  "init-ace-window")
 
+
+;;; 窗口导航相关内容
+(one-key-create-menu
+ "WINDOW-NAVIGATION"
+ '(
+   (("j" . "移动到下方窗口") . windmove-down)
+   (("k" . "移动到上方窗口") . windmove-up)
+   (("h" . "移动到左侧窗口") . windmove-left)
+   (("l" . "移动到右侧窗口") . windmove-right)
+   )
+t t)
+
 (lazy-load-global-keys
  '(("" . avy-goto-char))
  "init-avy")
