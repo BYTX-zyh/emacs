@@ -2,8 +2,6 @@
 ;;; 默认情况下的session文件存储在~/.config/emacs/session,可以在源码中修改
 
 
-(require 'init-themes)
-
 (desktop-save-mode 1)
 ;; (setq desktop-restore-frames nil) ;; 关闭恢复frames
 
@@ -40,8 +38,5 @@
 (add-hook 'kill-emacs-hook #'my-desktop-save)
 ;; 启动后自动加载
 (add-hook 'after-init-hook #'my-desktop-read)
-
-
-
 
 (provide 'init-session)

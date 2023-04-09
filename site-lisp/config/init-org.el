@@ -15,7 +15,7 @@
 (add-hook 'org-mode-hook #'visual-line-mode) ;; 为org添加长行折行
 
 ;; vaign,用于对齐表格
-                                        ;(add-hook 'org-mode-hook #'valign-mode)
+                                        ;(add-hook 'org-mode-hoobk #'valign-mode)
 
 ;; (require 'bytx-org-insert-image-from-clipboard) ;; 从剪切板复制图片
 

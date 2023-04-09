@@ -1,87 +1,5 @@
 ;;; bytx-dark-theme.el --- My dark theme, for night use.
 
-;; Filename: bytx-dark-theme.el
-;; Description: My dark theme, for night use.
-;; Author: Andy Stewart <bytx.manatee@gmail.com>
-;; Maintainer: Andy Stewart <bytx.manatee@gmail.com>
-;; Copyright (C) 2020, Andy Stewart, all rights reserved.
-;; Created: 2020-03-21 15:00:25
-;; Version: 0.1
-;; Last-Updated: 2020-03-21 15:00:25
-;;           By: Andy Stewart
-;; URL: http://www.emacswiki.org/emacs/download/bytx-dark-theme.el
-;; Keywords:
-;; Compatibility: GNU Emacs 26.3
-;;
-;; Features that might be required by this library:
-;;
-;;
-;;
-
-;;; This file is NOT part of GNU Emacs
-
-;;; License
-;;
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 3, or (at your option)
-;; any later version.
-
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth
-;; Floor, Boston, MA 02110-1301, USA.
-
-;;; Commentary:
-;;
-;; My dark theme, for night use.
-;;
-
-;;; Installation:
-;;
-;; Put bytx-dark-theme.el to your load-path.
-;; The load-path is usually ~/elisp/.
-;; It's set in your ~/.emacs like this:
-;; (add-to-list 'load-path (expand-file-name "~/elisp"))
-;;
-;; And the following to your ~/.emacs startup file.
-;;
-;; (require 'bytx-dark-theme)
-;;
-;; No need more.
-
-;;; Customize:
-;;
-;;
-;;
-;; All of the above can customize by:
-;;      M-x customize-group RET bytx-dark-theme RET
-;;
-
-;;; Change log:
-;;
-;; 2020/03/21
-;;      * First released.
-;;
-
-;;; Acknowledgements:
-;;
-;;
-;;
-
-;;; TODO
-;;
-;;
-;;
-
-;;; Require
-
-
 ;;; Code:
 
 (require 'bytx-theme)
@@ -129,7 +47,7 @@ determine the exact padding."
    (base7      '("#9ca0a4" "#979797" "brightblack"  ))
    (base8      '("#DFDFDF" "#dfdfdf" "white"        ))
    (fg         '("#00CE00" "#bfbfbf" "brightwhite"  ))
-   (fg-alt     '("green4" "#2d2d2d" "white"        ))
+   (fg-alt     '("green4" "#2d2d2d" "white"         ))
 
    (grey       base4)
    (red        '("#ff6c6b" "#ff6655" "red"          ))
@@ -145,7 +63,7 @@ determine the exact padding."
    (dark-cyan  '("#5699AF" "#5699AF" "cyan"         ))
 
    ;; face categories -- required for all themes
-   (highlight      "green")
+   (highlight      "#ff8936")
    (vertical-bar   (bytx-darken base1 0.1))
    (selection      dark-blue)
    (builtin        "#00b8ff")

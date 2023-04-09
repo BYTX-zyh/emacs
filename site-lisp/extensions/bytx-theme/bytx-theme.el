@@ -21,7 +21,8 @@
   :group 'bytx-themes
   :type 'boolean)
 
-(defvar bytx-themes--colors nil)
+(defvar bytx-themes--colors nil
+  "用于存储设置的颜色")
 (defvar bytx--min-colors '(257 256 16))
 (defvar bytx--quoted-p nil)
 (defvar bytx-themes--faces nil)
@@ -298,16 +299,19 @@ theme face specs. These is a simplified spec. For example:
                              collect `(,var ',val)))
              (list ,@(mapcar #'bytx-themes--build-face faces))))))
 
+
+
 (defmacro def-bytx-theme (name docstring defs &optional extra-faces extra-vars)
-  "Define a bytx theme, named NAME (a symbol)."
+  "定义一个新的主题,其名字为 name(a symbol) . Define a bytx theme, named NAME (a symbol)."
   (declare (doc-string 2)) ;; 指明文档字符串为第二个参数
   (let ((bytx-themes--colors defs)) ;; defs的值为颜色对照表,将其赋给bytx-themes--colors
     ;; 赋值
     `(let* ((bold   bytx-themes-enable-bold) ;; 是否允许加粗
             (italic bytx-themes-enable-italic) ;; 是否允许倾斜
+            ;; 将defs中的内容展开并插入
             ,@defs)
-       ;; 制造list
-       (setq bytx-themes--colors ;; 全局变量
+       ;; 将defs中的内容转化为list存储到bytx-themes--colors中
+       (setq bytx-themes--colors
              (list ,@(cl-loop for (var val) in defs
                               collect `(cons ',var ,val))))
        ;; 定义主题
@@ -338,16 +342,8 @@ theme face specs. These is a simplified spec. For example:
 
 
 (defvar bytx-themes-base-faces
-  '(;; --- custom faces -----------------------
-    (bytx-modeline-error
-     :background (bytx-darken red 0.25)
-     :foreground base0
-     :distant-foreground base0)
-    (bytx-visual-bell :background error)
-
+  '(
     ;; --- base faces -------------------------
-
-    ;;
     (bold
      :weight 'bold
      :foreground (unless bold base8))
