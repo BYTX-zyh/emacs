@@ -47,8 +47,7 @@
     (run-with-idle-timer
      1 nil
      #'(lambda()
-         (require 'init-replace-char) ;; 中英文字符自动替换
-         (require 'pretty-lambdada)   ;;;elisp lambda 表达式优化
+         (require 'init-hook) ;; 一些功能的hook绑定
          (require 'init-treesit)      ;; treesit 配置
          (require 'init-yasnippet)    ;; codesnip
          ;;      (require  'bytx-align)       ;;;对齐
@@ -69,7 +68,6 @@
 ;;    修改mode-line宽度
 ;;    添加新的module 表明其minor mode
 
-;; pretty-lambdada 自动显示
 ;; font: 为不同mode 添加不同的字体配置
 ;; lsp-bridge: 多功能跳转 keybind
 ;; init-mode : mode 绑定
