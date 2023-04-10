@@ -22,17 +22,14 @@
   (with-temp-message ""
     (require 'init-elpa) ;; elpa换源
     (require 'init-screen)  ;; 屏幕大小设置
+    (require 'lazycat-theme)
+    (lazycat-theme-load-with-sunrise)
     (require 'init-generic) ;; 通用配置(一些各种小配置的集合)
     (require 'lazy-load)    ;; lazy-load模块
     (require 'bytx-one-key) ;; 键盘快捷键方式
     (require 'bytx)         ;; 一些自定义内容
-  ;;  (require 'bytx-theme)
-    (require 'lazycat-theme)
-    (lazycat-theme-load-with-sunrise)
-   ;; (bytx-theme-load-dark)
     ;;(require 'init-themes)                ;; 自动加载随机主题
     (require 'init-ivy)                   ;; ivy
-    (require 'init-session)      ;; session管理，用于保存与恢复
     (require 'init-indent)       ;; 缩进
     (require 'init-performance)  ;;
     (require 'init-fingertip)    ;; fingertip
@@ -40,7 +37,7 @@
     (require 'init-lsp-bridge)   ;; lsp 配置
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
-    (require 'init-sort-tab)     ;; 智能排序tab
+
     (require 'init-awesome-tray)
    (require 'vimish-fold)
     ;; 在emacs闲置1s后启动的内容
@@ -59,6 +56,11 @@
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
          (require 'mind-wave) ;; chat
+
+
+         (require 'init-session)      ;; session管理，用于保存与恢复
+         (emacs-session-restore)
+          (require 'init-sort-tab)     ;; 智能排序tab
          ))))
 
 (provide 'init)

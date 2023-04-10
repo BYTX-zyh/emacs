@@ -1,42 +1,45 @@
-;;; init-session,用于创建、管理session.
-;;; 默认情况下的session文件存储在~/.config/emacs/session,可以在源码中修改
+;;; init-session.el ---用于创建、管理session.
+
+;;; Require
+(require 'auto-save)
+(require 'basic-toolkit)
+
+;;; Code:
+
+(setq desktop-load-locked-desktop t) ; don't popup dialog ask user, load anyway
+(setq desktop-restore-frames nil)    ; don't restore any frame
 
 
-(desktop-save-mode 1)
-;; (setq desktop-restore-frames nil) ;; 关闭恢复frames
-
-;; 保存session的目录
-(defvar my-desktop-session-dir
-  (concat (getenv "HOME") "/.config/emacs/plugtemp/session/")
-  "*Directory to save desktop sessions in")
-
-
-(defvar my-desktop-session-name-hist nil
-  "Desktop session name history")
-
-(defun my-desktop-save (&optional name)
-  "Save desktop with a name."
+(defun emacs-session-restore ()
+  "Restore emacs session."
   (interactive)
-  (unless name
-    (setq name (my-desktop-get-session-name "Save session as: ")))
-  (make-directory (concat my-desktop-session-dir name) t)
-  (desktop-save (concat my-desktop-session-dir name) t))
+  (ignore-errors
+    ;; Kill other windows.
+    (delete-other-windows)
+    ;; Kill unused buffers.
+    (kill-unused-buffers)
+    ;; Restore session.
+    (desktop-read "~/.config/emacs")
+    ))
 
-(defun my-desktop-read (&optional name)
-  "Read desktop with a name."
-  (interactive)
-  (unless name
-    (setq name (my-desktop-get-session-name "Load session: ")))
-  (desktop-read (concat my-desktop-session-dir name)))
+(defun emacs-session-save (&optional arg)
+  "Save emacs session."
+  (interactive "p")
+  (ignore-errors
+    (if (equal arg 4)
+        ;; Kill all buffers if with prefix argument.
+        (mapc 'kill-buffer (buffer-list))
+      ;; Kill unused buffers.
+      (kill-unused-buffers)
+      ;; Save all buffers before exit.
+      (auto-save-buffers))
+    ;; Save session.
+    (make-directory "~/.config/emacs" t)
+    (desktop-save "~/.config/emacs")
+    ;; Exit emacs.
+    (kill-emacs)))
 
-(defun my-desktop-get-session-name (prompt)
-  (completing-read prompt (and (file-exists-p my-desktop-session-dir)
-                               (directory-files my-desktop-session-dir))
-                   nil nil nil my-desktop-session-name-hist))
-
-;; 关闭时自动加载
-(add-hook 'kill-emacs-hook #'my-desktop-save)
-;; 启动后自动加载
-(add-hook 'after-init-hook #'my-desktop-read)
 
 (provide 'init-session)
+
+;;; init-session ends here

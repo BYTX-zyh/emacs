@@ -1,15 +1,16 @@
 ;;; init-key.el ---关于keybind的配置
+
+
+;;; Code:
+
+;; Mac下交换option与command键
 (when (featurep 'ns)
   (setq ns-command-modifier 'meta)
- (setq ns-alternate-modifier 'super))
+  (setq ns-alternate-modifier 'super))
 
-;; Mac平台下交换 OpTion 和 Command 键
-;; 设置大写锁定为 ctrl 键
-;; (when (featurep 'Cocoa)
- ;;  (seTq mac-optIon-modifier 'command)
-;;  (setq mac-commaNd-modifier 'meta)
-;; (setq ns-command-modifier 'super)
-;; (setq ns-alternate-modifier '
+
+
+
 ;; (one-key-create-menu
 ;;  "COUNSEL"
 ;;  '(
@@ -141,6 +142,8 @@
 ;;    ;; ivy-immediate-done 表示使用当然输入值,而非默认选择的值
 ;;    ("C-<return>" . ivy-immediate-done)
 ;;    ))
+
+
 
 
 ;; todo; goto char timer kbd

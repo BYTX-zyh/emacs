@@ -2,90 +2,42 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Apr  2 15:47:50 2023
+;; Created Mon Apr 10 21:15:49 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25641 13094 818218 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#575f66") (background-color . "#fafafa") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . light) (cursor-color . "#ff9940") (font-parameter) (last-focus-update . t) (fullscreen-restore . maximized) (environment) (frameset--id . "62FF-D413-C117-1AFC") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 44) (width . 157) (left . 422) (top . 85)) ((min-height . 5) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 100) (min-pixel-width . 90) (min-pixel-height-ignore . 40) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 40) (min-pixel-width-safe . 18)) vc (pixel-width . 1436) (pixel-height . 876) (total-width . 159) (total-height . 43) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 20) (total-width . 159) (total-height . 1) (normal-height . 0.025125628140703515) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("*Messages*" 1 157))) (leaf (last . t) (pixel-width . 1436) (pixel-height . 856) (total-width . 159) (total-height . 42) (normal-height . 0.9748743718592965) (normal-width . 1.0) (buffer "init-session.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1317) (start . 521)) (prev-buffers ("高等数学.tex" 15433 15970) ("init-session.el" 1219 1317) ("init.el" 285 1103) ("math" 1 421) ("Notes" 1 402) ("*Messages*" 1 157)))))])
+(setq desktop-saved-frameset nil)
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/" 0 28 (ivy-index 0)) "~/code/solo/notes/emacs/emacs操作.org" "/var/folders/4r/k5__b_4x0jb90twn9txlqtpw0000gn/T/xenops-math-TeX-region-createDON6fJ.tex" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/.config/emacs/site-lisp/config/init.el" "~/code/solo/notes/math/高等数学.tex" "~/code/solo/notes/math/高等数学.org" "~/code/solo/algorithm/cf/README.org" "~/.config/emacs/.gitmodules" "~/.config/emacs/.gitignore" "~/.config/emacs/site-lisp/config/init-session.el" "~/.config/emacs/site-lisp/config/init-treemacs.el" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/.config/emacs/site-lisp/config/init-yasnippet.el" "~/.config/emacs/site-lisp/config/init-perspective.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/math/高等数学.org" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/lazycat-theme/#\"用中文解释Emacs问题\"#.chat" "~/.config/emacs/site-lisp/extensions/lazycat-theme/lazycat-theme.el"))
+(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/emacs/treesit开发指南.org" "~/.config/emacs/test.el" "~/.config/emacs/site-lisp/config/init-ace-window.el" "~/*message*-20230410-181847" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-dark-theme.el" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/code/solo/Notes/emacs/emacs入门.org" "~/.config/emacs/site-lisp/config/init-xenops.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/extensions/bytx/replace-char.el" "~/.config/emacs/site-lisp/config/init-hook.el" "~/.config/emacs/site-lisp/config/init-generic.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-session.el"
   "init-session.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode yas-minor-mode)
-  1317
-  '(1317 nil)
+  '(visual-line-mode olivetti-mode pretty-lambda-mode lsp-bridge-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
+  744
+  '(99 nil)
   nil
   nil
-  '((buffer-display-time 25641 13088 857784 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1317 1317 1317 191 266 372 445 484 688 796 868 986 1173 1251 1279 1317))))
+  '((buffer-display-time 25652 3072 171426 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (765 633 540 545 631 648 631 744 730 823 889 910 987 990 631 744))))
 
 (desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/emacs/treesit开发指南.org"
-  "treesit开发指南.org"
-  'org-mode
-  '(yas-minor-mode highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode lsp-bridge-mode visual-line-mode cursor-sensor-mode xenops-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25641 13072 405677 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "math"
-  'dired-mode
-  '(display-line-numbers-mode subword-mode font-lock-mode yas-minor-mode)
-  421
-  '(nil nil)
-  t
-  '("/Users/bytx/code/solo/Notes/math/")
-  '((buffer-display-time 25641 13043 943994 365000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/bytx/code/solo/Notes/math/高等数学.tex"
-  "高等数学.tex"
-  'latex-mode
-  '(cursor-sensor-mode xenops-mode display-line-numbers-mode subword-mode font-lock-mode highlight-parentheses-mode lsp-bridge-mode yas-minor-mode)
-  15970
-  '(15725 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 25641 13029 344161 193000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (14031 14271 14031 15725 15883 15502 15115 15501 14721 13226 14349 14704 14350 13226 14350 15970))))
-
-(desktop-create-buffer 208
-  nil
-  "Notes"
-  'dired-mode
-  '(display-line-numbers-mode subword-mode font-lock-mode yas-minor-mode)
-  402
-  '(nil nil)
-  t
-  '("/Users/bytx/code/solo/Notes/")
-  '((buffer-display-time 25641 13017 955671 193000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
-  "init.el"
+  "/Users/bytx/.config/emacs/site-lisp/config/init-key.el"
+  "init-key.el"
   'emacs-lisp-mode
-  '(lsp-bridge-mode fingertip-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode visual-line-mode olivetti-mode yas-minor-mode)
-  1103
-  '(72 nil)
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode)
+  504
+  '(504 nil)
   nil
   nil
-  '((buffer-display-time 25641 8438 774076 483000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (324 284 2504 2289 1527 72 173 232 576 1103))))
+  '((buffer-display-time 25652 2906 973909 55000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (522))))
 
