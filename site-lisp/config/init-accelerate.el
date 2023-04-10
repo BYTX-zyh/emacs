@@ -1,5 +1,6 @@
-;;; 一些加速配置
+;;; init-accelerate.el --- Accelerate the start Emacs
 
+;;; Code:
 (setq
  ;; 不要缩放frame.
  frame-inhibit-implied-resize t
@@ -10,3 +11,5 @@
  package--init-file-ensured t)
 
 (provide 'init-accelerate)
+
+;;; init-accelerate.el ends here

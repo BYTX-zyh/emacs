@@ -25,10 +25,11 @@
     (require 'init-generic) ;; 通用配置(一些各种小配置的集合)
     (require 'lazy-load)    ;; lazy-load模块
     (require 'bytx-one-key) ;; 键盘快捷键方式
-    (require 'init-highlight-parentheses) ;; 高亮括号
-    (require 'bytx)                       ;; 一些自定义内容
-    (require 'bytx-theme)
-    (bytx-theme-load-with-sunrise)
+    (require 'bytx)         ;; 一些自定义内容
+  ;;  (require 'bytx-theme)
+    (require 'lazycat-theme)
+    (lazycat-theme-load-with-sunrise)
+   ;; (bytx-theme-load-dark)
     ;;(require 'init-themes)                ;; 自动加载随机主题
     (require 'init-ivy)                   ;; ivy
     (require 'init-session)      ;; session管理，用于保存与恢复
@@ -37,17 +38,17 @@
     (require 'init-fingertip)    ;; fingertip
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
-    (require 'init-blink-search) ;; 搜索插件
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
     (require 'init-sort-tab)     ;; 智能排序tab
     (require 'init-awesome-tray)
-    (require 'vimish-fold)
+   (require 'vimish-fold)
     ;; 在emacs闲置1s后启动的内容
     (run-with-idle-timer
      1 nil
      #'(lambda()
          (require 'init-hook) ;; 一些功能的hook绑定
+         (require 'init-highlight-parentheses) ;; 高亮括号
          (require 'init-treesit)      ;; treesit 配置
          (require 'init-yasnippet)    ;; codesnip
          ;;      (require  'bytx-align)       ;;;对齐
@@ -67,10 +68,10 @@
 ;; awesome-tray
 ;;    修改mode-line宽度
 ;;    添加新的module 表明其minor mode
-
+;; pretty-lambdada
+;;    改用ast检测？查看其实现原理
 ;; font: 为不同mode 添加不同的字体配置
 ;; lsp-bridge: 多功能跳转 keybind
-;; init-mode : mode 绑定
 ;; Smart-align 匹配注释
 ;; undo tree
 ;; session 恢复

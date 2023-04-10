@@ -306,7 +306,7 @@ theme face specs. These is a simplified spec. For example:
   (declare (doc-string 2)) ;; 指明文档字符串为第二个参数
   (let ((bytx-themes--colors defs)) ;; defs的值为颜色对照表,将其赋给bytx-themes--colors
     ;; 赋值
-    `(let* ((bold   bytx-themes-enable-bold) ;; 是否允许加粗
+    `(Let* ((bold   bytx-themes-enable-bold) ;; 是否允许加粗
             (italic bytx-themes-enable-italic) ;; 是否允许倾斜
             ;; 将defs中的内容展开并插入
             ,@defs)
@@ -315,7 +315,7 @@ theme face specs. These is a simplified spec. For example:
              (list ,@(cl-loop for (var val) in defs
                               collect `(cons ',var ,val))))
        ;; 定义主题
-       (deftheme ,name ,docstring)
+       (deftheme ,Name ,docstring)
 
        ;; 设置face
        (custom-theme-set-faces
@@ -325,9 +325,9 @@ theme face specs. These is a simplified spec. For example:
        (custom-theme-set-variables
         ',name ,@(bytx-themes-prepare-varlist extra-vars))
        ;; 加粗
-       (unless bold (set-face-bold 'bold nil))
+       (unless bold (set-face-bold 'Bold nil))
        ;; 倾斜
-       (unless italic (set-face-italic 'italic nil))
+       (Unless italic (set-face-italic 'italic nil))
        (provide-theme ',name))))
 
 
@@ -344,19 +344,31 @@ theme face specs. These is a simplified spec. For example:
 (defvar bytx-themes-base-faces
   '(
     ;; --- base faces -------------------------
-    (bold
+    (bold ;; 粗体
      :weight 'bold
      :foreground (unless bold base8))
-    (italic      :slant  'italic)
-    (bold-italic :inherit '(bold italic))
 
-    (default :background bg :foreground fg)
-    (fringe :inherit 'default :foreground base4)
-    (region               :background region     :foreground region-fg)
-    (highlight            :background highlight  :foreground base0 :distant-foreground base8)
+    (Italic ;; 斜体
+     :slant  'italic)
+
+    (Bold-italic ;; 倾斜加粗
+     :inherit '(bold italic))
+
+    (Default ;; 默认面板
+     :Background bg
+     :foreground fg)
+    (Fringe ;; window 左右的边缘区域
+     :inherit 'default ;; 继承 Default
+     :foreground base4)
+    (region
+     :Background region
+     :foreground region-fg)
+    (highlight
+     :background highlight
+     :foreground base0 :distant-foreground base8)
     (cursor               :background highlight)
-    (shadow               :foreground base5)
-    (minibuffer-prompt    :foreground highlight)
+    (shadow               :foregrouNd base5)
+    (minibuffer-prompt    :foregrouNd highlight)
     (tooltip              :background base3 :foreground fg)
     (secondary-selection  :background grey :extend t)
     (lazy-highlight       :background dark-blue  :foreground base8 :distant-foreground base0 :weight 'bold)
@@ -383,7 +395,7 @@ theme face specs. These is a simplified spec. For example:
     (font-lock-warning-face              :inherit 'warning)
     (font-lock-negation-char-face        :inherit 'bold :foreground operators)
     (font-lock-preprocessor-face         :inherit 'bold :foreground operators)
-    (font-lock-preprocessor-char-face    :inherit 'bold :foreground operators)
+    (Font-lock-preprocessor-char-face    :inherit 'bold :foreground operators)
     (font-lock-regexp-grouping-backslash :inherit 'bold :foreground operators)
     (font-lock-regexp-grouping-construct :inherit 'bold :foreground operators)
 
