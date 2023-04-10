@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Apr 10 21:15:49 2023
+;; Created Mon Apr 10 21:27:51 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset nil)
+(setq desktop-saved-frameset [frameset 1 (25652 3799 605900 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#00CE00") (background-color . "#242525") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore) (frameset--id . "344F-039A-5150-6A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 43) (width . 157) (left . 422) (top . 92)) ((min-height . 5) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 100) (min-pixel-width . 180) (min-pixel-height-ignore . 40) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 40) (min-pixel-width-safe . 36)) vc (pixel-width . 1436) (pixel-height . 852) (total-width . 160) (total-height . 43) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 20) (total-width . 160) (total-height . 1) (normal-height . 0.023474178403755874) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("init-font.el" 1096 1281) ("init-key.el" 1 504) ("init.el" 1 270) ("init-session.el" 1 124))) (hc (last . t) (pixel-width . 1436) (pixel-height . 832) (total-width . 160) (total-height . 42) (normal-height . 0.9765258215962441) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 716) (pixel-height . 832) (total-width . 80) (total-height . 42) (normal-height . 1.0) (normal-width . 0.5) (buffer "init-font.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 807) (start . 1))) (leaf (last . t) (pixel-width . 720) (pixel-height . 832) (total-width . 80) (total-height . 42) (normal-height . 1.0) (normal-width . 0.5) (buffer "init-font.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 807) (start . 807))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -18,26 +18,50 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init-font.el"
+  "init-font.el"
+  'emacs-lisp-mode
+  '(visual-line-mode olivetti-mode highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode)
+  807
+  '(1281 nil)
+  nil
+  nil
+  '((buffer-display-time 25652 3797 440672 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1096 1096 1166 1096 1096 1094 1302 38 806 567 548 237 545 548 547 807))))
+
+(desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-session.el"
   "init-session.el"
   'emacs-lisp-mode
   '(visual-line-mode olivetti-mode pretty-lambda-mode lsp-bridge-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
-  744
+  124
   '(99 nil)
   nil
   nil
-  '((buffer-display-time 25652 3072 171426 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (765 633 540 545 631 648 631 744 730 823 889 910 987 990 631 744))))
+  '((buffer-display-time 25652 3416 406115 181000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (817 685 592 597 683 700 683 796 782 875 941 962 1039 1042 683 124))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode)
+  270
+  '(270 nil)
+  nil
+  nil
+  '((buffer-display-time 25652 3729 521517 181000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-key.el"
   "init-key.el"
   'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode)
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode visual-line-mode olivetti-mode)
   504
   '(504 nil)
   nil
   nil
-  '((buffer-display-time 25652 2906 973909 55000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 25652 3757 559768 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (522))))
 
