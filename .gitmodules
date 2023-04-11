@@ -2,10 +2,6 @@
 path = site-lisp/extensions/swiper
 url = https://github.com/abo-abo/swiper.git
 
-[submodule "site-lisp/extensions/auto-save"]
-path = site-lisp/extensions/auto-save
-url = https://github.com/manateelazycat/auto-save.git
-
 [submodule "site-lisp/extensions/fingertip"]
 path = site-lisp/extensions/fingertip
 url = https://github.com/manateelazycat/fingertip.git
@@ -86,3 +82,6 @@ url = https://github.com/abo-abo/avy.git
 path = site-lisp/extensions/awesome-tray
 url = https://github.com/manateelazycat/awesome-tray.git
 
+[submodule "site-lisp/extensions/auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
