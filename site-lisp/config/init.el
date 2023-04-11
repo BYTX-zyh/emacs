@@ -22,16 +22,18 @@
   (with-temp-message ""
     (require 'init-elpa) ;; elpa换源
     (require 'init-screen)  ;; 屏幕大小设置
+    (require 'init-generic) ;; generic config
     (require 'lazycat-theme)
     (lazycat-theme-load-with-sunrise)
-    (require 'init-generic) ;; 通用配置(一些各种小配置的集合)
+
     (require 'lazy-load)    ;; lazy-load模块
     (require 'bytx-one-key) ;; 键盘快捷键方式
+    (require 'basic-toolkit)
     (require 'bytx)         ;; 一些自定义内容
-    ;;(require 'init-themes)                ;; 自动加载随机主题
-    (require 'init-ivy)                   ;; ivy
+
+    (require 'init-ivy)          ;; ivy
     (require 'init-indent)       ;; 缩进
-    (require 'init-performance)  ;;
+    (require 'init-performance)  ;; 
     (require 'init-fingertip)    ;; fingertip
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
@@ -44,8 +46,11 @@
     (run-with-idle-timer
      1 nil
      #'(lambda()
-         (require 'init-hook) ;; 一些功能的hook绑定
          (require 'init-highlight-parentheses) ;; 高亮括号
+
+        ;; (require 'init-magit)
+         (require 'init-hook) ;; 一些功能的hook绑定
+
          (require 'init-treesit)      ;; treesit 配置
          (require 'init-yasnippet)    ;; codesnip
          ;;      (require  'bytx-align)       ;;;对齐
@@ -56,6 +61,7 @@
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
          (require 'mind-wave) ;; chat
+  ;;       (require 'init-eaf)
 
 
          (require 'init-session)      ;; session管理，用于保存与恢复

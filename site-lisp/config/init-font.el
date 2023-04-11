@@ -24,6 +24,7 @@
 ;; 用于修正 emacs 29版本导致的字号变化问题
 (add-function :after after-focus-change-function #'load-font-setup)
 
+;; 添加mode-hook
 (dolist (hook (list
                'c-mode-common-hook
                'c-mode-hook

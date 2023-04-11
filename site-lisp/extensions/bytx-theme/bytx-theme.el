@@ -351,13 +351,13 @@ theme face specs. These is a simplified spec. For example:
     (Italic ;; 斜体
      :slant  'italic)
 
-    (Bold-italic ;; 倾斜加粗
+    (bold-italic ;; 倾斜加粗
      :inherit '(bold italic))
 
-    (Default ;; 默认面板
+    (default ;; 默认面板
      :Background bg
      :foreground fg)
-    (Fringe ;; window 左右的边缘区域
+    (fringe ;; window 左右的边缘区域
      :inherit 'default ;; 继承 Default
      :foreground base4)
     (region
