@@ -19,7 +19,7 @@
   ;; 2s后调用全屏幕
   (run-at-time "2sec" nil
                (lambda ()
-                 (toggle-frame-fullscreen)
+              ;;    (toggle-frame-fullscreen)
                  )))
 
 ;; 修改默认窗口大小

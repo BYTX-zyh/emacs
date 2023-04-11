@@ -8,6 +8,14 @@
   (setq ns-command-modifier 'meta)
   (setq ns-alternate-modifier 'super))
 
+;; (require 'undo-tree)
+
+(lazy-load-global-keys
+ '(
+   ("C-/" . undo-tree-undo)             ;撤销
+   ("C-?" . undo-tree-redo)             ;重做
+   )
+ "undo-tree")
 
 
 

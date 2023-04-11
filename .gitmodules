@@ -1,66 +1,88 @@
 [submodule "site-lisp/extensions/swiper"]
-	path = site-lisp/extensions/swiper
-	url = https://github.com/abo-abo/swiper.git
+path = site-lisp/extensions/swiper
+url = https://github.com/abo-abo/swiper.git
+
 [submodule "site-lisp/extensions/auto-save"]
-	path = site-lisp/extensions/auto-save
-	url = https://github.com/manateelazycat/auto-save.git
+path = site-lisp/extensions/auto-save
+url = https://github.com/manateelazycat/auto-save.git
+
 [submodule "site-lisp/extensions/fingertip"]
-	path = site-lisp/extensions/fingertip
-	url = https://github.com/manateelazycat/fingertip.git
-[submodule "site-lisp/extensions/projectile"]
-	path = site-lisp/extensions/projectile
-	url = https://github.com/bbatsov/projectile.git
+path = site-lisp/extensions/fingertip
+url = https://github.com/manateelazycat/fingertip.git
+
 [submodule "site-lisp/extensions/lsp-bridge"]
-	path = site-lisp/extensions/lsp-bridge
-	url = https://github.com/manateelazycat/lsp-bridge.git
+path = site-lisp/extensions/lsp-bridge
+url = https://github.com/manateelazycat/lsp-bridge.git
+
 [submodule "site-lisp/extensions/emacs-application-framework"]
-	path = site-lisp/extensions/emacs-application-framework
-	url = https://github.com/emacs-eaf/emacs-application-framework.git
+path = site-lisp/extensions/emacs-application-framework
+url = https://github.com/emacs-eaf/emacs-application-framework.git
+
 [submodule "site-lisp/extensions/popweb"]
-	path = site-lisp/extensions/popweb
-	url = https://github.com/manateelazycat/popweb.git
+path = site-lisp/extensions/popweb
+url = https://github.com/manateelazycat/popweb.git
+
 [submodule "site-lisp/extensions/olivetti"]
-	path = site-lisp/extensions/olivetti
-	url = https://github.com/rnkn/olivetti.git
+path = site-lisp/extensions/olivetti
+url = https://github.com/rnkn/olivetti.git
+
 [submodule "site-lisp/extensions/dash.el"]
-	path = site-lisp/extensions/dash.el
-	url = https://github.com/magnars/dash.el.git
+path = site-lisp/extensions/dash.el
+url = https://github.com/magnars/dash.el.git
+
 [submodule "site-lisp/extensions/s.el"]
-	path = site-lisp/extensions/s.el
-	url = https://github.com/magnars/s.el.git
+path = site-lisp/extensions/s.el
+url = https://github.com/magnars/s.el.git
+
 [submodule "site-lisp/extensions/f.el"]
-	path = site-lisp/extensions/f.el
-	url = https://github.com/rejeep/f.el.git
+path = site-lisp/extensions/f.el
+url = https://github.com/rejeep/f.el.git
+
 [submodule "site-lisp/extensions/toggle-one-window"]
-	path = site-lisp/extensions/toggle-one-window
-	url = https://github.com/manateelazycat/toggle-one-window.git
+path = site-lisp/extensions/toggle-one-window
+url = https://github.com/manateelazycat/toggle-one-window.git
+
 [submodule "site-lisp/extensions/posframe"]
-	path = site-lisp/extensions/posframe
-	url = https://github.com/tumashu/posframe.git
+path = site-lisp/extensions/posframe
+url = https://github.com/tumashu/posframe.git
+
 [submodule "site-lisp/extensions/lazy-load"]
-	path = site-lisp/extensions/lazy-load
-	url = https://github.com/manateelazycat/lazy-load.git
+path = site-lisp/extensions/lazy-load
+url = https://github.com/manateelazycat/lazy-load.git
+
 [submodule "site-lisp/extensions/blink-search"]
-	path = site-lisp/extensions/blink-search
-	url = https://github.com/manateelazycat/blink-search.git
+path = site-lisp/extensions/blink-search
+url = https://github.com/manateelazycat/blink-search.git
+
 [submodule "site-lisp/extensions/names"]
-	path = site-lisp/extensions/names
-	url = https://github.com/Malabarba/names.git
+path = site-lisp/extensions/names
+url = https://github.com/Malabarba/names.git
+
 [submodule "site-lisp/extensions/markdown-mode"]
-	path = site-lisp/extensions/markdown-mode
-	url = https://github.com/jrblevin/markdown-mode.git
+path = site-lisp/extensions/markdown-mode
+url = https://github.com/jrblevin/markdown-mode.git
+
 [submodule "site-lisp/extensions/yasnippet"]
-	path = site-lisp/extensions/yasnippet
-	url = https://github.com/joaotavora/yasnippet.git
+path = site-lisp/extensions/yasnippet
+url = https://github.com/joaotavora/yasnippet.git
+
 [submodule "site-lisp/extensions/emacs-aio"]
-	path = site-lisp/extensions/emacs-aio
-	url = https://github.com/skeeto/emacs-aio.git
+path = site-lisp/extensions/emacs-aio
+url = https://github.com/skeeto/emacs-aio.git
+
 [submodule "site-lisp/extensions/lazycat-theme"]
-	path = site-lisp/extensions/lazycat-theme
-	url = https://github.com/manateelazycat/lazycat-theme.git
+path = site-lisp/extensions/lazycat-theme
+url = https://github.com/manateelazycat/lazycat-theme.git
+
 [submodule "site-lisp/extensions/xenops"]
-	path = site-lisp/extensions/xenops
-	url = https://github.com/dandavison/xenops.git
+path = site-lisp/extensions/xenops
+url = https://github.com/dandavison/xenops.git
+
 [submodule "site-lisp/extensions/avy"]
-	path = site-lisp/extensions/avy
-	url = https://github.com/abo-abo/avy.git
+path = site-lisp/extensions/avy
+url = https://github.com/abo-abo/avy.git
+
+[submodule "site-lisp/extensions/awesome-tray"]
+path = site-lisp/extensions/awesome-tray
+url = https://github.com/manateelazycat/awesome-tray.git
+
