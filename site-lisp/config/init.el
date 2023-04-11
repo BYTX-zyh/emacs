@@ -53,6 +53,7 @@
 
          (require 'init-treesit)      ;; treesit 配置
          (require 'init-yasnippet)    ;; codesnip
+         (require 'init-diff-hl)      ;; ui 配置 git gutter 侧边装订线
          ;;      (require  'bytx-align)       ;;;对齐
          (require 'init-blink-search) ;; 搜索插件
          (require 'init-vterm)        ;; 终端模拟器

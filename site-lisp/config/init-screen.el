@@ -17,9 +17,9 @@
   ;; 默认先最大化
   (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
   ;; 2s后调用全屏幕
-  (run-at-time "2sec" nil
+   (run-at-time "2sec" nil
                (lambda ()
-              ;;    (toggle-frame-fullscreen)
+                 (toggle-frame-fullscreen)
                  )))
 
 ;; 修改默认窗口大小

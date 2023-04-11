@@ -83,5 +83,12 @@ path = site-lisp/extensions/awesome-tray
 url = https://github.com/manateelazycat/awesome-tray.git
 
 [submodule "site-lisp/extensions/auto-save"]
-	path = site-lisp/extensions/auto-save
-	url = https://github.com/manateelazycat/auto-save.git
+path = site-lisp/extensions/auto-save
+url = https://github.com/manateelazycat/auto-save.git
+
+[submodule "site-lisp/extensions/diff-hl"]
+	path = site-lisp/extensions/diff-hl
+	url = https://github.com/dgutov/diff-hl.git
+[submodule "site-lisp/extensions/hydra"]
+	path = site-lisp/extensions/hydra
+	url = https://github.com/abo-abo/hydra.git
