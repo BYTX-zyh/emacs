@@ -85,3 +85,5 @@
 ;; Smart-align 匹配注释
 ;; undo tree
 ;; session 恢复
+;; diff-hl
+;;   实时更新

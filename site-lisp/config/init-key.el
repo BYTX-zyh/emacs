@@ -1,5 +1,7 @@
 ;;; init-key.el ---关于keybind的配置
 
+;;; Require
+(require 'hydra)
 
 ;;; Code:
 
@@ -8,7 +10,6 @@
   (setq ns-command-modifier 'meta)
   (setq ns-alternate-modifier 'super))
 
-;; (require 'undo-tree)
 
 (lazy-load-global-keys
  '(
@@ -17,6 +18,12 @@
    )
  "undo-tree")
 
+;; 窗口管理
+(lazy-load-global-keys
+ '(
+   ("M-p" . hydra-windows/body)
+   )
+ "init-window")
 
 
 ;; (one-key-create-menu
