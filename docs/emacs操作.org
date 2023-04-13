@@ -1,0 +1,28 @@
+
+记录emacs的操作快捷键.
+
+前缀参数 C-u num action 按住meta按下num action
+
+光标移动
+
+| 快捷键 | 命令 | 效果                   | 来源   |
+| C-v   |     | 向下滚动一屏            | emacs |
+| M-v   |     | 向上滚动一屏            | emacs |
+| C-l   |     | 重绘屏幕,将光标所在行居中 | emacs |
+| C-n   |     | 移动到下一行            | emacs |
+| C-p   |     | 移动到上一行            | emacs |
+| C-b   |     | 向后移动                | emacs |
+| C-f   |     | 向前移动                | emacs |
+| M-f   |     | 向前移动一个词           | emacs |
+| M-b   |     | 向后移动一个词           | emacs |
+| C-a   |     | 移动到行首              | emacs |
+| C-e   |     | 移动到行尾              | emacs |
+| M-a   |     | 移动到句首              | emacs |
+| M-e   |     | 移动到句尾              | emacs |
+| M-<   |     | 移动到所有文字的开头      | emacs |
+| M->   |     | 移动到所有文字的结尾      | emacs |
+|       |     |                       |       |
+
+窗口
+| 快捷键 | 命令 | 效果               | 来源   |
+| C-x 

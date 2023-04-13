@@ -1,0 +1,33 @@
+
+[[https://github.com/joaotavora/yasnippet][yasnippet]]是emacs下的 code snip 插件.
+
+* [[http://joaotavora.github.io/yasnippet/snippet-organization.html][插件文件结构]]
+
+snip文件夹内部基于语言和snip命名进行组织，其结构通常可以为如下所示：
+每个mode文件夹下对应该语言的snip。
+#+begin_src texT
+ .
+ |-- c-mode
+ |   `-- printf
+ |-- java-mode
+ |   `-- println
+ `-- text-mode
+     |-- email
+     `-- time
+#+end_src
+
+默认情况下,snippets存储的文件夹可以采用如下设置:
+#+begin_src elisp
+;; Develop in ~/emacs.d/mysnippets, but also
+;; try out snippets in ~/Downloads/interesting-snippets
+(setq yas-snippet-dirs '("~/emacs.d/mysnippets"
+                           "~/Downloads/interesting-snippets"))
+
+;; OR, keeping YASnippet defaults try out ~/Downloads/interesting-snippets
+(setq yas-snippet-dirs (append yas-snippet-dirs
+                               '("~/Downloads/interesting-snippets")))
+#+end_src
+
+* [[http://joaotavora.github.io/yasnippet/snippet-expansion.html][扩展snip]]
+
+

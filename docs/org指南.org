@@ -1,0 +1,161 @@
+#+OPTIONS: id:my-id-
+
+[[https://orgmode.org][org-mode]]是emacs中的一个 major-mode,
+
+本文中大部分内容来自于[[https://orgmode.org/manual/index.html][The Org Manual]]与[[https://orgmode.org/orgguide.html][Org Mode Compact Guide]].或者你可以理解为这是我对于上述内容的笔记/精简,只保留了我认为需要的部分.
+
+* 简介
+:PROPERTIES:
+:ID:       B114A313-EA3A-497F-94CD-5337F59FFE0F
+:END:
+
+org 是一种用于记录笔记、维护 TODO 列表 以及使用快速有效的纯文本系统进行项目规划的模式,也是一个创作和发布系统,支持使用源代码进行文字编程和可重复研究.
+
+
+* 文档结构
+
+org 允许以层次结构组织文档,并可以通过折叠以隐藏文档的大部分而只显示文档的结构与当前编辑的部分. org 将文档的折叠与显示压缩到了 org-cycle 命令,默认绑定到 TAB 键.
+
+** 标题
+
+org中的标题采用在行首使用若干星号 ~*~ 后加一个空格来表示标题,如下例所示:
+
+#+BEGIN_SRC org
+ * Top level headline
+ ** Second level
+ *** Third level
+     some text
+ *** Third level
+     more text
+ * Another top level headline
+#+END_SRC
+
+注意，以 org-footnote-section 命名的标题（默认为“脚注”）被视为特殊标题.具有此标题的子树将被导出函数静默忽略.
+
+** 可见行循环
+
+org中使用两个绑定在 TAB 与 S-TAB 的两个命令更改部分文本在缓冲区的可见性.
+
+*** TAB
+
+子树循环:在以下状态中循环调整子树(即当前节点及其子树,不影响其余节点)折叠状态.分别表示:全部折叠、显示子树、全部显示.
+
+#+begin_src text
+,-> FOLDED -> CHILDREN -> SUBTREE --.
+'-----------------------------------'
+#+end_src
+
+当使用前缀参数调用时( C-u TAB ),将会调用全局循环.
+
+*** S-TAB / C-u TAB
+
+#+begin_src text
+,-> OVERVIEW -> CONTENTS -> SHOW ALL --.
+'--------------------------------------'
+#+end_src
+
+在全局缓冲区中循环调整折叠情况.
+
+*** C-u C-u C-u TAB
+
+展开全部,包括drawer.
+
+*** 打开文件时的折叠状态
+
+当 Emacs 第一次访问 Org 文件时，全局状态被设置为 OVERVIEW，即只有顶级标题是可见的。这可以通过变量 org-startup-folded 进行配置，或者通过将“STARTUP”关键字添加到“overview”、“content”、“showall”、“showeverything”或“show<n>levels”（ n = 2..5) 像这样：
+
+#+begin_src text
+#+STARTUP: content
+#+end_src
+
+** 移动
+
+以下命令跳转到缓冲区中的其他标题。
+
+| key     | commands                        | 描述            | 备注 |
+|---------+---------------------------------+----------------+-----|
+| C-c C-n | org-next-visible-heading        | 跳转到下一个标题 |     |
+| C-c C-p | org-previous-visible-heading    | 跳转到上一个标题 |     |
+| C-c C-f | org-forward-heading-same-level  | 下一个同级标题   |     |
+| C-c C-b | org-backward-heading-same-level | 上一个同级标题   |     |
+| C-c C-u | outline-up-heading              | 上级标题        |     |
+
+** 结构编辑
+:PROPERTIES:
+:ID:       8E9C43F8-280F-47E8-9702-6A4F923499A9
+:END:
+
+- M-RET
+  插入与当前级别相同的新标题.当在一行中间使用此命令时,该行被拆分,剩余部分成为新标题.
+   M-RET 如果点在普通列表项中，则会创建一个新项(请参阅[[id:6C61AAC8-3BFB-44D0-92D0-461CDEEF26B8][普通列表]]).
+- M-S-RET
+  插入与当前标题具有相同级别的新 TODO 条目.
+- TAB in new empty entry
+  在一个还没有文本的新条目中,循环其标题等级以得到合理的等级.(从等级1到当前默认等级+1).
+- M-LEFT / M-RIGHT
+  将当前标题提升或降低一级.
+- M-UP / M-DOWN
+  向上或向下移动子树，即与同一级别的上一个或下一个子树交换。
+- C-c C-w
+  将条目或区域重新归档到不同的位置。请参阅[[id:FD15A6F7-2292-400B-BC82-B4B66FC97C6B][重新归档和复制]]。
+- C-x n s / C-x n w
+
+将缓冲区缩小到当前子树/恢复原树.
+
+When there is an active region (Transient Mark mode), promotion and demotion work on all headlines in the region.
+当有活动区域时（Transient Mark 模式），升降级作用于该区域的所有头条。
+
+** TODO 稀疏树
+
+Org 模式的一个重要特性是能够在大纲树中为选中的信息构建稀疏树，从而尽可能折叠整个文档，但选中的信息连同其上方的标题结构一起可见.只需尝试一下，您就会立即看到它是如何工作的.
+
+Org 模式包含多个创建此类树的命令，所有这些命令都可以通过调度程序访问：
+
+*** C-c /
+
+这会提示输入一个额外的键来选择稀疏树创建命令。
+
+*** C-c / r
+
+Occur. Prompts for a regexp and shows a sparse tree with all matches. Each match is also highlighted; the highlights disappear by pressing C-c C-c.
+发生。提示输入正则表达式并显示包含所有匹配项的稀疏树。每场比赛也被突出显示;按 ，高光消失。
+
+The other sparse tree commands select headings based on TODO keywords, tags, or properties and will be discussed later in this manual.
+其他稀疏树命令根据 TODO 关键字、标签或属性选择标题，将在本手册后面讨论。
+
+** 普通列表
+:PROPERTIES:
+:ID:       6C61AAC8-3BFB-44D0-92D0-461CDEEF26B8
+:END:
+
+org 拥有有序列表、无序列表与描述列表.
+- 无序列表项目以 ~-~ 、 ~+~ 或 ~*~ 作为项目符号开头.
+- 有序列表项以 ~1.~ 或 ~1)~ 开头.
+- 描述列表使用 ~::~ 将术语与描述分开.
+
+属于同一列表的项目必须在第一行具有相同的缩进。项目在下一行之前结束，缩进与其项目符号/编号相同或更少。当所有项目都结束时，或在两个空行之前，列表结束。一个例子：
+#+BEGIN_SRC org
+ * Lord of the Rings
+  My favorite scenes are (in this order)
+  1. The attack of the Rohirrim
+  2. Eowyn's fight with the witch king
+     + this was already my favorite scene in the book
+     + I really like Miranda Otto.
+  Important actors in this film are:
+  - Elijah Wood :: He plays Frodo
+  - Sean Astin :: He plays Sam, Frodo's friend.
+#+END_SRC
+
+当点位于项目的第一行（带有项目符号或编号的行）时，以下命令对项目起作用.
+- TAB
+  展开/折叠列表项内容.
+- M-RET
+  在当前级别插入新item。使用前缀参数，强制使用新标题(请参阅[[id:8E9C43F8-280F-47E8-9702-6A4F923499A9][结构编辑]])。todo:?未生效
+- M-S-RET
+  插入一个带有复选框的新项目(请参阅复选框).
+  
+
+* 重新归档与复制
+:PROPERTIES:
+:ID:       FD15A6F7-2292-400B-BC82-B4B66FC97C6B
+:END:

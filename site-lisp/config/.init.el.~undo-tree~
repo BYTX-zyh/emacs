@@ -1,6 +1,4 @@
 (undo-tree-save-format-version . 1)
 "a4f57b20f9373772008539f733546c13e63b319f"
-[nil nil nil nil (25654 21680 142063 0) 0 nil]
-([nil nil ((688 . 689) (t 25653 33543 347498 984000)) nil (25654 21680 142059 0) 0 nil])
-([nil current ((#("q" 0 1 (face font-lock-comment-face fontified t)) . -688) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) 689) nil (25654 21680 142047 0) 0 nil])
+[nil current nil nil (25654 40055 661067 0) 0 nil]
 nil

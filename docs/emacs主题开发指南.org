@@ -1,0 +1,12 @@
+
+* emacs 主题开发
+
+关于色彩的问题,24色,256色,真色彩
+
+M-x disable-theme以禁用主题
+
+M-x describe-face 描述face
+
+M-x counsel-color 查看emacs配置的颜色
+
+M-x list-faces-display

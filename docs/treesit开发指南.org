@@ -1,0 +1,38 @@
+
+
+关于 treesit 开发插件的指南.
+
+前言-treesit简介与treesit-emacs的安装
+
+您可以键入 M-x shortdoc RET treesit RET 来查看树保姆函数列表。因为它是 Emacs，所以有全面的手册涵盖您需要了解的一切。它在 Emacs Lisp 参考手册的“Section 37, Parsing Program Source”中。
+
+* emacs内置 treesit 相关函数功能
+
+** treesit-explore-mode
+
+启用浏览当前缓冲区的语法树.
+
+弹出一个窗口,实时显示当前缓冲区中源文件的语法树.
+
+** treesit-install-language-grammar
+
+为treesit安装语言语法库.
+
+** 
+
+* 其他
+
+https://archive.casouri.cc/note/2023/tree-sitter-in-emacs-29/ : emacs29 简介
+帮助与使用: https://archive.casouri.cc/note/2023/tree-sitter-starter-guide/
+https://archive.casouri.cc/note/2021/emacs-tree-sitter/Parsing-Program-Source.html
+C-h i m elisp RET g Parsing Program Source RET
+
+
+使用了ts的插件:
+
+https://github.com/meain/scopeline.el : 括号尾部显示其内容.
+https://github.com/emacs-tree-sitter/ts-fold : 折叠
+https://blog.meain.io/2022/more-treesitter-emacs/#show-current-class%2Ffunction-name-in-modeline : 一些使用的demo
+https://blog.meain.io/2022/navigating-config-files-using-tree-sitter 同上
+https://blog.meain.io/2021/intelligent-snippets-treesitter 智能片段
+https://blog.meain.io/2023/split-join-tree-sitter/ 拆分与移动
