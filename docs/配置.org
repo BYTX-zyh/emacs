@@ -1,8 +1,10 @@
 本文包含一些emacs的配置思路和插件推荐,遵循如下规则:
+
 1. 配置思路与推荐根据功能进行分类
 2. 不对推荐插件与配置进行详细解析
-   插件推荐只给出必要的使用部分讲解,其余内容自行查看推荐处给出的链接.
+   插件推荐只给出功能介绍,其余内容自行查看推荐处给出的链接.
    给出插件的个人配置地址均在 ~emacs/site-lisp/config/init-插件名称.el~ 中.
+   相关所有
    如为重要需讲解插件会单独进行讲解.
 
 * 配置思路
@@ -47,6 +49,66 @@ hydra:
   用于修饰每个键的内容.
 
 可以使用[[https://github.com/manateelazycat/one-key][one-key]]进行快捷键管理,可以方便的管理多个快捷键.
+
+* 配置文件目录解释
+
+配置文件目录大致如下,可能略有更改.
+#+begin_src text
+.
+├── README.org
+├── docs              # 相关一些文档
+├── eaf               # eaf
+├── elpa              # elpa相关内容
+├── init.el           # 配置入口
+├── plugFile          # 插件的一些文件目录
+├── plugtemp          # 插件运行产生的内容目录
+├── site-lisp         # lisp代码
+│   ├── config         # 配置
+│   └── extensions     # 插件
+├── snippets          # snip
+├── tree-sitter       # treesit相关内容
+#+end_src
+
+大部分的配置均出现在 ~site-lisp/config/init-plugname.el~ ,入口 ~init.el~ 文件调用 ~site-lisp/config/init.el~ ,而后该文件调用 ~config~ 目录下的其余插件配置.
+
+有github 仓库的插件通常在 ~site-lisp/extension/plugname~ ,如果为单文件插件且久未维护,则存储于 ~site-lisp/extension/bytx/filename~ .
+
+* 配置文件格式
+
+#+begin_src
+;;; Package-name.el --- Description of package
+
+;; Author: Your Name <your.email@example.com>
+;; URL: https://github.com/your-username/package-name
+;; Version: 0.1
+;; Package-Requires: ((emacs "24.4"))
+
+;;; Commentary:
+
+;; This package provides ...
+
+;;; License:
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation , either version 3 of the License, or
+;; (at your option) any later version.
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Code:
+
+;; Your code goes here
+
+(provide 'package-name)
+
+;;; package-name.el ends here
+#+end_src
 
 * 界面配置
 
