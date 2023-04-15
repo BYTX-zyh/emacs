@@ -613,19 +613,20 @@
 	    ("jakanakaevangeli" . "jakanakaevangeli@chiru.no"))
 	   (:commit . "d8e1b04cd359d9f27ab7c6dbf8cae90dde834085"))])
  (counsel .
-	  [(0 13 4)
+	  [(0 14 0)
 	   ((emacs
 	     (24 5))
 	    (ivy
-	     (0 13 4))
+	     (0 14 0))
 	    (swiper
-	     (0 13 4)))
+	     (0 14 0)))
 	   "Various completion functions using Ivy" tar
 	   ((:url . "https://github.com/abo-abo/swiper")
+	    (:keywords "convenience" "matching" "tools")
 	    (:maintainer "Oleh Krehel" . "ohwoeowho@gmail.com")
 	    (:authors
 	     ("Oleh Krehel" . "ohwoeowho@gmail.com"))
-	    (:keywords "convenience" "matching" "tools"))])
+	    (:commit . "603c29c64856ba7f32ca00affae64f2f5ae3fced"))])
  (cpio-mode .
 	    [(0 17)
 	     ((emacs
@@ -1123,7 +1124,7 @@
 		    ("Omar Antolín Camarena" . "omar@matem.unam.mx"))
 		   (:commit . "127492fac048cecfdba145d496a902022a68d1d5"))])
  (ement .
-	[(0 8 2)
+	[(0 8 3)
 	 ((emacs
 	   (27 1))
 	  (map
@@ -1146,7 +1147,7 @@
 	  (:maintainer "Adam Porter" . "adam@alphapapa.net")
 	  (:authors
 	   ("Adam Porter" . "adam@alphapapa.net"))
-	  (:commit . "fc48543b5396a8d24850e104f62a50cb1008b4c7"))])
+	  (:commit . "b86a31700d1a382ad8da8cd2addd5dcad79d6dba"))])
  (emms .
        [(14)
 	((cl-lib
@@ -1295,11 +1296,11 @@
 	     ("Barry O'Reilly" . "gundaetiapo@gmail.com"))
 	    (:maintainer "Barry O'Reilly" . "gundaetiapo@gmail.com"))])
  (flymake .
-	  [(1 2 2)
+	  [(1 3 3)
 	   ((emacs
 	     (26 1))
 	    (eldoc
-	     (1 1 0))
+	     (1 14 0))
 	    (project
 	     (0 7 1)))
 	   "A universal on-the-fly syntax checker" tar
@@ -1308,7 +1309,7 @@
 	    (:authors
 	     ("Pavel Kobyakov" . "pk_at_work@yahoo.com"))
 	    (:url . "https://elpa.gnu.org/packages/flymake.html")
-	    (:commit . "31af9bca99fa88350271e1a905c9b435eaec28cf"))])
+	    (:commit . "8fdd7710ec0448fe9d3908ad073ddd4d69917719"))])
  (flymake-proselint .
 		    [(0 3 0)
 		     ((emacs
@@ -1708,29 +1709,31 @@
 	       ("Michael Heerdegen" . "michael_heerdegen@web.de"))
 	      (:maintainer "Michael Heerdegen" . "michael_heerdegen@web.de"))])
  (ivy .
-      [(0 13 4)
+      [(0 14 0)
        ((emacs
 	 (24 5)))
        "Incremental Vertical completYon" tar
        ((:url . "https://github.com/abo-abo/swiper")
+	(:keywords "matching")
 	(:maintainer "Oleh Krehel" . "ohwoeowho@gmail.com")
 	(:authors
 	 ("Oleh Krehel" . "ohwoeowho@gmail.com"))
-	(:keywords "matching"))])
+	(:commit . "abc993c6d066a11f9ca6ec70d2c5c2e2b3e6b17a"))])
  (ivy-avy .
-	  [(0 13 4)
+	  [(0 14 0)
 	   ((emacs
 	     (24 5))
 	    (ivy
-	     (0 13 4))
+	     (0 14 0))
 	    (avy
 	     (0 5 0)))
 	   "Avy integration for Ivy" tar
 	   ((:url . "https://github.com/abo-abo/swiper")
+	    (:keywords "convenience")
 	    (:maintainer "Oleh Krehel" . "ohwoeowho@gmail.com")
 	    (:authors
 	     ("Oleh Krehel" . "ohwoeowho@gmail.com"))
-	    (:keywords "convenience"))])
+	    (:commit . "522c2ed7a62d3c7ff9e7ea455ad3c5d63b3c4b54"))])
  (ivy-explorer .
 	       [(0 3 2)
 		((emacs
@@ -1744,19 +1747,20 @@
 		 (:maintainer "Clemens Radermacher" . "clemera@posteo.net")
 		 (:url . "https://github.com/clemera/ivy-explorer"))])
  (ivy-hydra .
-	    [(0 13 5)
+	    [(0 14 0)
 	     ((emacs
 	       (24 5))
 	      (ivy
-	       (0 13 4))
+	       (0 14 0))
 	      (hydra
 	       (0 14 0)))
 	     "Additional key bindings for Ivy" tar
 	     ((:url . "https://github.com/abo-abo/swiper")
+	      (:keywords "convenience")
 	      (:maintainer "Oleh Krehel" . "ohwoeowho@gmail.com")
 	      (:authors
 	       ("Oleh Krehel" . "ohwoeowho@gmail.com"))
-	      (:keywords "convenience"))])
+	      (:commit . "1ee6eda9f632d66f5e6b582a0d565e52feb856ed"))])
  (ivy-posframe .
 	       [(0 6 3)
 		((emacs
@@ -2231,14 +2235,14 @@
 	   ("Artur Malabarba" . "emacs@endlessparentheses.com"))
 	  (:keywords "extensions" "lisp"))])
  (nano-agenda .
-	      [(0 2 2)
+	      [(0 3)
 	       ((emacs
 		 (27 1)))
 	       "N Λ N O agenda" tar
 	       ((:url . "https://github.com/rougier/nano-agenda")
 		(:keywords "convenience" "org-mode" "org-agenda")
 		(:maintainer "Nicolas P. Rougier" . "Nicolas.Rougier@inria.fr")
-		(:commit . "f0a536eea1c2dd90454b622d0930bc80757a95da"))])
+		(:commit . "6c38e95b8e846aceb88398c682fd283052924556"))])
  (nano-modeline .
 		[(0 7 2)
 		 ((emacs
@@ -2735,7 +2739,7 @@
 	    ("Protesilaos Stavrou" . "info@protesilaos.com"))
 	   (:commit . "e01a8f7e80c5c83dfcfb87b10e0213d4963e4d15"))])
  (pyim .
-       [(5 3 1)
+       [(5 3 2)
 	((emacs
 	  (27 1))
 	 (async
@@ -2749,7 +2753,7 @@
 	 (:authors
 	  ("Ye Wenbin" . "wenbinye@163.com")
 	  ("Feng Shu" . "tumashu@163.com"))
-	 (:commit . "6cc5b76a947938b3b9e842423497a1875b7ca1a0"))])
+	 (:commit . "4c953701a368e1433bf91fd19766d76c9b496825"))])
  (pyim-basedict .
 		[(0 5 4)
 		 nil "The default pinyin dict of pyim" tar
@@ -3184,7 +3188,7 @@
 		("Michael Heerdegen" . "michael_heerdegen@web.de"))
 	       (:maintainer "Michael Heerdegen" . "michael_heerdegen@web.de"))])
  (sml-mode .
-	   [(6 11)
+	   [(6 12)
 	    ((emacs
 	      (24 3))
 	     (cl-lib
@@ -3201,7 +3205,7 @@
 	      ("	Matthias Blume" . "blume@cs.princeton.edu")
 	      ("	(Stefan Monnier)" . "monnier@iro.umontreal.ca"))
 	     (:url . "https://elpa.gnu.org/packages/sml-mode.html")
-	     (:commit . "072e3eedf703209f8f2937aff51ca02c627dee8e"))])
+	     (:commit . "7ebf91114292eead967d1a9bb4f235d66f6dd525"))])
  (so-long .
 	  [(1 1 2)
 	   ((emacs
@@ -3389,17 +3393,31 @@
 		 (:authors
 		  ("Nicolas P. Rougier" . "Nicolas.Rougier@inria.fr")))])
  (swiper .
-	 [(0 13 4)
+	 [(0 14 0)
 	  ((emacs
 	    (24 5))
 	   (ivy
-	    (0 13 4)))
-	  "Isearch with an overview. Oh, man!" tar
+	    (0 14 0)))
+	  "Isearch with an overview.  Oh, man!" tar
 	  ((:url . "https://github.com/abo-abo/swiper")
+	   (:keywords "matching")
 	   (:maintainer "Oleh Krehel" . "ohwoeowho@gmail.com")
 	   (:authors
 	    ("Oleh Krehel" . "ohwoeowho@gmail.com"))
-	   (:keywords "matching"))])
+	   (:commit . "4129750ab368c8bfd1ef2ad3df6ea11d79ad06b4"))])
+ (switchy-window .
+		 [(1 3)
+		  ((emacs
+		    (25 1))
+		   (compat
+		    (29 1 4 1)))
+		  "A most-recently-used window switcher" tar
+		  ((:url . "https://sr.ht/~tsdh/switchy-window/")
+		   (:keywords "windows")
+		   (:maintainer "Tassilo Horn" . "tsdh@gnu.org")
+		   (:authors
+		    ("Tassilo Horn" . "tsdh@gnu.org"))
+		   (:commit . "c743c47b7b4326c411470ba98410b7bfe3685edc"))])
  (sxhkdrc-mode .
 	       [(1 0 0)
 		((emacs

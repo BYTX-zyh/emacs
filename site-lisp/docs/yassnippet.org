@@ -1,0 +1,154 @@
+
+[[https://github.com/joaotavora/yasnippet][yasnippet]]是emacs下的 code snip 插件.
+
+* [[http://joaotavora.github.io/yasnippet/snippet-organization.html][组织插件]]
+
+snip文件夹内部基于语言和snip命名进行组织，其结构通常可以为如下所示：
+每个mode文件夹下对应该语言的snip,文件名为对应snip的格式.
+#+begin_src texT
+ .
+ |-- c-mode
+ |   `-- printf
+ |-- java-mode
+ |   `-- println
+ `-- text-mode
+     |-- email
+     `-- time
+#+end_src
+
+默认情况下,snippets存储的文件夹可以采用如下设置:
+#+begin_src elisp
+;; Develop in ~/emacs.d/mysnippets, but also
+;; try out snippets in ~/Downloads/interesting-snippets
+(setq yas-snippet-dirs '("~/emacs.d/mysnippets"
+                           "~/Downloads/interesting-snippets"))
+
+;; OR, keeping YASnippet defaults try out ~/Downloads/interesting-snippets
+(setq yas-snippet-dirs (append yas-snippet-dirs
+                               '("~/Downloads/interesting-snippets")))
+#+end_src
+
+* [[http://joaotavora.github.io/yasnippet/snippet-expansion.html][扩展snip]]
+
+在激活yas-minor-mode的情况下,输入触发片段后调用 ~yas-expand~ (默认绑定到tab键)即可展开片段.
+
+* 编写snip
+
+** 创建/修改 snip
+
+通常编写一个snip分为两种情况:
+- 创建新的snip
+  使用 ~M-x yas-new-snippet~ (key: ~C-c & C-n~ )打开一个新的用于创建snip的缓冲区,并切换到snippet-mode,编辑完成后使用 ~C-c C-c~ 将其保存.
+- 修改已有的snip
+  使用 ~M-x yas-visit-snippet-file~ (key: ~C-c & C-v~),查找并转到一个已有snip的定义文件中,如果找到该文件则其切换到 snippet-mode.
+
+** snippet-mode
+snippet-mode是一个用于辅助编辑snip的major mode,提供了对应的语法高亮与一些命令.
+- ~M-x yas-load-snippet-buffer~
+  提示输入片段表（默认基于片段的主要模式）并加载当前正在编辑的片段。
+- ~M-x yas-load-snippet-buffer-and-close~
+  类似于 yas-load-snippet-buffer ，但保存代码片段后调用 quit-window 。保存的目的地是根据选择的代码片段表和代码片段集合直接决定的(默认为 yas-snippet-dirs 中的第一个目录).
+- ~M-x yas-tryout-snippet~ 
+  打开一个新的缓冲区并设置为合适的major-mode,而后插入当前片段进行测试.
+
+** snip文件格式
+
+*** 文件首部
+
+文件的首部是可选的,但是通常建议添加.
+
+如果文件包含一行 ~# --~ ，则其上面的行算作注释，其中一些可以是指令（或元数据）.
+代码段指令看起来像 ~# property: value~ 并调整了其下面描述的某些代码段属性.如果没有找到 ~# --~ ，则整个文件被认为是片段模板.
+
+eg:
+#+begin_src
+# contributor: pluskid <pluskid@gmail.com>
+# name: __...__
+# --
+__${init}__
+#+end_src
+
+文件首部的指令(元数据)支持如下部分:
+- ~# key: snippet abbrev~
+  表示用于激活snip的关键字,在输入key后调用 ~yas-expand~ 即可展开snip,如果不设置该值则无法展开内容.
+- ~# name: snippet name~
+  表示为snip的名称,如果不设置则默认为snip文件的文件名,通常这个与key为同一内容.
+- ~# condition: snippet condition~
+  为一段elisp代码,表示用于评估是否展开snip,当其值非nil时展开.
+- ~# expand-env: expand environment~
+  这是一段采用 let varlist 形式的 Emacs-lisp 代码，即为变量赋值的列表列表。它可用于在展开代码段时覆盖变量值。
+  可以覆盖的变量是 ~yas-wrap-around-region~ 和 ~yas-indent-line~,表示缩进的格式与区域的选择相关内容.
+- ~# binding: direct keybinding~
+  表示将片段绑定到按键上
+
+*** 正文语法
+
+**** 文本
+
+可以包含任意文本作为模板的内容,通常被解释为纯文本，~$~ 和 ~`~ 除外。需要使用 ~\~ 来转义它们： ~\$~ 和 ~\`~ 。 ~\~ 本身有时也可能需要转义为 ~\\~ .
+
+**** 嵌入式Emacs-lisp代码
+Emacs-Lisp 代码可以嵌入模板内，写在反引号 ( ` ) 内。展开代码段时会评估 lisp 形式。评估是在与正在展开的代码段相同的缓冲区中完成的。
+例如:
+#+begin_src snippet
+#ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
+#define $1
+
+$0
+
+#endif /* $1 */
+#+end_src
+
+
+从 0.6 版开始，片段扩展在运行时绑定了一些特殊的 Emacs-lisp 变量。其中之一是 yas-selected-text 。因此，您可以定义一个片段，如：
+
+#+begin_src snippet
+for ($1;$2;$3) {
+  `yas-selected-text`$0
+}
+#+end_src
+
+
+将所选区域“包裹”在您最近插入的代码段中。或者，您也可以将变量 yas-wrap-around-region 自定义为 t ，这将自动执行此操作.
+
+请注意反引号中的 lisp 形式不应该修改缓冲区，这样做会触发警告。
+
+在您的 init 文件中使用以下代码可以抑制该警告：
+
+#+begin_src
+(add-to-list 'warning-suppress-types '(yasnippet backquote-change))
+#+end_src
+
+
+**** Tab stop
+  Tab stop 是可以通过 TAB 和 S-TAB 来回导航的字段。它们由 ~$~ 后跟数字编写。 ~$0~ 片段表示最后到达的位置.
+
+
+**** 占位符
+  制表位可以有默认值——又名占位符。语法是这样的： ~${N:default value}~
+  它们充当制表位的默认值。但是当您第一次在制表位键入时，默认值将被您的键入替换。如果您不想为此字段创建镜像或转换，则可以省略该数字.
+
+**** 镜像
+  我们将带有占位符的制表位称为字段。一个字段可以有镜像。每当您更新任何字段文本时，所有镜像都会更新。这是一个例子：
+
+  #+begin_src
+    \begin{${1:enumerate}}
+    $0
+\end{$1}
+  #+end_src
+**** 带有转换的镜像
+  如果 ${n: -construct 的值以 $( 开头并包含 $( ，那么它将被解释为具有转换的字段 n 的镜像。镜像的文本内容是根据此转换计算的，这是在变量 yas-text 绑定到字段 n 中包含的文本内容（字符串）的环境中评估的 Emacs-lisp 代码。这是 Objective-C 的示例：
+  例如:
+  ${1:$(make-string (string-width yas-text) ?\=)}
+${1:Title}
+${1:$(make-string (string-width yas-text) ?\=)}
+
+$0
+- Fields with transformations
+**** 从列表中选择字段值
+
+#+begin_src
+<div align="${2:$$(yas-choose-value '("right" "center" "left"))}">
+  $0
+</div>
+#+end_src

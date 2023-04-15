@@ -18,6 +18,7 @@
                             inhibit-message nil)
               (redisplay)))
 
+  (setq my-config-dir "/Users/bytx/.config/emacs")
   ;; 抹掉插件启动输出
   (with-temp-message ""
     (require 'init-elpa) ;; elpa换源
@@ -62,7 +63,7 @@
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
          (require 'mind-wave) ;; chat
-         (require 'init-eaf)
+        ;; (require 'init-eaf)
 
 
 

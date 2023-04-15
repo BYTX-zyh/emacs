@@ -1,6 +1,41 @@
-;;; init-key.el ---关于keybind的配置
+;;;init-key.el  --- 所有的keybind配置
 
-;;; Require
+;; Copyright (C) 2023 BYTX  <bytxzyh@gmail.com>
+
+;; Filename: init-key
+;; Description: 所有的keybind配置
+;; Author: BYTX <bytxzyh@gmail.com>
+;; Keywords: keybind , lazy-load
+
+;; This file is not currently part of GNU Emacs.
+
+;;; License
+;;
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 3, or (at your option)
+;; any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program; see the file COPYING.  If not, write to
+;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth
+;; Floor, Boston, MA 02110-1301, USA.
+
+;;; Commentary:
+;; 使用lazy-load与hydra进行的快捷键配置
+;;
+;;
+
+;;; Change Log:
+
+;;; Todo:
+
+;;; Require:
 (require 'hydra)
 
 ;;; Code:
@@ -10,7 +45,10 @@
   (setq ns-command-modifier 'meta)
   (setq ns-alternate-modifier 'super))
 
+;; (lazy-load-unset-keys
+;;  '("M-J" "M-r" "M-s" "M-;" "C-M-f" "C-M-b" "M-)")
 
+;; undo-tree
 (lazy-load-global-keys
  '(
    ("C-/" . undo-tree-undo)             ;撤销
@@ -24,6 +62,11 @@
    ("M-p" . hydra-windows/body)
    )
  "init-window")
+
+;; 已经加载的功能,
+(lazy-load-set-keys
+ '(("M-o" . hydra-yassnipet/body) ;; yassnipet
+    ))
 
 
 ;; (one-key-create-menu
@@ -157,9 +200,6 @@
 ;;    ;; ivy-immediate-done 表示使用当然输入值,而非默认选择的值
 ;;    ("C-<return>" . ivy-immediate-done)
 ;;    ))
-
-
-
 
 ;; todo; goto char timer kbd
 

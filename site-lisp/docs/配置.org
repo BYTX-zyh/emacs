@@ -1,0 +1,59 @@
+
+
+* 界面配置
+
+** mode-line
+
+在划分多个窗口时,通常只需要关注当前窗口的mode-line,而其余窗口的mode-line是多余的,而且占据了额外的空间.故采用[[https://github.com/manateelazycat/awesome-tray][awesome-tray]],将原本的mode-line清除改为短线,仅用于区分不同的窗口,而在minibuffer右下显示mode-line中的一些信息,例如在文件中的位置,当前 major mode,git 情况等内容.
+
+* TODO mini buffer 增强
+[[file:../src/emacs/配置.org/ivy.png]]
+
+  首先采用[[https://github.com/abo-abo/swiper#ivy][ivy]]增强功能,其提供了更快更全面的completion mechanism功能(可以简单理解为性能更好的替代？),可以在其[[https://oremacs.com/swiper/][手册]]与[[https://github.com/abo-abo/swiper/wiki][wiki]]处找到详细的细节内容.
+  ivy功能简述:
+  - 选择候选项
+    使用 ~C-n~ 与 ~C-p~ 进行上下选择
+    使用 ~M-<~ 与 ~M->~ 选择第一/最后一个候选
+    使用 ~C-v~ 与 ~M-v~ 进行备选项滚动查看
+    使用 ~C-m~ 或者 ~RET~ 确认选择并执行
+    使用 ~TAB~ 尽可能补全内容
+    使用 ~C-'~ 采用 avy 跳转
+    使用 ~C-M-j~ 选择当前输入内容而非默认选择内容(例如当前匹配了init-test.el,但是输入的是init.el)
+ - 窗口信息保留与恢复
+   ivy 提供了一组命令 ~ivy-switch-buffer~ ~ivy-push-view~ ~ivy-pop-view~ 命令进行快速窗口切换.
+
+* TODO 位置导航
+
+[[file:../src/emacs/README.org/avy.gif]]
+[[https://github.com/abo-abo/avy][avy]]插件提供了快捷跳转功能,类似于vim的easymotion,可以根据前缀进行当前可见范围内的行/字符/word跳转.详细信息查看:[[https://github.com/abo-abo/avy][README]],[[https://github.com/abo-abo/avy/wiki/defcustom][配置]],[[https://github.com/abo-abo/avy/wiki/custom-commands][wiki]]
+
+* 文件的保存与恢复
+
+** 自动保存
+
+  采用[[https://github.com/manateelazycat/auto-save][auto-save]]插件进行文件的自动保存,该插件可以在文件停止输入后自动保存,并自动删除行尾的多余空格,如果有某些文件不希望自动保存也可以根据其规则进行配置.
+
+** undo-tree
+
+下载:https://www.emacswiki.org/emacs/UndoTree#h5o-2
+
+需要queue.el
+
+功能:激活undo tree mode
+
+* TODO 编程工具
+
+emacs在29版本以后添加了[[https://tree-sitter.github.io/tree-sitter/][tree-sitter]]支持,可以使用命令 ~M-x treesit-install-language-grammar~ 安装对应的treesit支持.但是该指令需要手动输入treesit的仓库,可以加载[[https://github.com/BYTX-zyh/emacs/blob/master/site-lisp/config/init-treesit.el][此配置]]自动配置对应需要的内容.
+
+* 窗口管理
+
+窗口相关的操作分为如下几类:
+- 光标在窗口之间移动
+  采用 windmove-left/down/up/right 进行移动
+- 缓冲区在窗口之间的移动
+  缓冲区在不同窗口的移动采用 [[https://www.emacswiki.org/emacs/buffer-move.el][buffer-move]] 的 buf-move-left/down/up/right 进行移动.
+- 窗口大小调整
+  窗口大小的调整采用 [[https://github.com/ramnes/move-border][move-border]] 提供的 move-border-left/down/up/right 进行调整.
+
+* todo
+ https://github.com/manateelazycat/lazycat-emacs/blob/master/site-lisp/config/init-indent.el
