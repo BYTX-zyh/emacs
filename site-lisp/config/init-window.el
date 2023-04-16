@@ -34,40 +34,103 @@
 (require 'move-border)
 
 ;;; Code:
-(defhydra hydra-windows(:timeout 3)
-  "
-cursor |buffer |window|
------------------------------------------------------------------
- ^ ^ _k_ ^ ^ | ^ ^ _d_ ^ ^ | ^ ^ _i_ ^ ^|
- _h_ ^+^ _l_ | _a_ ^+^ _f_ | _y_ ^+^ _o_|
- ^ ^ _j_ ^ ^ | ^ ^ _s_ ^ ^ | ^ ^ _u_ ^ ^|
-分割窗口:[_c_]:上下分割,[_v_]:左右分割
-删除:[_b_]uffer,[_w_]indow,o[_t_]ther window
-"
-  ;; windmove
+
+;; 调用时显示的颜色
+(setq hydra-temp-cursor-color "#e9e7ef")
+(setq hydra-temp-hl-color "#bacac6")
+;; windmove
+(defhydra hydra-windmove(
+                         :pre(progn
+                               (set-cursor-color hydra-temp-cursor-color)
+                               (set-face-background 'hl-line hydra-temp-hl-color)
+                               )
+                         :post  (load-theme 'lazycat-dark t)
+                         :timeout 2)
+  "using hjkl to move cursor"
   ("h" windmove-left  nil)
   ("j" windmove-down  nil)
   ("k" windmove-up    nil)
   ("l" windmove-right nil)
-  ;; buf move
-  ("a" buf-move-left  nil)
-  ("s" buf-move-down  nil)
-  ("d" buf-move-up    nil)
-  ("f" buf-move-right nil)
-  ;; window resize
-  ("y" move-border-left  nil)
-  ("u" move-border-down  nil)
-  ("i" move-border-up    nil)
-  ("o" move-border-right nil)
-  ;; kill and delete
-  ("w" delete-window        nil)
-  ("t" delete-other-windows nil)
-  ("b" kill-this-buffer     nil)
+  ("q" nil "quit"))
 
-  ;; split and vsplit
+;; buf-move
+(defhydra hydra-buf-move(
+                         :pre(progn
+                               (set-cursor-color hydra-temp-cursor-color)
+                               (set-face-background 'hl-line hydra-temp-hl-color)
+                               )
+                         :post  (load-theme 'lazycat-dark t)
+                         :timeout 2)
+  "using hjkl to move buffer"
+  ("h" buf-move-left  nil)
+  ("j" buf-move-down  nil)
+  ("k" buf-move-up    nil)
+  ("l" buf-move-right nil)
+  ("q" nil "quit"))
+
+;; window resize
+(defhydra hydra-move-border(
+                            :pre(progn
+                                  (set-cursor-color hydra-temp-cursor-color)
+                                  (set-face-background 'hl-line hydra-temp-hl-color)
+                                  )
+                            :post  (load-theme 'lazycat-dark t)
+                            :timeout 2)
+  "using hjkl to resize"
+  ("h" move-border-left  nil)
+  ("j" move-border-down  nil)
+  ("k" move-border-up    nil)
+  ("l" move-border-right nil)
+  ("q" nil "quit"))
+
+(defhydra hydra-kill-buffer-window(
+                                   :pre(progn
+                                         (set-cursor-color hydra-temp-cursor-color)
+                                         (set-face-background 'hl-line hydra-temp-hl-color)
+                                         )
+                                   :post  (load-theme 'lazycat-dark t)
+                                   :timeout 2)
+  "
+[_b_]uffer,[_w_]indow,[_o_]ther-window
+"
+  ("b" kill-this-buffer nil)
+  ("w" delete-window)
+  ("o" delete-other-windows nil)
+  ("q" nil "quit"))
+
+(defhydra hydra-split-window(
+                             :pre(progn
+                                   (set-cursor-color hydra-temp-cursor-color)
+                                   (set-face-background 'hl-line hydra-temp-hl-color)
+                                   )
+                             :post  (load-theme 'lazycat-dark t)
+                             :timeout 2)
+  "h,v"
   ("v" split-window-vertically   nil)
-  ("c" split-window-horizontally nil)
-  ;; quit
+  ("h" split-window-horizontally nil)
+  ("q" nil "quit"))
+
+
+;; hydra 主体
+(defhydra hydra-windows(
+                        :pre(progn
+                              (set-cursor-color hydra-temp-cursor-color)
+                              (set-face-background 'hl-line hydra-temp-hl-color)
+                              )
+                        :post  (load-theme 'lazycat-dark t)
+                        :timeout 3)
+  "
+[_c_]ursor  光标移动
+[_b_]buffer 窗口移动
+[_r_]esize  窗口大小
+[_k_]ill
+[_s_]plit
+"
+  ("c" hydra-windmove/body    :exit t)        ;; windmove
+  ("b" hydra-buf-move/body    :exit t)        ;; buf move
+  ("r" hydra-move-border/body :exit t)        ;; window resize
+  ("k" hydra-kill-buffer-window/body :exit t) ;; kill buffer and windows
+  ("s" hydra-split-window/body :exit t)       ;; split
   ("q" nil "cancel"))
 
 (provide 'init-window)

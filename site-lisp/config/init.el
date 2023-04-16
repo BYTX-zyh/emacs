@@ -28,7 +28,6 @@
     (lazycat-theme-load-with-sunrise)
 
     (require 'lazy-load)    ;; lazy-load模块
-    (require 'bytx-one-key) ;; 键盘快捷键方式
     (require 'basic-toolkit)
     (require 'bytx)         ;; 一些自定义内容
 
@@ -42,7 +41,7 @@
     (require 'init-org)          ;; org-mode设置
 
     (require 'init-awesome-tray)
-   (require 'vimish-fold)
+    (require 'vimish-fold)
     ;; 在emacs闲置1s后启动的内容
     (run-with-idle-timer
      1 nil
@@ -65,8 +64,6 @@
          (require 'mind-wave) ;; chat
         ;; (require 'init-eaf)
 
-
-
          (require 'init-session)      ;; session管理，用于保存与恢复
          (emacs-session-restore)
           (require 'init-sort-tab)     ;; 智能排序tab
@@ -75,7 +72,6 @@
 (provide 'init)
 
 ;;; todo
-;; window-navigation 窗口管理,参考lazycat
 ;; awesome-tray
 ;;    修改mode-line宽度
 ;;    添加新的module 表明其minor mode
@@ -86,5 +82,3 @@
 ;; Smart-align 匹配注释
 ;; undo tree
 ;; session 恢复
-;; diff-hl
-;;   实时更新
