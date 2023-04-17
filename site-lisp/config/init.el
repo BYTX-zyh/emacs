@@ -39,6 +39,7 @@
     (require 'init-lsp-bridge)   ;; lsp 配置
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
     (require 'init-org)          ;; org-mode设置
+    (require 'init-rime)
 
     (require 'init-awesome-tray)
     (require 'vimish-fold)
@@ -62,7 +63,7 @@
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
          (require 'mind-wave) ;; chat
-        ;; (require 'init-eaf)
+         (require 'init-eaf)
 
          (require 'init-session)      ;; session管理，用于保存与恢复
          (emacs-session-restore)

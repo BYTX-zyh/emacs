@@ -92,3 +92,6 @@ url = https://github.com/manateelazycat/auto-save.git
 [submodule "site-lisp/extensions/hydra"]
 	path = site-lisp/extensions/hydra
 	url = https://github.com/abo-abo/hydra.git
+[submodule "site-lisp/extensions/emacs-rime"]
+	path = site-lisp/extensions/emacs-rime
+	url = https://github.com/DogLooksGood/emacs-rime.git

@@ -2,78 +2,54 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Apr 12 23:30:55 2023
+;; Created Mon Apr 17 23:59:16 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25654 52911 528748 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#00CE00") (background-color . "#242525") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . fullboth) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore) (frameset--id . "344F-039A-5150-6A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 48) (width . 177) (left . 0) (top . 25)) ((min-height . 9) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 3) (min-width-safe . 4) (min-pixel-height . 162) (min-pixel-width . 160) (min-pixel-height-ignore . 54) (min-pixel-width-ignore . 64) (min-pixel-height-safe . 54) (min-pixel-width-safe . 32)) vc (pixel-width . 1436) (pixel-height . 854) (total-width . 180) (total-height . 47) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 18) (total-width . 180) (total-height . 1) (normal-height . 0.021077283372365363) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("init-window.el" 314 899))) (hc (last . t) (pixel-width . 1436) (pixel-height . 836) (total-width . 180) (total-height . 46) (normal-height . 0.9789227166276346) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 716) (pixel-height . 836) (total-width . 90) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (buffer "init-window.el" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 335) (start . 84))) (vc (last . t) (pixel-width . 720) (pixel-height . 836) (total-width . 90) (total-height . 46) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 720) (pixel-height . 418) (total-width . 90) (total-height . 23) (normal-height . 0.5) (normal-width . 1.0) (buffer "hydra.org" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 3552) (start . 3407)) (prev-buffers ("hydra.org" 1 262) ("配置.org" 857 1133) ("init-window.el" 1 291))) (leaf (last . t) (pixel-width . 720) (pixel-height . 418) (total-width . 90) (total-height . 23) (normal-height . 0.5) (normal-width . 1.0) (buffer "#\"How to Delete Current Window in Emacs?\"#.chat" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 3439) (start . 3110)) (prev-buffers ("init-window.el" 438 667)))))))])
+(setq desktop-saved-frameset [frameset 1 (25661 27860 69102 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#00CE00") (background-color . "#242525") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore) (frameset--id . "344F-039A-5150-6A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 46) (width . 177) (left . 0) (top . 24)) ((min-height . 5) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 90) (min-pixel-width . 80) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 36) (min-pixel-width-safe . 16)) vc (pixel-width . 1436) (pixel-height . 825) (total-width . 180) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 18) (total-width . 180) (total-height . 1) (normal-height . 0.021531100478468845) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("init-window.el" 84 335))) (leaf (last . t) (pixel-width . 1436) (pixel-height . 807) (total-width . 180) (total-height . 45) (normal-height . 0.9784688995215312) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2159) (start . 1344)) (prev-buffers ("init-window.el" 1 872)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '(#("theme" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '(#("/Users/bytx/.config/emacs/docs/hydra.org" 0 40 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/docs/配置.org" 0 37 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/config/init-window.el" 0 57 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/source/_posts/hexo.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/_config.yml" 0 52 (ivy-index 2)) #("/Users/bytx/code/solo/Notes/hexo.md" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 3)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/配置.org" 0 40 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/undo-tree.el" 0 64 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" 0 71 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/emacs/treesit开发指南.org" "~/.config/emacs/test.el" "~/.config/emacs/site-lisp/config/init-ace-window.el" "~/*message*-20230410-181847" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-dark-theme.el" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/code/solo/Notes/emacs/emacs入门.org" "~/.config/emacs/site-lisp/config/init-xenops.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/extensions/bytx/replace-char.el" "~/.config/emacs/site-lisp/config/init-hook.el" "~/.config/emacs/site-lisp/config/init-generic.el"))
+(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 2)) #("/Users/bytx/.config/emacs/docs/hydra.org" 0 40 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/docs/配置.org" 0 37 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/config/init-window.el" 0 57 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/source/_posts/hexo.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/_config.yml" 0 52 (ivy-index 2)) #("/Users/bytx/code/solo/Notes/hexo.md" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/配置.org" 0 40 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/undo-tree.el" 0 64 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" 0 71 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/emacs/treesit开发指南.org" "~/.config/emacs/test.el" "~/.config/emacs/site-lisp/config/init-ace-window.el" "~/*message*-20230410-181847" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-dark-theme.el" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/code/solo/Notes/emacs/emacs入门.org" "~/.config/emacs/site-lisp/config/init-xenops.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/extensions/bytx/replace-char.el" "~/.config/emacs/site-lisp/config/init-hook.el" "~/.config/emacs/site-lisp/config/init-generic.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/#\"How to Delete Current Window in Emacs?\"#.chat"
-  "#\"How to Delete Current Window in Emacs?\"#.chat"
-  'mind-wave-chat-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode visual-line-mode olivetti-mode)
-  3439
-  '(2330 nil)
+  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode lsp-bridge-mode pretty-lambda-mode)
+  2159
+  '(2159 nil)
   nil
   nil
-  '((tab-width . 4) (buffer-display-time 25654 52906 606351 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (124 475 981 1465 1552 1552 1553 1980 2330 2597 3043 3018 3207 3044 3439))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/docs/hydra.org"
-  "hydra.org"
-  'org-mode
-  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode lsp-bridge-mode visual-line-mode cursor-sensor-mode xenops-mode olivetti-mode)
-  3552
-  '(3560 nil)
-  nil
-  nil
-  '((buffer-display-time 25654 52906 606351 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (3534 3532 3514 3512 3502 3499 3499 3497 3423 3421 3412 3393 3100 3080 3047 3552))))
-
-(desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/docs/配置.org"
-  "配置.org"
-  'org-mode
-  '(highlight-parentheses-mode font-lock-mode lsp-bridge-mode visual-line-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode cursor-sensor-mode xenops-mode olivetti-mode)
-  1133
-  '(732 nil)
-  nil
-  nil
-  '((buffer-display-time 25654 41973 888527 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (208 225 208 208 923 1133))))
+  '((buffer-display-time 25661 27857 37899 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-window.el"
   "init-window.el"
   'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode pretty-lambda-mode lsp-bridge-mode diff-hl-mode yas-minor-mode display-line-numbers-mode subword-mode eldoc-mode font-lock-mode highlight-parentheses-mode)
-  335
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode lsp-bridge-mode pretty-lambda-mode visual-line-mode olivetti-mode)
+  872
   '(899 nil)
   nil
   nil
-  '((buffer-display-time 25654 52906 606351 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (899 899 899 899 689 899 474 899 653 899 899 876 303 416 460 335))))
+  '((buffer-display-time 25661 27849 484014 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (899 899 899 899 689 899 474 899 653 899 899 876 303 416 460 872))))
 
 (desktop-create-buffer 208
   "/Users/bytx/.config/emacs/site-lisp/config/init-session.el"
   "init-session.el"
   'emacs-lisp-mode
-  '(visual-line-mode olivetti-mode display-line-numbers-mode subword-mode highlight-parentheses-mode font-lock-mode eldoc-mode yas-minor-mode lsp-bridge-mode pretty-lambda-mode auto-revert-mode diff-hl-mode)
+  '(diff-hl-mode auto-revert-mode pretty-lambda-mode lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode highlight-parentheses-mode subword-mode display-line-numbers-mode visual-line-mode olivetti-mode)
   124
   '(99 nil)
   nil
   nil
-  '((buffer-display-time 25654 40358 677030 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25661 27841 647937 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (817 685 592 597 683 700 683 796 782 875 941 962 1039 1042 683 124))))
 
