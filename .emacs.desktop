@@ -2,54 +2,126 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Apr 17 23:59:16 2023
+;; Created Thu Apr 27 19:11:17 2023
 ;; Desktop file format version 208
 ;; Emacs version 30.0.50
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25661 27860 69102 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#00CE00") (background-color . "#242525") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore) (frameset--id . "344F-039A-5150-6A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (height . 46) (width . 177) (left . 0) (top . 24)) ((min-height . 5) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 90) (min-pixel-width . 80) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 36) (min-pixel-width-safe . 16)) vc (pixel-width . 1436) (pixel-height . 825) (total-width . 180) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1436) (pixel-height . 18) (total-width . 180) (total-height . 1) (normal-height . 0.021531100478468845) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1)) (prev-buffers ("init-window.el" 84 335))) (leaf (last . t) (pixel-width . 1436) (pixel-height . 807) (total-width . 180) (total-height . 45) (normal-height . 0.9784688995215312) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2159) (start . 1344)) (prev-buffers ("init-window.el" 1 872)))))])
+(setq desktop-saved-frameset [frameset 1 (25674 22613 54695 0) (desktop . "208") "bytx@baideMBA.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#00CE00") (background-color . "#242525") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "green") (font-parameter) (environment) (last-focus-update . t) (fullscreen-restore) (frameset--id . "344F-039A-5150-6A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "baideMBA.local") (explicit-name) (tool-bar-position . top) (visibility . t) (frameset--text-pixel-width . 1422) (frameset--text-pixel-height . 843) (height . 46) (width . 177) (left + -2) (top . 25)) ((min-height . 5) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 90) (min-pixel-width . 80) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 36) (min-pixel-width-safe . 16)) vc (pixel-width . 1438) (pixel-height . 825) (total-width . 180) (total-height . 46) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 1438) (pixel-height . 18) (total-width . 180) (total-height . 1) (normal-height . 0.021077283372365363) (normal-width . 1.0) (buffer "*sort-tab*" (selected) (hscroll . 22) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1) (start . 1))) (leaf (last . t) (pixel-width . 1438) (pixel-height . 807) (total-width . 180) (total-height . 45) (normal-height . 0.9789227166276346) (normal-width . 1.0) (buffer "lazy-load.md" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 555) (start . 1)) (prev-buffers ("lazy-load.md" 1 746) ("mkdocs.yml" 1949 2507) ("连续.md" 632 765) ("极限.md" 2276 3022) ("常数项级数.md" 3344 4385) ("常微分方程.md" 8870 9245) ("rime.md" 1 221) ("index.md" 1 10) ("mkdocs.md" 517 1424)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("theme" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("加" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("x" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("arithmatex" 0 10 (isearch-case-fold-search t isearch-regexp-function nil)) #("attr_list" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("inlinehilite" 0 12 (isearch-case-fold-search t isearch-regexp-function nil)) #("theme" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 2)) #("/Users/bytx/.config/emacs/docs/hydra.org" 0 40 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/docs/配置.org" 0 37 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/config/init-window.el" 0 57 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/source/_posts/hexo.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/_config.yml" 0 52 (ivy-index 2)) #("/Users/bytx/code/solo/Notes/hexo.md" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/配置.org" 0 40 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/undo-tree.el" 0 64 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" 0 71 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/emacs/treesit开发指南.org" "~/.config/emacs/test.el" "~/.config/emacs/site-lisp/config/init-ace-window.el" "~/*message*-20230410-181847" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-dark-theme.el" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/code/solo/Notes/emacs/emacs入门.org" "~/.config/emacs/site-lisp/config/init-xenops.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/extensions/bytx/replace-char.el" "~/.config/emacs/site-lisp/config/init-hook.el" "~/.config/emacs/site-lisp/config/init-generic.el"))
+(setq file-name-history '(#("/Users/bytx/.config/emacs/site-lisp/config/init-replace-char.el" 0 63 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/emacs/lazy-load.md" 0 64 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/多元微分学习题.md" 0 61 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/极限于连续,偏导与微分.md" 0 65 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/极值与条件极值.md" 0 61 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/定积分的应用.md" 0 60 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/定积分.md" 0 57 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/反常积分.md" 0 58 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/一元函数积分学-概念.md" 0 64 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/导数的运用.md" 0 59 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/导数和微分的计算.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/导数和微分的概念.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/" 0 46 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/连续.md" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/极限.md" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/常数项级数.md" 0 59 (ivy-index 4)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/常微分方程/常微分方程.md" 0 65 (ivy-index 2)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/emacs/rime.md" 0 59 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/mkdocs.yml" 0 51 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/三角函数.md" 0 58 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/javascripts/mathjax.js" 0 68 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-xenops.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init.el" 0 50 (ivy-index 2)) #("/Users/bytx/.config/emacs/site-lisp/snippets/markdown-mode/details" 0 66 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eaf.el" 0 54 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/.github/workflows/cl.yml" 0 65 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/index.md" 0 54 (ivy-index 3)) #("/Users/bytx/code/solo/bytx-zyh.github.io/docs/杂项/" 0 49 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-org.el" 0 54 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/math/高等数学/多元函数微分学/多元函数微分学.tex" 0 57 (ivy-index 7)) #("/Users/bytx/.config/emacs/docs/hydra.org" 0 40 (ivy-index 0)) #("/Users/bytx/.config/emacs/test.chat" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/docs/配置.org" 0 37 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/config/init-window.el" 0 57 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/source/_posts/hexo.md" 0 62 (ivy-index 0)) #("/Users/bytx/code/solo/bytx-zyh.github.io/_config.yml" 0 52 (ivy-index 2)) #("/Users/bytx/code/solo/Notes/hexo.md" 0 35 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-screen.el" 0 57 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-eldoc.el" 0 56 (ivy-index 0)) #("/Users/bytx/code/solo/Notes/emacs/配置.org" 0 40 (ivy-index 9)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx/undo-tree.el" 0 64 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" 0 71 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-awesome-tray.el" 0 63 (ivy-index 4)) #("/Users/bytx/.config/emacs/site-lisp/config/init-highlight-parentheses.el" 0 72 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-generic.el" 0 58 (ivy-index 0)) #("/Users/bytx/.config/emacs/site-lisp/config/init-session.el" 0 58 (ivy-index 0)) "~/.config/emacs/site-lisp/config/init-key.el" "~/.config/emacs/site-lisp/config/init.el" "~/.config/emacs/site-lisp/config/init-session.el" "~/code/solo/Notes/emacs/配置.org" "~/.config/emacs/site-lisp/config/init-accelerate.el" "~/code/solo/Notes/math/高等数学.tex" "~/code/solo/Notes/emacs/treesit开发指南.org" "~/.config/emacs/test.el" "~/.config/emacs/site-lisp/config/init-ace-window.el" "~/*message*-20230410-181847" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-dark-theme.el" "~/.config/emacs/site-lisp/extensions/bytx-theme/bytx-theme.el" "~/.config/emacs/site-lisp/extensions/fingertip/fingertip.el" "~/code/solo/Notes/emacs/emacs入门.org" "~/.config/emacs/site-lisp/config/init-xenops.el" "~/.config/emacs/.gitmodules" "~/.config/emacs/site-lisp/config/init-font.el" "~/.config/emacs/site-lisp/extensions/bytx/replace-char.el" "~/.config/emacs/site-lisp/config/init-hook.el" "~/.config/emacs/site-lisp/config/init-generic.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode lsp-bridge-mode pretty-lambda-mode)
-  2159
-  '(2159 nil)
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/emacs/lazy-load.md"
+  "lazy-load.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  555
+  '(1555 nil)
   nil
   nil
-  '((buffer-display-time 25661 27857 37899 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
+  '((tab-width . 4) (buffer-display-time 25674 22609 958735 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1288 1395 1551 1457 1457 1214 1038 845 759 687 628 556 499 499 175 555))))
 
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-window.el"
-  "init-window.el"
-  'emacs-lisp-mode
-  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode lsp-bridge-mode pretty-lambda-mode visual-line-mode olivetti-mode)
-  872
-  '(899 nil)
+  "/Users/bytx/code/solo/bytx-zyh.github.io/mkdocs.yml"
+  "mkdocs.yml"
+  'yaml-ts-mode
+  '(highlight-parentheses-mode font-lock-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode)
+  2507
+  '(2649 nil)
   nil
   nil
-  '((buffer-display-time 25661 27849 484014 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (899 899 899 899 689 899 474 899 653 899 899 876 303 416 460 872))))
+  '((indent-tabs-mode) (buffer-display-time 25674 22485 318633 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (2579 2649 2552 2290 2392 2552 2624 2552 2606 2631 2725 2569 2649 2649 2570 2454))))
 
 (desktop-create-buffer 208
-  "/Users/bytx/.config/emacs/site-lisp/config/init-session.el"
-  "init-session.el"
-  'emacs-lisp-mode
-  '(diff-hl-mode auto-revert-mode pretty-lambda-mode lsp-bridge-mode yas-minor-mode eldoc-mode font-lock-mode highlight-parentheses-mode subword-mode display-line-numbers-mode visual-line-mode olivetti-mode)
-  124
-  '(99 nil)
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/连续.md"
+  "连续.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  765
+  '(764 nil)
   nil
   nil
-  '((buffer-display-time 25661 27841 647937 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (817 685 592 597 683 700 683 796 782 875 941 962 1039 1042 683 124))))
+  '((tab-width . 4) (buffer-display-time 25673 60628 16324 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1468 750 679 589 6 6 12 2 1 2 12 3 6 6 12 13))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/极限.md"
+  "极限.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  3022
+  '(3022 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25673 59294 659713 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (3012 3011 2879 2661 2587 2263 2177 1674 1598 1447 1446 4662 1431 959 876 810))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/常数项级数.md"
+  "常数项级数.md"
+  'markdown-mode
+  '(font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  4385
+  '(4617 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25673 56637 29003 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (4892 4621 4932 4796 4844 4983 5130 5080 5041 4900 4766 4661 4710 4629 4572 4385))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/高等数学/常微分方程/常微分方程.md"
+  "常微分方程.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  9245
+  '(9245 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25673 53391 870148 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (8441 8168 8050 7573 4006 3356 2722 2429 2151 789 1179 1619 1417 1953 1418 1417))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/emacs/rime.md"
+  "rime.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  221
+  '(136 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25673 50919 272141 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (72 19 17 17 222 37 205))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/index.md"
+  "index.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  10
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25672 51565 10762 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 10))))
+
+(desktop-create-buffer 208
+  "/Users/bytx/code/solo/bytx-zyh.github.io/docs/杂项/mkdocs.md"
+  "mkdocs.md"
+  'markdown-mode
+  '(highlight-parentheses-mode font-lock-mode eldoc-mode subword-mode display-line-numbers-mode yas-minor-mode diff-hl-mode fingertip-mode lsp-bridge-mode)
+  1424
+  '(1359 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 25672 51445 556812 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1348 1272 1027 786 548 550 548 548 548 548 548 550 550 549 548 1424))))
 

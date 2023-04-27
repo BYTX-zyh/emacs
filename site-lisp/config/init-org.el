@@ -20,7 +20,7 @@
 ;; (require 'bytx-org-insert-image-from-clipboard) ;; 从剪切板复制图片
 
 
-(require 'init-xenops) ;; 数学公式渲染
+;; (require 'init-xenops) ;; 数学公式渲染
 
 (require 'org)
 (require 'posframe)

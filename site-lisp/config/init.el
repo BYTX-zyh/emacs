@@ -38,7 +38,7 @@
     (require 'init-key)          ;; lazy-load加载的key设置
     (require 'init-lsp-bridge)   ;; lsp 配置
     (require 'init-auto-save)    ;; 文件停止编辑后自动保存
-    (require 'init-org)          ;; org-mode设置
+    ;; (require 'init-org)          ;; org-mode设置
     (require 'init-rime)
 
     (require 'init-awesome-tray)
@@ -51,19 +51,18 @@
 
         ;; (require 'init-magit)
          (require 'init-hook) ;; 一些功能的hook绑定
-
          (require 'init-treesit)      ;; treesit 配置
          (require 'init-yasnippet)    ;; codesnip
          (require 'init-diff-hl)      ;; ui 配置 git gutter 侧边装订线
          ;;      (require  'bytx-align)       ;;;对齐
          (require 'init-blink-search) ;; 搜索插件
-         (require 'init-vterm)        ;; 终端模拟器
          (require 'init-avy)          ;; 光标跳转插件
-         (require 'init-olivetti) ;; 居中显示
+         ;;(require 'init-olivetti) ;; 居中显示
          (require 'toggle-one-window) ;; 窗口切换
          (require 'rainbow-mode) ;; rainbow mode
          (require 'mind-wave) ;; chat
          (require 'init-eaf)
+
 
          (require 'init-session)      ;; session管理，用于保存与恢复
          (emacs-session-restore)
